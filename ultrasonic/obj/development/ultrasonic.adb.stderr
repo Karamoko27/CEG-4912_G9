@@ -1,0 +1,50 @@
+ultrasonic.adb:2:11: warning: no entities of "STM32.Board" are referenced [-gnatwu]
+ultrasonic.adb:2:19: warning: use clause for package "Board" has no effect [-gnatwu]
+ultrasonic.adb:7:09: warning: no entities of "HAL.UART" are referenced [-gnatwu]
+ultrasonic.adb:7:16: warning: use clause for package "UART" has no effect [-gnatwu]
+ultrasonic.adb:7:29: (style) trailing spaces not permitted
+ultrasonic.adb:8:09: warning: no entities of "Ada.Text_IO" are referenced [-gnatwu]
+ultrasonic.adb:8:19: warning: use clause for package "Text_IO" has no effect [-gnatwu]
+ultrasonic.adb:9:06: warning: unit "Interfaces" is not referenced [-gnatwu]
+ultrasonic.adb:10:09: warning: no entities of "HAL.Bitmap" are referenced [-gnatwu]
+ultrasonic.adb:10:18: warning: use clause for package "Bitmap" has no effect [-gnatwu]
+ultrasonic.adb:13:09: warning: unit "HAL.Framebuffer" is not referenced [-gnatwu]
+ultrasonic.adb:14:06: warning: redundant with clause [-gnatwr]
+ultrasonic.adb:16:04: (style) space required
+ultrasonic.adb:17:31: (style) trailing spaces not permitted
+ultrasonic.adb:25:04: warning: "Echo_Pin" is not modified, could be declared constant [-gnatwk]
+ultrasonic.adb:28:61: (style) space required
+ultrasonic.adb:30:29: (style) trailing spaces not permitted
+ultrasonic.adb:31:32: (style) trailing spaces not permitted
+ultrasonic.adb:40:15: (style) space required
+ultrasonic.adb:41:14: (style) space required
+ultrasonic.adb:42:04: warning: variable "trigger_time" is never read and never assigned [-gnatwv]
+ultrasonic.adb:42:16: (style) space required
+ultrasonic.adb:46:21: (style) space required
+ultrasonic.adb:48:23: (style) space required
+ultrasonic.adb:52:29: (style) space required
+ultrasonic.adb:54:37: (style) space required
+ultrasonic.adb:55:27: (style) space required
+ultrasonic.adb:62:27: (style) space required
+ultrasonic.adb:64:29: (style) space required
+ultrasonic.adb:67:27: (style) space required
+ultrasonic.adb:71:29: (style) space required
+ultrasonic.adb:75:01: (style) trailing spaces not permitted
+ultrasonic.adb:77:01: (style) trailing spaces not permitted
+ultrasonic.adb:80:80: (style) this line is too long
+ultrasonic.adb:84:27: (style) space required
+ultrasonic.adb:86:24: (style) space required
+ultrasonic.adb:87:27: (style) space required
+ultrasonic.adb:90:01: (style) multiple blank lines
+ultrasonic.adb:94:01: (style) trailing spaces not permitted
+ultrasonic.adb:95:16: (style) space required
+ultrasonic.adb:96:16: (style) space required
+ultrasonic.adb:97:24: (style) space required
+ultrasonic.adb:100:27: (style) space required
+ultrasonic.adb:102:27: (style) space required
+ultrasonic.adb:105:58: (style) space required
+ultrasonic.adb:106:67: (style) space required
+ultrasonic.adb:108:80: (style) this line is too long
+ultrasonic.adb:111:30: (style) space required
+ultrasonic.adb:112:01: (style) trailing spaces not permitted
+ultrasonic.adb:115:80: (style) this line is too long
