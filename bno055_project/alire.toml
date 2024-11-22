@@ -1,0 +1,18 @@
+name = "bno055_project"
+description = "BNO055 Project"
+version = "0.1.0-dev"
+
+authors = ["Youssef"]
+maintainers = ["Youssef <youss104@uottawa.ca>"]
+maintainers-logins = ["Youss104"]
+licenses = "MIT OR Apache-2.0 WITH LLVM-exception"
+website = ""
+tags = []
+
+executables = ["main"]
+
+[[depends-on]]
+gnat_native = '^14.2.1'
+
+[[depends-on]]
+hal = "^1.0.0"
