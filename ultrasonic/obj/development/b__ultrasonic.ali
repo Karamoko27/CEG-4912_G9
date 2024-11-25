@@ -28,7 +28,7 @@ RV NO_IMPLICIT_LOOPS
 RV NO_ELABORATION_CODE
 RV NO_OBSOLESCENT_FEATURES
 
-U ada_main%b		b__ultrasonic.adb	c59707a4 OO PK IL
+U ada_main%b		b__ultrasonic.adb	4775230b OO PK IL
 W system%s		system.ads		system.ali
 W system.restrictions%s	s-restri.adb		s-restri.ali
 
@@ -37,8 +37,8 @@ W system%s		system.ads		system.ali
 W system.parameters%s	s-parame.adb		s-parame.ali
 W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
 
-D b__ultrasonic.ads	20241114013927 8786fbce ada_main%s
-D b__ultrasonic.adb	20241114013927 b19ed42f ada_main%b
+D b__ultrasonic.ads	20241125190139 8786fbce ada_main%s
+D b__ultrasonic.adb	20241125190139 337cf080 ada_main%b
 D system.ads		20220929105809 5ad4ef55 system%s
 D s-parame.ads		20220929105809 8e90778f system.parameters%s
 D s-restri.ads		20220929105809 f38f2845 system.restrictions%s
@@ -52,7 +52,7 @@ G c Z s b [main ada_main 25 14 none]
 G c Z b b [Tsec_default_sized_stacksBIP ada_main 75 4 none]
 G c Z b b [ada_main_program ada_main 340 14 none]
 X 1 b__ultrasonic.ads
-6K9*ada_main 331l5 331e13 2|9b14 380l5 380t13
+6K9*ada_main 329l5 329e13 2|9b14 380l5 380t13
 9a4*GNAT_Version{string} 11r22 13r54
 13m4*GNAT_Version_Address{3|80M9} 14r22
 16a4*Ada_Main_Program_Name{string} 17r22 2|351r52
