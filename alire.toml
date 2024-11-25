@@ -13,3 +13,6 @@ executables = ["gtkada_demo"]
 
 [[depends-on]]
 gtkada = "^24.0.1"
+
+[[depends-on]]
+gnat_native = "^14.2.1"
