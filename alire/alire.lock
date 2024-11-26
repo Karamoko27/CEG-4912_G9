@@ -1,0 +1,176 @@
+# THIS FILE IS GENERATED. DO NOT EDIT.
+
+[solution]
+[solution.context]
+solved = true
+[[solution.state]]
+crate = "gnat_native"
+fulfilment = "solved"
+pinned = false
+transitivity = "direct"
+versions = "^14.2.1"
+[solution.state.release]
+auto-gpr-with = false
+description = "The GNAT Ada compiler - Native"
+licenses = "GPL-3.0-or-later AND GPL-3.0-or-later WITH GCC-exception-3.1"
+maintainers = [
+"chouteau@adacore.com",
+]
+maintainers-logins = [
+"Fabien-Chouteau",
+]
+name = "gnat_native"
+provides = [
+"gnat=14.2.1",
+]
+version = "14.2.1"
+[solution.state.release.configuration]
+auto_gpr_with = true
+disabled = true
+generate_ada = true
+generate_c = true
+generate_gpr = true
+output_dir = "config"
+[solution.state.release.environment]
+[solution.state.release.environment.LD_LIBRARY_PATH]
+prepend = "${CRATE_ROOT}/lib64"
+[solution.state.release.environment.LD_RUN_PATH]
+prepend = "${CRATE_ROOT}/lib64"
+[solution.state.release.environment.LIBRARY_PATH]
+prepend = "${CRATE_ROOT}/lib64"
+[solution.state.release.environment.PATH]
+prepend = "${CRATE_ROOT}/bin"
+[solution.state.release.origin]
+binary = true
+hashes = [
+"sha256:06bb3def7f70371d601a5c8b93bc4933c50873a5e5ba26aa7ee3447dda687722",
+]
+url = "https://github.com/alire-project/GNAT-FSF-builds/releases/download/gnat-14.2.0-1/gnat-x86_64-linux-14.2.0-1.tar.gz"
+[[solution.state]]
+crate = "gtkada"
+fulfilment = "solved"
+pinned = false
+transitivity = "direct"
+versions = "^24.0.1"
+[solution.state.release]
+authors = [
+"AdaCore",
+]
+description = "An Ada graphical toolkit based on Gtk+"
+licenses = "GPL-3.0-or-later WITH GCC-exception-3.1"
+long-description = "This crate requires Gtk3+ >= 3.24.24"
+maintainers = [
+"chouteau@adacore.com",
+"reznikmm@gmail.com",
+]
+maintainers-logins = [
+"Fabien-Chouteau",
+"reznikmm",
+]
+name = "gtkada"
+project-files = [
+"src/gtkada.gpr",
+]
+tags = [
+"gtk",
+"gui",
+]
+version = "24.0.1"
+website = "https://github.com/adacore/gtkada"
+[solution.state.release.configuration]
+auto_gpr_with = true
+disabled = true
+generate_ada = true
+generate_c = true
+generate_gpr = true
+output_dir = "config"
+[solution.state.release.gpr-externals]
+LIBRARY_TYPE = [
+"static",
+"static-pic",
+"relocatable",
+]
+[solution.state.release.origin]
+hashes = [
+"sha512:8de57f739051f29efb64c6f1c75f7b7f46fe64b73b0f4165b6e838646dac5a868eeb20ee016129ac6088c188fa77c6777d08f1117efe152c95858fac82caf595",
+]
+url = "https://github.com/AdaCore/gtkada/archive/v24.0.1/gtkada-24.0.1.zip"
+[[solution.state.release.actions]]
+command = [
+"bash",
+"-c",
+"PATH=${DISTRIB_ROOT}/mingw64/bin:${PATH} ./configure",
+]
+directory = "."
+type = "post-fetch"
+[[solution.state.release.actions]]
+command = [
+"make",
+"src/gtkada-intl.adb",
+]
+directory = "."
+type = "post-fetch"
+[[solution.state.release.depends-on]]
+libgtk3 = ">=3.24.24"
+make = "*"
+pkg_config = "*"
+[[solution.state]]
+crate = "libgtk3"
+fulfilment = "solved"
+pinned = false
+transitivity = "indirect"
+versions = ">=3.24.24"
+[solution.state.release]
+description = "GObject-based multi-platform GUI toolkit (v3)"
+licenses = "LGPL-3.0-only"
+maintainers = [
+"chouteau@adacore.com",
+]
+maintainers-logins = [
+"Fabien-Chouteau",
+]
+name = "libgtk3"
+notes = "Provided by system package: libgtk-3-dev"
+version = "3.24.33"
+[solution.state.release.origin]
+url = "system:libgtk-3-dev"
+[[solution.state]]
+crate = "make"
+fulfilment = "solved"
+pinned = false
+transitivity = "indirect"
+versions = "*"
+[solution.state.release]
+description = "Utility for directing compilation"
+maintainers = [
+"alejandro@mosteo.com",
+]
+maintainers-logins = [
+"mosteo",
+]
+name = "make"
+notes = "Provided by system package: make"
+version = "4.3.0"
+[solution.state.release.origin]
+url = "system:make"
+[[solution.state]]
+crate = "pkg_config"
+fulfilment = "solved"
+pinned = false
+transitivity = "indirect"
+versions = "*"
+[solution.state.release]
+description = ""
+licenses = "LGPL-3.0-only"
+maintainers = [
+"chouteau@adacore.com",
+]
+maintainers-logins = [
+"Fabien-Chouteau",
+]
+name = "pkg_config"
+notes = "Provided by system package: pkg-config"
+version = "0.29.2"
+[solution.state.release.origin]
+url = "system:pkg-config"
+

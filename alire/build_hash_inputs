@@ -1,0 +1,5 @@
+dependency:gtkada=24.0.1=05561da954afaee17128f59bba699db2f2e4a4215317b2b818a8016192c82334
+external:GTKADA_DEMO_LIBRARY_TYPE=default
+external:LIBRARY_TYPE=default
+profile:gtkada_demo=DEVELOPMENT
+switches:gtkada_demo=-Og,-fdata-sections,-ffunction-sections,-g,-gnatVa,-gnatW8,-gnatw.X,-gnatwa,-gnaty-d,-gnaty3,-gnatyA,-gnatyB,-gnatyI,-gnatyO,-gnatyS,-gnatya,-gnatyb,-gnatyc,-gnatye,-gnatyf,-gnatyh,-gnatyi,-gnatyk,-gnatyl,-gnatym,-gnatyn,-gnatyp,-gnatyr,-gnatyt,-gnatyu,-gnatyx
