@@ -1,0 +1,21 @@
+name = "servo_motor_control_main"
+description = ""
+version = "0.1.0-dev"
+
+authors = ["Your Name"]
+maintainers = ["Your Name <example@example.com>"]
+maintainers-logins = ["github-username"]
+licenses = "MIT OR Apache-2.0 WITH LLVM-exception"
+website = ""
+tags = ["embedded", "stm32"]
+
+executables = ["servo_motor_control_main"]
+
+
+[[depends-on]]
+#stm32f4xxm_devebox = "0.1.0"
+stm32f429disco = "0.1.0"
+#stm32f746disco = "0.1.0"
+
+[[pins]]
+gnat_arm_elf = { version='12.2.1' }
