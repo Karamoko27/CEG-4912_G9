@@ -1,5 +1,5 @@
-dependency:stm32_gui=0.1.0=3ee674d2b93dc9506389e115fb01936ceddd850a63beae621d8cf36a7eb596b0
-dependency:stm32f429disco=0.1.0=889ab963feec0991851c3be89f19344fb5b82b13dbe59edcaca23d6420e4ffef
+dependency:stm32_gui=0.1.0=e43069f23bdfc0277732929f4e410652e9635da668b58f56934bf0bb27ab017f
+dependency:stm32f429disco=0.1.0=c82c5fd28bae1b74f73b5bc408fb0d2a6c4a95b458bd5f92faf6278736579e80
 external:LIBRARY_TYPE=default
 external:ULTRASONIC_LIBRARY_TYPE=default
 profile:ultrasonic=DEVELOPMENT
