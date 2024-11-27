@@ -79,16 +79,15 @@ procedure ultrasonic is
       return End_Time - Start_Time;  -- Adjust as needed
    end Get_Echo_Time;
 
-   function Calculate_Distance (Echo_Time : Ada.Real_Time.Time_Span) return Float is
-      Speed_Of_Sound : constant Float := 34300.0;  --  in meters per second
-      Distance       : Float;
+   type T6_D3 is delta 10.0 ** (-3) digits 8;
+
+   function Calculate_Distance (Time_Diff : T6_D3) return T6_D3 is
+      Speed_Of_Sound : constant T6_D3 := 34300.0;  --  in meters per second
+      By_Two : constant T6_D3 := Time_Diff / 2.0;
    begin
       --  Convert time to seconds and calculate distance 
-      Distance := (Float(Ada.Real_Time.To_Duration(Echo_Time))/2.0) * Speed_Of_Sound ;
-      return Distance;
+      return By_Two * Speed_Of_Sound;
    end Calculate_Distance;
-
-
 
 begin
 
@@ -96,18 +95,13 @@ begin
    Configure_IO(Trig_Pin, Trig_Config);  --  PD0 as output
    Configure_IO(Echo_Pin, Echo_Config);  --  PC1 as input with pull-down
 
-
    loop
       Trigger_Sensor;
       declare
          Echo_Time : constant Ada.Real_Time.Time_Span := Get_Echo_Time;
-         Distance  : constant Float := Calculate_Distance(Echo_Time);
-         Message   : constant String := "Distance: " & Float'Image(Distance) & "cm";
-
+         Distance  : constant T6_D3 := Calculate_Distance(T6_D3 (To_Duration (Echo_Time)));
       begin
-      
-         Screen_Draw.WriteMsg(Message);
-
+         Screen_Draw.WriteMsg ("Distance: " & Distance'Image & " cm");
       end;
       delay until Clock + Delay_sec;  --  Delay 1 second before the next measurement
    end loop;
