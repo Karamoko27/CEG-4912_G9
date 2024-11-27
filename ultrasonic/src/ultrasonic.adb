@@ -31,7 +31,7 @@ procedure ultrasonic is
       Mode      => Mode_Out,
       Resistors => Floating, 
       Output_Type => Push_Pull, 
-      Speed => Speed_2MHz
+      Speed => Speed_25MHz
    );
 
    Echo_Config : constant STM32.GPIO.GPIO_Port_Configuration := (
@@ -82,7 +82,7 @@ procedure ultrasonic is
    type T6_D3 is delta 10.0 ** (-3) digits 8;
 
    function Calculate_Distance (Time_Diff : T6_D3) return T6_D3 is
-      Speed_Of_Sound : constant T6_D3 := 34300.0;  --  in meters per second
+      Speed_Of_Sound : constant T6_D3 := 343.0;  --  in meters per second
       By_Two : constant T6_D3 := Time_Diff / 2.0;
    begin
       --  Convert time to seconds and calculate distance 
@@ -101,7 +101,7 @@ begin
          Echo_Time : constant Ada.Real_Time.Time_Span := Get_Echo_Time;
          Distance  : constant T6_D3 := Calculate_Distance(T6_D3 (To_Duration (Echo_Time)));
       begin
-         Screen_Draw.WriteMsg ("Distance: " & Distance'Image & " cm");
+         Screen_Draw.WriteMsg ("Distance: " & Distance'Image & "m");
       end;
       delay until Clock + Delay_sec;  --  Delay 1 second before the next measurement
    end loop;

@@ -189,9 +189,9 @@ prepend = "${CRATE_ROOT}/bin"
 [solution.state.release.origin]
 binary = true
 hashes = [
-"sha256:9be2ca0ea66cda44cdbbd136f0ef24517c7e25139df80d104b304cad8712d189",
+"sha256:f4bfd822af8428fff63a46e5156f9904867871cf9eeb4d6cbde057aad14c9edb",
 ]
-url = "https://github.com/alire-project/GNAT-FSF-builds/releases/download/gnat-12.2.0-1/gnat-arm-elf-linux64-12.2.0-1.tar.gz"
+url = "https://github.com/alire-project/GNAT-FSF-builds/releases/download/gnat-12.2.0-1/gnat-arm-elf-darwin-12.2.0-1.tar.gz"
 [[solution.state]]
 crate = "hal"
 fulfilment = "solved"
@@ -217,9 +217,9 @@ tags = [
 "hal",
 "nostd",
 ]
-version = "0.3.1"
+version = "0.3.0"
 [solution.state.release.origin]
-commit = "58bb6bd72fc276ba1128451e3b4784b6029be0a8"
+commit = "095ae5140d55ba5bc3905295d1029e79e1f11d43"
 url = "git+https://github.com/Fabien-Chouteau/hal.git"
 [[solution.state]]
 crate = "stm32_gui"
