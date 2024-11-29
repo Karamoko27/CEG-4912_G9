@@ -1,0 +1,362 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #0077cc;
+}
+
+/* Hero Section for Home Page */
+.hero {
+    position: relative;
+    height: 100vh;
+    background: url('interface.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.discover-btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    color: white;
+    background-color: #0077cc;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.discover-btn:hover {
+    background-color: #005fa3;
+}
+
+/* Telemetry Section */
+#telemetry-section {
+    text-align: center;
+    padding: 2rem;
+}
+
+.gauges-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2rem auto;
+    max-width: 800px;
+}
+
+/* Gauge Styling */
+.gauge {
+    text-align: center;
+}
+
+.gauge-circle {
+    width: 150px;
+    height: 75px;
+    background: conic-gradient(
+        green 0% 33%, 
+        yellow 33% 66%, 
+        red 66% 100%
+    );
+    border-radius: 150px 150px 0 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.gauge-circle::after {
+    content: '';
+    width: 140px;
+    height: 70px;
+    background: white;
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+    border-radius: 140px 140px 0 0;
+}
+
+.gauge-label {
+    margin-top: 0.5rem;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #f44;
+    display: inline-block;
+    padding: 0.2rem 1rem;
+    border-radius: 20px;
+}
+
+/* Battery Icon */
+.battery-icon {
+    margin-top: 2rem;
+}
+
+.battery {
+    width: 100px;
+    height: 40px;
+    border: 3px solid #333;
+    border-radius: 5px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.battery-level {
+    width: 60%;
+    height: 100%;
+    background: #0077cc;
+}
+.battery-label {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}
+
+
+/* Arrow Controls */
+#arrow-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.arrows-horizontal {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    margin: 0.5rem 0;
+}
+
+.arrow {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    background: #ddd;
+    padding: 1rem;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.arrow:hover {
+    background: #0077cc;
+    color: white;
+    transform: scale(1.1);
+}
+
+/* Remote Control Section */
+#remote-control {
+    text-align: center;
+    padding: 2rem;
+}
+
+.remote-control-layout {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+/* Control Buttons */
+.control-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.action-btn {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.8rem 1rem;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.action-btn:hover {
+    background-color: #218838;
+}
+
+/* Car Image */
+.car-container {
+    text-align: center;
+    position: relative;
+}
+
+.car-container img {
+    width: 200px;
+    height: auto;
+}
+
+/* Arrow Controls */
+.arrow-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.horizontal-arrows {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.arrow-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem;
+    width: 60px;
+    height: 60px;
+    background-color: #ddd;
+    color: #333;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.arrow-btn:hover {
+    background-color: #0077cc;
+    color: white;
+    transform: scale(1.1);
+}
+
+
+/* About Hero Section */
+.about-hero {
+    position: relative;
+    min-height: 100vh; /* Use min-height instead of height */
+    background: url('interface.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    overflow: hidden; /* Ensures content stays inside the section */
+}
+
+.about-content {
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    max-width: 800px;
+    text-align: left;
+}
+
+
+.about-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    font-family: 'Georgia', serif;
+}
+
+.about-content p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.about-content h2 {
+    font-size: 2rem;
+    margin-top: 2rem;
+    font-family: 'Georgia', serif;
+    text-align: left;
+}
+
+.about-content ul {
+    text-align: left;
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+.about-content ul li {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    list-style-type: disc;
+}
+
+/* Discover Section */
+#discover {
+    padding: 3rem;
+    background: #f4f4f9;
+    text-align: center;
+}
+
+#discover h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Georgia', serif;
+    color: #0077cc;
+}
+
+#discover p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+html {
+    scroll-behavior: smooth;
+}

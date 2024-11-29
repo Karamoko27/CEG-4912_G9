@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telemetry Data</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="remote.html">Remote Control</a></li>
+                <li><a href="telemetry.html">Telemetry Data</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="telemetry-section">
+            <h2>Telemetry Data</h2>
+            <div class="gauges-container">
+                <!-- Speed Gauge -->
+                <div class="gauge">
+                    <div class="gauge-circle" id="speed-gauge"></div>
+                    <p class="gauge-label">Speed</p>
+                </div>
+                <!-- Temperature Gauge -->
+                <div class="gauge">
+                    <div class="gauge-circle" id="temperature-gauge"></div>
+                    <p class="gauge-label">Temperature</p>
+                </div>
+                <!-- Inclination Gauge -->
+                <div class="gauge">
+                    <div class="gauge-circle" id="inclination-gauge"></div>
+                    <p class="gauge-label">Inclination</p>
+                </div>
+            </div>
+            <!-- Battery Icon -->
+            <div class="battery-icon">
+                <div class="battery">
+                    <div class="battery-level"></div>
+                </div>
+                <p class="battery-label">Battery Level</p>
+            </div>
+            
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
