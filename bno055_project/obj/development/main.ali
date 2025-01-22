@@ -1,0 +1,96 @@
+V "GNAT Lib v12"
+M P W=8
+A -Og
+A -gnatA
+A --RTS=/users/karamoko/.local/share/alire/toolchains/gnat_arm_elf_12.2.1_f4bfd822/arm-eabi/lib/gnat/embedded-stm32f429disco/
+A -mlittle-endian
+A -mfloat-abi=hard
+A -mcpu=cortex-m4
+A -mfpu=fpv4-sp-d16
+A -mthumb
+A -ffunction-sections
+A -fdata-sections
+A -g
+A -gnatwa
+A -gnatw.X
+A -gnatVa
+A -gnaty3
+A -gnatya
+A -gnatyA
+A -gnatyB
+A -gnatyb
+A -gnatyc
+A -gnaty-
+A -gnatyd
+A -gnatye
+A -gnatyf
+A -gnatyh
+A -gnatyi
+A -gnatyI
+A -gnatyk
+A -gnatyl
+A -gnatym
+A -gnatyn
+A -gnatyO
+A -gnatyp
+A -gnatyr
+A -gnatyS
+A -gnatyt
+A -gnatyu
+A -gnatyx
+A -gnatW8
+A -mlibarch=armv7e-m+fp
+A -march=armv7e-m+fp
+P DB ZX
+
+RN
+RV NO_IO
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U main%b		main.adb		7cf2d958 NE OO SU
+W ada%s			ada.ads			ada.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W bno055_project%s	bno055_project.adb	bno055_project.ali
+
+D ada.ads		20220929105808 76789da1 ada%s
+D a-except.ads		20220929105809 2a7d8d70 ada.exceptions%s
+D a-finali.ads		20220929105809 bf4f806b ada.finalization%s
+D a-string.ads		20220929105808 90ac6797 ada.strings%s
+D a-sttebu.ads		20220929105809 18209c64 ada.strings.text_buffers%s
+D a-stuten.ads		20220929105809 33c54060 ada.strings.utf_encoding%s
+D a-tags.ads		20220929105809 9eaa38c6 ada.tags%s
+D a-textio.ads		20220929105808 ffc84532 ada.text_io%s
+D a-unccon.ads		20220929105808 0e9b276f ada.unchecked_conversion%s
+D bno055_i2c_io_custom.ads  20250122005355 3cab9327 bno055_i2c_io_custom%s
+D bno055_project.ads	20241122121056 f7b244df bno055_project%s
+D bno055_project.adb	20250122005305 1885db3c bno055_project%b
+D hal.ads		20240927211215 2b42c80e hal%s
+D hal-i2c.ads		20240927211215 bbe3f8eb hal.i2c%s
+D interfac.ads		20220929105808 edec285f interfaces%s
+D main.adb		20241122121056 7488d8b5 main%b
+D system.ads		20220929105809 5ad4ef55 system%s
+D s-finmas.ads		20220929105809 bd688734 system.finalization_masters%s
+D s-finroo.ads		20220929105809 4ff27390 system.finalization_root%s
+D s-parame.ads		20220929105809 8e90778f system.parameters%s
+D s-pooglo.ads		20220929105809 91708d21 system.pool_global%s
+D s-putima.ads		20220929105809 4e095881 system.put_images%s
+D s-stalib.ads		20220929105809 1c9580f6 system.standard_library%s
+D s-stoele.ads		20220929105808 6d8e1ff4 system.storage_elements%s
+D s-stoele.adb		20220929105808 8f5a9db6 system.storage_elements%b
+D s-stopoo.ads		20220929105809 e9fa2dd8 system.storage_pools%s
+D s-traent.ads		20220929105809 c81cbf8c system.traceback_entries%s
+D s-unstyp.ads		20220929105808 fa2a7f59 system.unsigned_types%s
+D unchconv.ads		20220929105808 ca2f9e18 unchecked_conversion%s
+G a e
+G c Z b b [main standard 4 11 none]
+X 1 ada.ads
+16K9*Ada 20e8 16|1r6 1r23
+X 8 a-textio.ads
+36K13*Text_IO 52e16 16|1w10 1r27
+46U14*Put_Line 16|6s4
+X 11 bno055_project.ads
+124k9*Bno055_Project 690e19 16|2w6
+X 16 main.adb
+4U11*Main 4b11 7l5 7t9
+
