@@ -1,0 +1,166 @@
+V "GNAT Lib v12"
+A -Og
+A -gnatA
+A --RTS=/users/karamoko/.local/share/alire/toolchains/gnat_arm_elf_12.2.1_f4bfd822/arm-eabi/lib/gnat/embedded-stm32f429disco/
+A -mlittle-endian
+A -mfloat-abi=hard
+A -mcpu=cortex-m4
+A -mfpu=fpv4-sp-d16
+A -mthumb
+A -ffunction-sections
+A -fdata-sections
+A -g
+A -gnatwa
+A -gnatw.X
+A -gnatVa
+A -gnaty3
+A -gnatya
+A -gnatyA
+A -gnatyB
+A -gnatyb
+A -gnatyc
+A -gnaty-
+A -gnatyd
+A -gnatye
+A -gnatyf
+A -gnatyh
+A -gnatyi
+A -gnatyI
+A -gnatyk
+A -gnatyl
+A -gnatym
+A -gnatyn
+A -gnatyO
+A -gnatyp
+A -gnatyr
+A -gnatyS
+A -gnatyt
+A -gnatyu
+A -gnatyx
+A -gnatW8
+A -mlibarch=armv7e-m+fp
+A -march=armv7e-m+fp
+P DB SS ZX
+
+RN
+RV NO_DISPATCH
+RV NO_DISPATCHING_CALLS
+RV NO_ENUMERATION_MAPS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+
+U bno055_i2c_io%b	bno055_i2c_io_custom.adb  437b2964 NE OO PK IU
+Z ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+
+U bno055_i2c_io%s	bno055_i2c_io.ads	c7265ef9 EE OO PF PK IU
+Z ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.streams%s		a-stream.adb		a-stream.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W hal%s			hal.ads			hal.ali
+W hal.i2c%s		hal-i2c.ads		hal-i2c.ali
+Z system%s		system.ads		system.ali
+Z system.finalization_masters%s  s-finmas.adb	s-finmas.ali
+Z system.pool_global%s	s-pooglo.adb		s-pooglo.ali
+Z system.put_images%s	s-putima.adb		s-putima.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.stream_attributes%s  s-stratt.adb	s-stratt.ali
+
+D ada.ads		20220929105808 76789da1 ada%s
+D a-except.ads		20220929105809 2a7d8d70 ada.exceptions%s
+D a-finali.ads		20220929105809 bf4f806b ada.finalization%s
+D a-stream.ads		20220929105808 119b8fb3 ada.streams%s
+D a-string.ads		20220929105808 90ac6797 ada.strings%s
+D a-sttebu.ads		20220929105809 18209c64 ada.strings.text_buffers%s
+D a-stuten.ads		20220929105809 33c54060 ada.strings.utf_encoding%s
+D a-tags.ads		20220929105809 9eaa38c6 ada.tags%s
+D a-unccon.ads		20220929105808 0e9b276f ada.unchecked_conversion%s
+D bno055_i2c_io.ads	20240927211218 7cc5a612 bno055_i2c_io%s
+D bno055_i2c_io_custom.adb  20250122004650 3fbe8f76 bno055_i2c_io%b
+D hal.ads		20240927211215 2b42c80e hal%s
+D hal-i2c.ads		20240927211215 bbe3f8eb hal.i2c%s
+D interfac.ads		20220929105808 edec285f interfaces%s
+D system.ads		20220929105809 5ad4ef55 system%s
+D s-finmas.ads		20220929105809 bd688734 system.finalization_masters%s
+D s-finroo.ads		20220929105809 4ff27390 system.finalization_root%s
+D s-parame.ads		20220929105809 8e90778f system.parameters%s
+D s-pooglo.ads		20220929105809 91708d21 system.pool_global%s
+D s-putima.ads		20220929105809 4e095881 system.put_images%s
+D s-secsta.ads		20220929105808 56a2861c system.secondary_stack%s
+D s-stalib.ads		20220929105809 1c9580f6 system.standard_library%s
+D s-stoele.ads		20220929105808 6d8e1ff4 system.storage_elements%s
+D s-stoele.adb		20220929105808 8f5a9db6 system.storage_elements%b
+D s-stopoo.ads		20220929105809 e9fa2dd8 system.storage_pools%s
+D s-stratt.ads		20220929105808 f7dfd786 system.stream_attributes%s
+D s-traent.ads		20220929105809 c81cbf8c system.traceback_entries%s
+D s-unstyp.ads		20220929105808 fa2a7f59 system.unsigned_types%s
+D unchconv.ads		20220929105808 ca2f9e18 unchecked_conversion%s
+G a e
+G c Z s b [read bno055_i2c_io 47 14 none]
+G c Z s b [write bno055_i2c_io 52 14 none]
+G c Z s b [read_buffer bno055_i2c_io 57 14 none]
+G c Z s s [io_portDA bno055_i2c_io 40 9 none]
+G c Z s s [io_portDF bno055_i2c_io 40 9 none]
+G c Z s s [io_portIP bno055_i2c_io 40 9 none]
+X 10 bno055_i2c_io.ads
+38K9*BNO055_I2C_IO 62l5 62e18 11|32b14 106l5 106t18
+40R9*IO_Port 43e14 45r35
+41p7*Port{13|51P9} 11|47r15 72r15 95r15
+42m7*Device{13|47M12} 11|48r15 73r15 96r15
+45P9*Any_IO_Port(40R9) 48r18 53r18 58r18 11|39r18 64r18 88r18
+47U14*Read 48>7 49>7 50<7 11|38b14 57l8 57t12
+48p7 This{45P9} 11|39b7 47r10 48r10
+49m7 Register{12|53M9} 11|40b7 49r35
+50m7 Value{12|53M9} 11|41b7 56m7
+52U14*Write 53>7 54>7 55>7 11|63b14 81l8 81t13
+53p7 This{45P9} 11|64b7 72r10 73r10
+54m7 Register{12|53M9} 11|65b7 74r35
+55m7 Value{12|53M9} 11|66b7 68r54
+57U14*Read_Buffer 58>7 59>7 60<7 11|87b14 104l8 104t19
+58p7 This{45P9} 11|88b7 95r10 96r10
+59m7 Register{12|53M9} 11|89b7 97r35
+60a7 Value{13|41A12} 11|90b7 99m27
+X 11 bno055_i2c_io_custom.adb
+43a7 Incoming{13|41A12} 51m27 56r16
+44e7 Result{13|35E9} 52m27 53r10 54r55
+68a7 Outgoing{13|41A12} 76r27
+69e7 Result{13|35E9} 77m27 78r10 79r56
+92e7 Result{13|35E9} 100m27 101r10 102r60
+X 12 hal.ads
+34K9*HAL 10|35r6 35r22 36r5 12|166e8
+53M9*UInt8<14|68M9> 10|49r18 50r22 54r18 55r18 59r18 11|40r18 41r22 65r18
+. 66r18 89r18
+54M9*UInt10
+66M9*UInt16<14|71M9> 11|49r27 74r27 97r27
+162A9*UInt8_Array(53M9)<integer>
+X 13 hal-i2c.ads
+32K13*I2C 10|35w10 35r26 13|85e12
+35E9*I2C_Status 11|44r18 69r18 92r18 13|39e12
+36n7*Ok{35E9} 11|53r20 78r20 101r20
+41A12*I2C_Data{12|162A9}<integer> 10|60r22 11|43r18 68r27 90r22
+44n7*Memory_Size_8b{43E9} 11|50r27 75r27 98r27
+47M12*I2C_Address{12|54M9} 10|42r16
+49h9*I2C_Port
+51P9*Any_I2C_Port(49R9) 10|41r16
+67x14*Mem_Write 11|71R7
+70m7 Mem_Addr{12|66M9} 11|74r10
+71e7 Mem_Addr_Size{43E9} 11|75r10
+72a7 Data{41A12} 11|76r10
+73e7 Status{35E9} 11|77r10
+76x14*Mem_Read 11|46R7 94R7
+79m7 Mem_Addr{12|66M9} 11|49r10 97r10
+80e7 Mem_Addr_Size{43E9} 11|50r10 98r10
+81a7 Data{41A12} 11|51r10 99r10
+82e7 Status{35E9} 11|52r10 100r10
+X 14 interfac.ads
+68M9*Unsigned_8
+71M9*Unsigned_16
+
