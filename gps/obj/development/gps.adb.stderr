@@ -1,0 +1,10 @@
+gps.adb:17:01: (style) multiple blank lines
+gps.adb:18:01: (style) trailing spaces not permitted
+gps.adb:35:80: (style) this line is too long
+gps.adb:38:80: (style) this line is too long
+gps.adb:48:80: (style) this line is too long
+gps.adb:48:86: (style) trailing spaces not permitted
+gps.adb:59:80: (style) this line is too long
+gps.adb:63:80: (style) this line is too long
+gps.adb:68:27: (style) trailing spaces not permitted
+gps.adb:72:11: (style) trailing spaces not permitted

@@ -1,0 +1,288 @@
+V "GNAT Lib v12"
+A -Og
+A -gnatA
+A --RTS=/users/karamoko/.local/share/alire/toolchains/gnat_arm_elf_12.2.1_f4bfd822/arm-eabi/lib/gnat/embedded-stm32f429disco/
+A -mlittle-endian
+A -mfloat-abi=hard
+A -mcpu=cortex-m4
+A -mfpu=fpv4-sp-d16
+A -mthumb
+A -ffunction-sections
+A -fdata-sections
+A -g
+A -gnatwa
+A -gnatw.X
+A -gnatVa
+A -gnaty3
+A -gnatya
+A -gnatyA
+A -gnatyB
+A -gnatyb
+A -gnatyc
+A -gnaty-
+A -gnatyd
+A -gnatye
+A -gnatyf
+A -gnatyh
+A -gnatyi
+A -gnatyI
+A -gnatyk
+A -gnatyl
+A -gnatym
+A -gnatyn
+A -gnatyO
+A -gnatyp
+A -gnatyr
+A -gnatyS
+A -gnatyt
+A -gnatyu
+A -gnatyx
+A -gnatW8
+A -mlibarch=armv7e-m+fp
+A -march=armv7e-m+fp
+P DB LC TF  SS ZX
+
+RN
+RV NO_DISPATCHING_CALLS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV NO_OBSOLESCENT_FEATURES
+
+U uart%b		uart.adb		237280d5 OO PK
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W stm32%s		stm32.ads		stm32.ali
+W stm32.device%s	stm32-device.adb	stm32-device.ali
+W stm32.gpio%s		stm32-gpio.adb		stm32-gpio.ali
+Z system%s		system.ads		system.ali
+
+U uart%s		uart.ads		62aa4d26 BN EE NE OO PK
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W hal%s			hal.ads			hal.ali
+W stm32%s		stm32.ads		stm32.ali
+W stm32.usarts%s	stm32-usarts.adb	stm32-usarts.ali
+
+D ada.ads		20220929105808 76789da1 ada%s
+D a-except.ads		20220929105809 2a7d8d70 ada.exceptions%s
+D a-finali.ads		20220929105809 bf4f806b ada.finalization%s
+D a-interr.ads		20220929105809 bdf68b51 ada.interrupts%s
+D a-reatim.ads		20220929105809 cfe92427 ada.real_time%s
+D a-stream.ads		20220929105808 119b8fb3 ada.streams%s
+D a-string.ads		20220929105808 90ac6797 ada.strings%s
+D a-sttebu.ads		20220929105809 18209c64 ada.strings.text_buffers%s
+D a-stuten.ads		20220929105809 33c54060 ada.strings.utf_encoding%s
+D a-tags.ads		20220929105809 9eaa38c6 ada.tags%s
+D a-taside.ads		20220929105809 c0a7c8d8 ada.task_identification%s
+D a-unccon.ads		20220929105808 0e9b276f ada.unchecked_conversion%s
+D hal.ads		20240927211215 2b42c80e hal%s
+D hal-audio.ads		20240927211215 e7f91665 hal.audio%s
+D hal-gpio.ads		20240927211215 c8195dfd hal.gpio%s
+D hal-i2c.ads		20240927211215 bbe3f8eb hal.i2c%s
+D hal-real_time_clock.ads  20240927211215 d33ce008 hal.real_time_clock%s
+D hal-spi.ads		20240927211215 23ccf813 hal.spi%s
+D hal-uart.ads		20240927211215 f6856013 hal.uart%s
+D interfac.ads		20220929105808 edec285f interfaces%s
+D i-stm32.ads		20220929105809 2ad0960b interfaces.stm32%s
+D i-stm32-pwr.ads	20220929105809 4a098e84 interfaces.stm32.pwr%s
+D stm32.ads		20240927211219 698e2c3b stm32%s
+D stm32-adc.ads		20240927211219 fbfd6f57 stm32.adc%s
+D stm32-crc.ads		20240927211219 9ef7b3c1 stm32.crc%s
+D stm32-dac.ads		20240927211219 bbc963b4 stm32.dac%s
+D stm32-device.ads	20240927211219 21fa9a22 stm32.device%s
+D stm32-dma.ads		20240927211219 a485c5f7 stm32.dma%s
+D stm32-dma-interrupts.ads  20240927211219 0810c00a stm32.dma.interrupts%s
+D stm32-exti.ads	20240927211219 27a7d05f stm32.exti%s
+D stm32-gpio.ads	20240927211219 316fa3bb stm32.gpio%s
+D stm32-i2c.ads		20240927211219 2a3b9b70 stm32.i2c%s
+D stm32-i2c-dma.ads	20240927211219 75d445d8 stm32.i2c.dma%s
+D stm32-i2s.ads		20240927211219 8099fbc7 stm32.i2s%s
+D stm32-rtc.ads		20240927211219 ff58a3e8 stm32.rtc%s
+D stm32-spi.ads		20240927211219 98127252 stm32.spi%s
+D stm32-spi-dma.ads	20240927211219 030a0921 stm32.spi.dma%s
+D stm32-timers.ads	20240927211219 63c500b2 stm32.timers%s
+D stm32-usarts.ads	20240927211219 c32302c7 stm32.usarts%s
+D stm32_svd.ads		20240927211219 89b9f11a stm32_svd%s
+D stm32_svd-adc.ads	20240927211219 0c4598f6 stm32_svd.adc%s
+D stm32_svd-crc.ads	20240927211219 f8fb8ec8 stm32_svd.crc%s
+D stm32_svd-dac.ads	20240927211219 7ce3d16d stm32_svd.dac%s
+D stm32_svd-dma.ads	20240927211219 cbdaf790 stm32_svd.dma%s
+D stm32_svd-gpio.ads	20240927211219 05f2a6bd stm32_svd.gpio%s
+D stm32_svd-i2c.ads	20240927211219 b6aa1d20 stm32_svd.i2c%s
+D stm32_svd-sdio.ads	20240927211219 586e3cc2 stm32_svd.sdio%s
+D stm32_svd-spi.ads	20240927211219 694b2c33 stm32_svd.spi%s
+D stm32_svd-usart.ads	20240927211219 d9126171 stm32_svd.usart%s
+D system.ads		20220929105809 5ad4ef55 system%s
+D s-bb.ads		20220929105808 09e072ae system.bb%s
+D s-bbbopa.ads		20220929105809 5e9af419 system.bb.board_parameters%s
+D s-bbbosu.ads		20220929105809 0f820a2a system.bb.board_support%s
+D s-bbcppr.ads		20220929105809 c529bbcc system.bb.cpu_primitives%s
+D s-bbinte.ads		20220929105809 cf617f22 system.bb.interrupts%s
+D s-bbmcpa.ads		20220929105809 b5961a30 system.bb.mcu_parameters%s
+D s-bbpara.ads		20220929105809 f29639f9 system.bb.parameters%s
+D s-bbthre.ads		20220929105809 5f49caa9 system.bb.threads%s
+D s-bbthqu.ads		20220929105809 cd23d79e system.bb.threads.queues%s
+D s-bbtime.ads		20220929105809 ad086247 system.bb.time%s
+D s-finmas.ads		20220929105809 bd688734 system.finalization_masters%s
+D s-finroo.ads		20220929105809 4ff27390 system.finalization_root%s
+D s-interr.ads		20220929105809 d74bd991 system.interrupts%s
+D s-multip.ads		20220929105809 f33e0e35 system.multiprocessors%s
+D s-mufalo.ads		20220929105809 3dca0374 system.multiprocessors.fair_locks%s
+D s-musplo.ads		20220929105809 69fa25c4 system.multiprocessors.spin_locks%s
+D s-osinte.ads		20220929105809 229b14dd system.os_interface%s
+D s-parame.ads		20220929105809 8e90778f system.parameters%s
+D s-pooglo.ads		20220929105809 91708d21 system.pool_global%s
+D s-putima.ads		20220929105809 4e095881 system.put_images%s
+D s-secsta.ads		20220929105808 56a2861c system.secondary_stack%s
+D s-stalib.ads		20220929105809 1c9580f6 system.standard_library%s
+D s-stm32.ads		20220929105809 ea0d68d9 system.stm32%s
+D s-stoele.ads		20220929105808 6d8e1ff4 system.storage_elements%s
+D s-stoele.adb		20220929105808 8f5a9db6 system.storage_elements%b
+D s-stopoo.ads		20220929105809 e9fa2dd8 system.storage_pools%s
+D s-stratt.ads		20220929105808 f7dfd786 system.stream_attributes%s
+D s-tasinf.ads		20220929105809 801abd01 system.task_info%s
+D s-taspri.ads		20220929105809 37f162b4 system.task_primitives%s
+D s-taskin.ads		20220929105809 989d56fd system.tasking%s
+D s-taprob.ads		20220929105809 c8fc0753 system.tasking.protected_objects%s
+D s-tpoben.ads		20220929105809 8351b91e system.tasking.protected_objects.entries%s
+D s-traent.ads		20220929105809 c81cbf8c system.traceback_entries%s
+D s-unstyp.ads		20220929105808 fa2a7f59 system.unsigned_types%s
+D uart.ads		20241127222308 8acb87ef uart%s
+D uart.adb		20241128205519 b92c3ea3 uart%b
+D unchconv.ads		20220929105808 ca2f9e18 unchecked_conversion%s
+G a e
+G c Z s b [initialize_uart_gpio uart 6 14 none]
+G c Z s b [initialize uart 7 14 none]
+G c Z s b [await_send_ready uart 8 14 none]
+G c Z s b [await_data_available uart 9 14 none]
+G c Z s b [put_blocking uart 10 14 none]
+G c Z s b [get_blocking uart 11 14 none]
+G c Z s b [put_msg uart 12 14 none]
+G c Z s b [get_msg uart 13 14 none]
+G r c none [initialize_uart_gpio uart 6 14 none] [enable_clock stm32__device 396 14 none]
+G r s gpio_points [initialize_uart_gpio uart 6 14 none] [gpio_pointsIP stm32__gpio 233 9 none]
+G r c none [initialize_uart_gpio uart 6 14 none] [enable_clock stm32__device 74 14 none]
+G r c none [initialize_uart_gpio uart 6 14 none] [configure_io stm32__gpio 268 14 none]
+G r c none [initialize uart 7 14 none] [enable_clock stm32__device 396 14 none]
+G r s gpio_points [initialize uart 7 14 none] [gpio_pointsIP stm32__gpio 233 9 none]
+G r c none [initialize uart 7 14 none] [enable_clock stm32__device 74 14 none]
+G r c none [initialize uart 7 14 none] [configure_io stm32__gpio 268 14 none]
+G r c none [initialize uart 7 14 none] [disable stm32__usarts 63 14 none]
+G r c none [initialize uart 7 14 none] [set_baud_rate stm32__usarts 97 14 none]
+G r c none [initialize uart 7 14 none] [set_mode stm32__usarts 108 14 none]
+G r c none [initialize uart 7 14 none] [set_stop_bits stm32__usarts 85 14 none]
+G r c none [initialize uart 7 14 none] [set_word_length stm32__usarts 89 14 none]
+G r c none [initialize uart 7 14 none] [set_parity stm32__usarts 93 14 none]
+G r c none [initialize uart 7 14 none] [set_flow_control stm32__usarts 116 14 none]
+G r c none [initialize uart 7 14 none] [enable stm32__usarts 59 14 none]
+G r c none [await_send_ready uart 8 14 none] [tx_ready stm32__usarts 77 13 none]
+G r c none [await_data_available uart 9 14 none] [rx_ready stm32__usarts 79 13 none]
+G r c none [put_blocking uart 10 14 none] [tx_ready stm32__usarts 77 13 none]
+G r c none [put_blocking uart 10 14 none] [transmit stm32__usarts 75 14 none]
+G r c none [get_blocking uart 11 14 none] [rx_ready stm32__usarts 79 13 none]
+G r c none [get_blocking uart 11 14 none] [receive stm32__usarts 69 14 none]
+G r c none [put_msg uart 12 14 none] [tx_ready stm32__usarts 77 13 none]
+G r c none [put_msg uart 12 14 none] [transmit stm32__usarts 75 14 none]
+G r c none [get_msg uart 13 14 none] [rx_ready stm32__usarts 79 13 none]
+G r c none [get_msg uart 13 14 none] [receive stm32__usarts 69 14 none]
+X 13 hal.ads
+34K9*HAL 166e8 85|1w6 1r25
+43M9*UInt4
+51M9*UInt9 86|76r23 86r22 108r23
+66M9*UInt16<20|71M9> 85|10r57 11r61 86|73r57 83r61
+X 14 hal-audio.ads
+62h9*Audio_Stream
+X 15 hal-gpio.ads
+48h9*GPIO_Point
+X 16 hal-i2c.ads
+49h9*I2C_Port
+X 17 hal-real_time_clock.ads
+80h9*RTC_Device
+X 18 hal-spi.ads
+49h9*SPI_Port
+X 19 hal-uart.ads
+49h9*UART_Port
+X 20 interfac.ads
+71M9*Unsigned_16
+X 23 stm32.ads
+39K9*STM32 48e10 85|2r6 2r25 86|1r6 1r25 2r6 2r25
+42M9*GPIO_Alternate_Function<13|43M9>
+X 27 stm32-device.ads
+63K15*Device 654e17 86|1w12 1r31
+74U14*Enable_Clock 86|16s7
+109r4*PA2{31|138R9} 86|6r36
+110r4*PA3{31|138R9} 86|7r36
+312m4*GPIO_AF_USART2_7{23|42M9} 86|21r29
+388r4*USART_2{39|56R9} 86|15m21 15r21 35m16 35r16 37m25 37r25 38m25 38r25
+. 39m25 39r25 40m25 40r25 41m25 41r25 42m25 42r25 44m15 44r15
+396U14*Enable_Clock 86|15s7
+X 31 stm32-gpio.ads
+49K15*GPIO 297e15 86|2w12 2r31
+87n45*Mode_AF{87E9} 86|20r29
+96n30*Push_Pull{96E9} 86|24r29
+101n57*Speed_50MHz{101E9} 86|23r29
+115n46*Pull_Up{115E9} 86|22r29
+123e34*Mode{87E9} 86|20m11
+124e7*Resistors{115E9} 86|22m11
+132e13*AF_Output_Type{96E9} 86|24m11
+133e13*AF_Speed{101E9} 86|23m11
+134m13*AF{23|42M9} 86|21m11
+138R9*GPIO_Point<15|48R9> 143e14 86|6r22 7r22
+268U14*Configure_IO 86|18s7
+X 39 stm32-usarts.ads
+52K15*USARTs 271e17 85|2w12 2r31
+56R9*USART<19|49R9> 269e53 85|8r39 9r43 10r42 11r42 12r37 13r37 86|51r39
+. 62r43 73r42 83r42 93r37 106r37
+59U14*Enable 86|44s7
+63U14*Disable 86|35s7
+69U14*Receive 86|86s7 113s10
+75U14*Transmit 86|76s7 97s10
+77V13*Tx_Ready{boolean} 86|54s20
+79V13*Rx_Ready{boolean} 86|65s20
+81n23*Stopbits_1{81E9} 86|39r34
+85U14*Set_Stop_Bits 86|39s7
+87n26*Word_Length_8{87E9} 86|40r34
+89U14*Set_Word_Length 86|40s7
+91n22*No_Parity{91E9} 86|41r34
+93U14*Set_Parity 86|41s7
+97U14*Set_Baud_Rate 86|37s7
+106n42*Tx_Rx_Mode{106E9} 86|38r34
+108U14*Set_Mode 86|38s7
+111n7*No_Flow_Control{110E9} 86|42r34
+116U14*Set_Flow_Control 86|42s7
+X 63 s-interr.ads
+97U14*Install_Restricted_Handlers_Sequential 98i<c,__gnat_attach_all_handlers>22
+X 71 s-secsta.ads
+46P9*SS_Stack_Ptr(43R9)
+X 80 s-taskin.ads
+398V13*Get_Sec_Stack{71|46P9} 399i<c,__gnat_get_secondary_stack>22
+X 85 uart.ads
+4K9*Uart 14l5 14e9 86|4b14 121l5 121t9
+5i4*Msg_Size{integer} 86|111r33
+6U14*Initialize_UART_GPIO 86|13b14 25l8 25t28 33s7
+7U14*Initialize 86|31b14 45l8 45t18
+8U14*Await_Send_Ready 8>32 86|51b14 56l8 56t24 75s7 96s10
+8r32 This{39|56R9} 86|51b32 54r30
+9U14*Await_Data_Available 9>36 86|62b14 67l8 67t28 85s7 112s10
+9r36 This{39|56R9} 86|62b36 65r30
+10U14*Put_Blocking 10=28 10>50 86|73b14 77l8 77t20
+10r28 This{39|56R9} 86|73b28 75r25 76m17
+10m50 Data{13|66M9} 86|73b50 76r30
+11U14*Get_Blocking 11=28 11<50 86|83b14 87l8 87t20
+11r28 This{39|56R9} 86|83b28 85r29 86r16
+11m50 Data{13|66M9} 86|83b50 86m29 86r29
+12U14*Put_Msg 12=23 12>45 86|93b14 99l8 99t15
+12r23 This{39|56R9} 86|93b23 96r28 97m20
+12a45 Msg{string} 86|93b45 95r16 97r41
+13U14*Get_Msg 13=23 13<45 86|106b14 119l8 119t15
+13r23 This{39|56R9} 86|106b23 112r32 113r19
+13a45 Msg{string} 86|106b45 110m7 115m10
+X 86 uart.adb
+6r4 TX_Pin{31|138R9} 16r30 19r19
+7r4 RX_Pin{31|138R9} 16r21 19r10
+95i11 K{integer} 97r46
+107e7 Received_Char{character} 114m10 115r21 117r30
+108m7 Raw{13|51M9} 113m25 114r42
+111l7 Receiving 117r15 118l16 118e25
+111i23 K{integer} 115r15
+

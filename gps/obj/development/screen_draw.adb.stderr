@@ -1,0 +1,4 @@
+screen_draw.adb:22:11: (style) space required
+screen_draw.adb:29:41: (style) trailing spaces not permitted
+screen_draw.adb:31:21: (style) trailing spaces not permitted
+screen_draw.ads:4:30: (style) space required
