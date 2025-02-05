@@ -1,0 +1,4 @@
+serial_io-blocking.adb:67:80: (style) this line is too long
+serial_io-blocking.ads:68:80: (style) this line is too long
+serial_io-blocking.ads:73:80: (style) this line is too long
+serial_io-blocking.ads:75:46: (style) "and then" required

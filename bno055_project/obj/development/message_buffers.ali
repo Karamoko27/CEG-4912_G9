@@ -1,0 +1,226 @@
+V "GNAT Lib v12"
+A -Og
+A -gnatA
+A --RTS=/users/karamoko/.local/share/alire/toolchains/gnat_arm_elf_12.2.1_f4bfd822/arm-eabi/lib/gnat/embedded-stm32f429disco/
+A -mlittle-endian
+A -mfloat-abi=hard
+A -mcpu=cortex-m4
+A -mfpu=fpv4-sp-d16
+A -mthumb
+A -ffunction-sections
+A -fdata-sections
+A -g
+A -gnatwa
+A -gnatw.X
+A -gnatVa
+A -gnaty3
+A -gnatya
+A -gnatyA
+A -gnatyB
+A -gnatyb
+A -gnatyc
+A -gnaty-
+A -gnatyd
+A -gnatye
+A -gnatyf
+A -gnatyh
+A -gnatyi
+A -gnatyI
+A -gnatyk
+A -gnatyl
+A -gnatym
+A -gnatyn
+A -gnatyO
+A -gnatyp
+A -gnatyr
+A -gnatyS
+A -gnatyt
+A -gnatyu
+A -gnatyx
+A -gnatW8
+A -mlibarch=armv7e-m+fp
+A -march=armv7e-m+fp
+P DB LC TF  SS ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_DISPATCHING_CALLS
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV NO_OBSOLESCENT_FEATURES
+
+U message_buffers%b	message_buffers.adb	2f10923b NE OO PK
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+
+U message_buffers%s	message_buffers.ads	871cc5ec BN EB EE OO PF PK
+W ada%s			ada.ads			ada.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W ada.synchronous_task_control%s  a-sytaco.adb	a-sytaco.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W serial_io%s		serial_io.adb		serial_io.ali
+Z system%s		system.ads		system.ali
+Z system.put_images%s	s-putima.adb		s-putima.ali
+
+D ada.ads		20220929105808 76789da1 ada%s
+D a-except.ads		20220929105809 2a7d8d70 ada.exceptions%s
+D a-finali.ads		20220929105809 bf4f806b ada.finalization%s
+D a-stream.ads		20220929105808 119b8fb3 ada.streams%s
+D a-string.ads		20220929105808 90ac6797 ada.strings%s
+D a-sttebu.ads		20220929105809 18209c64 ada.strings.text_buffers%s
+D a-stuten.ads		20220929105809 33c54060 ada.strings.utf_encoding%s
+D a-sytaco.ads		20220929105809 e57638e1 ada.synchronous_task_control%s
+D a-tags.ads		20220929105809 9eaa38c6 ada.tags%s
+D a-taside.ads		20220929105809 c0a7c8d8 ada.task_identification%s
+D a-unccon.ads		20220929105808 0e9b276f ada.unchecked_conversion%s
+D hal.ads		20240927211215 2b42c80e hal%s
+D hal-gpio.ads		20240927211215 c8195dfd hal.gpio%s
+D hal-uart.ads		20240927211215 f6856013 hal.uart%s
+D interfac.ads		20220929105808 edec285f interfaces%s
+D i-stm32.ads		20220929105809 2ad0960b interfaces.stm32%s
+D i-stm32-pwr.ads	20220929105809 4a098e84 interfaces.stm32.pwr%s
+D message_buffers.ads	20250204193600 8e8a4051 message_buffers%s
+D message_buffers.adb	20250204193553 a19ad26a message_buffers%b
+D serial_io.ads		20250204193636 ece0bd5c serial_io%s
+D stm32.ads		20240927211219 698e2c3b stm32%s
+D stm32-exti.ads	20240927211219 27a7d05f stm32.exti%s
+D stm32-gpio.ads	20240927211219 316fa3bb stm32.gpio%s
+D stm32-usarts.ads	20240927211219 c32302c7 stm32.usarts%s
+D stm32_svd.ads		20240927211219 89b9f11a stm32_svd%s
+D stm32_svd-gpio.ads	20240927211219 05f2a6bd stm32_svd.gpio%s
+D stm32_svd-usart.ads	20240927211219 d9126171 stm32_svd.usart%s
+D system.ads		20220929105809 5ad4ef55 system%s
+D s-bb.ads		20220929105808 09e072ae system.bb%s
+D s-bbbopa.ads		20220929105809 5e9af419 system.bb.board_parameters%s
+D s-bbbosu.ads		20220929105809 0f820a2a system.bb.board_support%s
+D s-bbcppr.ads		20220929105809 c529bbcc system.bb.cpu_primitives%s
+D s-bbinte.ads		20220929105809 cf617f22 system.bb.interrupts%s
+D s-bbmcpa.ads		20220929105809 b5961a30 system.bb.mcu_parameters%s
+D s-bbpara.ads		20220929105809 f29639f9 system.bb.parameters%s
+D s-bbthre.ads		20220929105809 5f49caa9 system.bb.threads%s
+D s-bbthqu.ads		20220929105809 cd23d79e system.bb.threads.queues%s
+D s-bbtime.ads		20220929105809 ad086247 system.bb.time%s
+D s-finmas.ads		20220929105809 bd688734 system.finalization_masters%s
+D s-finroo.ads		20220929105809 4ff27390 system.finalization_root%s
+D s-multip.ads		20220929105809 f33e0e35 system.multiprocessors%s
+D s-mufalo.ads		20220929105809 3dca0374 system.multiprocessors.fair_locks%s
+D s-musplo.ads		20220929105809 69fa25c4 system.multiprocessors.spin_locks%s
+D s-osinte.ads		20220929105809 229b14dd system.os_interface%s
+D s-parame.ads		20220929105809 8e90778f system.parameters%s
+D s-pooglo.ads		20220929105809 91708d21 system.pool_global%s
+D s-putima.ads		20220929105809 4e095881 system.put_images%s
+D s-secsta.ads		20220929105808 56a2861c system.secondary_stack%s
+D s-stalib.ads		20220929105809 1c9580f6 system.standard_library%s
+D s-stm32.ads		20220929105809 ea0d68d9 system.stm32%s
+D s-stoele.ads		20220929105808 6d8e1ff4 system.storage_elements%s
+D s-stoele.adb		20220929105808 8f5a9db6 system.storage_elements%b
+D s-stopoo.ads		20220929105809 e9fa2dd8 system.storage_pools%s
+D s-stratt.ads		20220929105808 f7dfd786 system.stream_attributes%s
+D s-tasinf.ads		20220929105809 801abd01 system.task_info%s
+D s-taspri.ads		20220929105809 37f162b4 system.task_primitives%s
+D s-taskin.ads		20220929105809 989d56fd system.tasking%s
+D s-taprob.ads		20220929105809 c8fc0753 system.tasking.protected_objects%s
+D s-tposen.ads		20220929105809 828b4fcc system.tasking.protected_objects.single_entry%s
+D s-traent.ads		20220929105809 c81cbf8c system.traceback_entries%s
+D s-unstyp.ads		20220929105808 fa2a7f59 system.unsigned_types%s
+D unchconv.ads		20220929105808 ca2f9e18 unchecked_conversion%s
+G a e
+G c Z s b [content message_buffers 43 13 none]
+G c Z s b [length message_buffers 45 13 none]
+G c Z s b [content_at message_buffers 47 13 none]
+G c Z s b [clear message_buffers 51 14 none]
+G c Z s b [append message_buffers 55 14 none]
+G c Z s b [set message_buffers 60 14 none]
+G c Z s b [set message_buffers 65 14 none]
+G c Z s b [set_terminator message_buffers 69 14 none]
+G c Z s b [terminator message_buffers 76 13 none]
+G c Z s b [await_transmission_complete message_buffers 82 14 none]
+G c Z s b [await_reception_complete message_buffers 85 14 none]
+G c Z s b [signal_transmission_complete message_buffers 89 14 none]
+G c Z s b [signal_reception_complete message_buffers 91 14 none]
+G c Z s b [note_error message_buffers 93 14 none]
+G c Z s b [errors_detected message_buffers 96 13 none]
+G c Z s b [clear_errors message_buffers 98 14 none]
+G c Z s b [has_error message_buffers 100 13 none]
+G c Z s s [messageDF message_buffers 105 9 none]
+G c Z s s [messageIP message_buffers 105 9 none]
+X 1 ada.ads
+16K9*Ada 20e8 18|36r6 36r41
+X 8 a-sytaco.ads
+40K13*Synchronous_Task_Control 92e33 18|36w10 36r45
+46W9*Suspension_Object 90e25 18|108r31 109r31
+49U14*Set_True 19|142s7 151s7
+63U14*Suspend_Until_True 19|124s7 133s7
+X 13 hal-gpio.ads
+48h9*GPIO_Point
+X 14 hal-uart.ads
+49h9*UART_Port
+X 18 message_buffers.ads
+38K9*Message_Buffers 105E9 114l5 114e20 19|32b14 190l5 190t20
+41R9*Message 41d18 43p13 43r29 45p13 45r28 47p13 47r32 51p14 51r35 55p14
+. 55r36 60p14 60r33 65p14 65r33 69p14 69r44 76p13 76r32 82p14 82r57 85p14
+. 85r54 89p14 89r58 91p14 91r55 93p14 93r40 96p13 96r37 98p14 98r42 100p13
+. 100r31 105c9 112e14 19|38r29 47r32 56r28 65r35 74r36 84r33 94r33 104r44
+. 113r32 122r57 131r54 140r58 149r55 158r40 167r37 176r42 185r31
+41i18 Physical_Size{positive} 56r35 61r32 105r18 106r44
+43V13*Content{string} 43>22 52s36 62s44 19|38b13 41l8 41t15
+43r22 This{41R9} 19|38b22 40r14 40r33
+45V13*Length{natural} 45>21 48s22 52s14 56s14 57s32 62s14 66s14 19|56b13
+. 59l8 59t14
+45r21 This{41R9} 19|56b21 58r14
+47V13*Content_At{character} 47>25 47>42 57s14 66s36 19|47b13 50l8 50t18
+47r25 This{41R9} 48r30 19|47b25 49r14
+47i42 Index{positive} 48r13 19|47b42 49r28
+51U14*Clear 51=21 19|65b14 68l8 68t13
+51r21 This{41R9} 52r22 52r45 19|65b21 67m7
+55U14*Append 55=22 55>46 19|74b14 78l8 78t14
+55r22 This{41R9} 56r22 56r30 57r26 57r40 19|74b22 76m7 76r22 77m7 77r21
+55e46 Value{character} 57r49 19|74b46 77r37
+60U14*Set 60=19 60>43 19|84b14 88l8 88t11
+60r19 This{41R9} 61r27 62r22 62r53 19|84b19 86m7 87m7
+60a43 To{string} 61r14 62r30 62r61 19|84b43 86r26 86r40 87r22
+65U14*Set 65=19 65>43 19|94b14 98l8 98t11
+65r19 This{41R9} 66r22 66r48 19|94b19 96m7 97m7
+65e43 To{character} 66r59 19|94b43 96r27
+69U14*Set_Terminator 69=30 69>54 19|104b14 107l8 107t22
+69r30 This{41R9} 70r26 19|104b30 106m7
+69e54 To{character} 70r34 19|104b54 106r26
+76V13*Terminator{character} 70s14 76>25 19|113b13 116l8 116t18
+76r25 This{41R9} 19|113b25 115r14
+82U14*Await_Transmission_Complete 82=43 19|122b14 125l8 125t35
+82r43 This{41R9} 19|122b43 124m27 124r27
+85U14*Await_Reception_Complete 85=40 19|131b14 134l8 134t32
+85r40 This{41R9} 19|131b40 133m27 133r27
+89U14*Signal_Transmission_Complete 89=44 19|140b14 143l8 143t36
+89r44 This{41R9} 19|140b44 142m17 142r17
+91U14*Signal_Reception_Complete 91=41 19|149b14 152l8 152t33
+91r41 This{41R9} 19|149b41 151m17 151r17
+93U14*Note_Error 93=26 93>49 19|158b14 161l8 161t18
+93r26 This{41R9} 19|158b26 160m7 160r28
+93m49 Condition{20|54M9} 19|158b49 160r49
+96V13*Errors_Detected{20|54M9} 96>30 19|167b13 170l8 170t23
+96r30 This{41R9} 19|167b30 169r14
+98U14*Clear_Errors 98=28 19|176b14 179l8 179t20
+98r28 This{41R9} 19|176b28 178m7
+100V13*Has_Error{boolean} 100>24 100>40 19|185b13 188l8 188t17
+100r24 This{41R9} 19|185b24 187r15
+100m40 Condition{20|54M9} 19|185b40 187r37
+106a7*Content{string} 19|40r19 49r19 77m12 86m12 96m12
+107i7*Length{natural} 19|40r38 58r19 67m12 76m12 76r27 77r26 87m12 97m12
+108w7*Reception_Complete{8|46W9} 19|133m32 151m22
+109w7*Transmission_Complete{8|46W9} 19|124m32 142m22
+110e7*Terminator{character} 19|106m12 115r19
+111m7*Error_Status{20|54M9} 19|160m12 160r33 169r19 178m12 187r20
+X 20 serial_io.ads
+35K9*Serial_IO 18|35w6 35r41 20|63e14
+54M9*Error_Conditions 18|93r61 96r53 100r52 111r31 19|158r61 167r53 185r52
+56m4*No_Error_Detected{54M9} 18|111r51 19|178r28
+X 48 s-secsta.ads
+46P9*SS_Stack_Ptr(43R9)
+X 57 s-taskin.ads
+398V13*Get_Sec_Stack{48|46P9} 399i<c,__gnat_get_secondary_stack>22
+

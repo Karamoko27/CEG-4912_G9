@@ -40,10 +40,15 @@ package ada_main is
    --  system.bb.mcu_parameters%s
    --  system.bb.mcu_parameters%b
    --  system.exceptions%s
+   --  system.float_control%s
+   --  system.float_control%b
    --  system.img_int%s
    --  system.machine_code%s
    --  system.parameters%s
    --  system.parameters%b
+   --  system.powten_flt%s
+   --  system.restrictions%s
+   --  system.restrictions%b
    --  system.semihosting%s
    --  system.semihosting%b
    --  system.storage_elements%s
@@ -68,6 +73,9 @@ package ada_main is
    --  system.traceback_entries%b
    --  system.unsigned_types%s
    --  interfaces.stm32.rcc%s
+   --  system.img_uns%s
+   --  system.img_util%s
+   --  system.img_util%b
    --  system.stm32%s
    --  system.bb.parameters%s
    --  system.stm32%b
@@ -162,6 +170,7 @@ package ada_main is
    --  system.finalization_root%s
    --  system.finalization_root%b
    --  ada.finalization%s
+   --  system.img_flt%s
    --  system.storage_pools%s
    --  system.storage_pools%b
    --  system.finalization_masters%s
@@ -170,14 +179,171 @@ package ada_main is
    --  system.stream_attributes.xdr%s
    --  system.stream_attributes.xdr%b
    --  system.stream_attributes%b
+   --  ada.real_time%s
+   --  ada.real_time%b
+   --  ada.real_time.delays%s
+   --  ada.real_time.delays%b
    --  system.pool_global%s
    --  system.pool_global%b
+   --  system.tasking.protected_objects%s
+   --  system.tasking.protected_objects%b
+   --  system.tasking.protected_objects.entries%s
+   --  system.tasking.protected_objects.entries%b
+   --  system.tasking.protected_objects.multiprocessors%s
+   --  system.tasking.protected_objects.multiprocessors%b
+   --  system.tasking.protected_objects.single_entry%s
+   --  system.tasking.protected_objects.single_entry%b
+   --  system.tasking.queuing%s
+   --  system.tasking.queuing%b
+   --  system.tasking.protected_objects.operations%s
+   --  system.tasking.protected_objects.operations%b
+   --  system.tasking.restricted%s
+   --  system.tasking.restricted.stages%s
+   --  system.tasking.restricted.stages%b
+   --  ada.task_identification%s
+   --  ada.task_identification%b
+   --  ada.synchronous_task_control%s
+   --  ada.synchronous_task_control%b
+   --  system.interrupts%s
+   --  system.interrupts%b
+   --  ada.interrupts%s
+   --  ada.interrupts%b
+   --  ada.interrupts.names%s
+   --  cortex_m%s
+   --  cortex_m_svd%s
    --  hal%s
+   --  cortex_m_svd.scb%s
+   --  hal.audio%s
+   --  hal.bitmap%s
+   --  hal.framebuffer%s
+   --  hal.gpio%s
    --  hal.i2c%s
+   --  hal.real_time_clock%s
+   --  hal.spi%s
+   --  hal.time%s
+   --  hal.touch_panel%s
+   --  hal.uart%s
+   --  stm32%s
+   --  stm32_svd%s
+   --  stm32_svd.adc%s
+   --  stm32_svd.crc%s
+   --  stm32_svd.dac%s
+   --  stm32_svd.dma%s
+   --  stm32_svd.dma2d%s
+   --  stm32_svd.exti%s
+   --  stm32_svd.fsmc%s
+   --  stm32_svd.gpio%s
+   --  stm32_svd.i2c%s
+   --  stm32_svd.ltdc%s
+   --  stm32_svd.pwr%s
+   --  stm32_svd.rcc%s
+   --  stm32_svd.rtc%s
+   --  stm32_svd.sdio%s
+   --  stm32_svd.spi%s
+   --  stm32_svd.syscfg%s
+   --  stm32_svd.usart%s
+   --  bitmap_color_conversion%s
+   --  bitmap_color_conversion%b
+   --  bmp_fonts%s
+   --  bmp_fonts%b
    --  bno055_i2c_io%s
    --  bno055_i2c_io%b
-   --  bno055_project%s
-   --  bno055_project%b
+   --  bosch_bno055%s
+   --  bosch_bno055%b
+   --  cortex_m.cache%s
+   --  cortex_m.cache%b
+   --  delay_milliseconds%s
+   --  delay_milliseconds%b
+   --  bno055_i2c%s
+   --  bno055_i2c%b
+   --  hershey_fonts%s
+   --  hershey_fonts%b
+   --  bitmapped_drawing%s
+   --  bitmapped_drawing%b
+   --  ili9341_regs%s
+   --  ili9341%s
+   --  ili9341%b
+   --  l3gd20%s
+   --  l3gd20%b
+   --  ravenscar_time%s
+   --  ravenscar_time%b
+   --  soft_drawing_bitmap%s
+   --  soft_drawing_bitmap%b
+   --  memory_mapped_bitmap%s
+   --  memory_mapped_bitmap%b
+   --  stm32.adc%s
+   --  stm32.adc%b
+   --  stm32.crc%s
+   --  stm32.crc%b
+   --  stm32.dac%s
+   --  stm32.dac%b
+   --  stm32.dma%s
+   --  stm32.dma%b
+   --  stm32.dma.interrupts%s
+   --  stm32.dma.interrupts%b
+   --  stm32.dma2d%s
+   --  stm32.dma2d%b
+   --  stm32.dma2d.interrupt%s
+   --  stm32.dma2d.interrupt%b
+   --  stm32.dma2d.polling%s
+   --  stm32.dma2d.polling%b
+   --  stm32.dma2d_bitmap%s
+   --  stm32.dma2d_bitmap%b
+   --  stm32.exti%s
+   --  stm32.exti%b
+   --  stm32.fmc%s
+   --  stm32.fmc%b
+   --  stm32.i2s%s
+   --  stm32.i2s%b
+   --  stm32.power_control%s
+   --  stm32.power_control%b
+   --  stm32.rtc%s
+   --  stm32.rtc%b
+   --  stm32.sdram%s
+   --  stm32.sdram%b
+   --  stm32.spi%s
+   --  stm32.spi%b
+   --  stm32.spi.dma%s
+   --  stm32.spi.dma%b
+   --  stm32.timers%s
+   --  stm32.timers%b
+   --  stm32.gpio%s
+   --  stm32.i2c%s
+   --  stm32.i2c.dma%s
+   --  stm32.rcc%s
+   --  stm32.syscfg%s
+   --  stm32.syscfg%b
+   --  stm32.gpio%b
+   --  stm32.usarts%s
+   --  stm32.device%s
+   --  stm32.device%b
+   --  stm32.i2c%b
+   --  stm32.i2c.dma%b
+   --  stm32.rcc%b
+   --  stm32.usarts%b
+   --  serial_io%s
+   --  serial_io%b
+   --  message_buffers%s
+   --  message_buffers%b
+   --  serial_io.blocking%s
+   --  serial_io.blocking%b
+   --  peripherals%s
+   --  stm32.ltdc%s
+   --  stm32.ltdc%b
+   --  framebuffer_ltdc%s
+   --  framebuffer_ltdc%b
+   --  stmpe811%s
+   --  stmpe811%b
+   --  framebuffer_ili9341%s
+   --  touch_panel_stmpe811%s
+   --  stm32.board%s
+   --  stm32.board%b
+   --  framebuffer_ili9341%b
+   --  touch_panel_stmpe811%b
+   --  last_chance_handler%s
+   --  last_chance_handler%b
+   --  screen_draw%s
+   --  screen_draw%b
    --  main%b
    --  END ELABORATION ORDER
 

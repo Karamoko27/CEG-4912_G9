@@ -1,6 +1,6 @@
 package Screen_Draw is
 
    procedure Clear;
-   procedure Display_Msg (Msg: String);
+   procedure WriteMsg (Msg: String);
 
 end Screen_Draw;

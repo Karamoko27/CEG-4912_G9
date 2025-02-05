@@ -3,7 +3,6 @@ with HAL.Bitmap;            use HAL.Bitmap;
 with BMP_Fonts;
 
 with Bitmapped_Drawing;
-
 with HAL.Framebuffer;
 
 package body Screen_Draw is
@@ -18,7 +17,7 @@ package body Screen_Draw is
       Display.Update_Layer (1, Copy_Back => True);
    end Clear;
 
-   procedure Display_Msg
+   procedure WriteMsg
       (Msg: String)
    is
    begin
@@ -34,7 +33,7 @@ package body Screen_Draw is
          Background => BG);
 
       Display.Update_Layer (1, Copy_Back => True);
-   end Display_Msg;
+   end WriteMsg;
 
 begin
 

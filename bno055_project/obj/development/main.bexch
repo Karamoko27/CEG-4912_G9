@@ -1,54 +1,59 @@
 [GENERATED OBJECT FILE]
 b__main.o
 [PROJECT FILES]
-/Users/karamoko/Downloads/CEG-4912_G9-BNO055/bno055_project/bno055_project.gpr
-20250122004822 8a8f51027d98ffb4a644cc9b19928b74
-/Users/karamoko/.local/share/alire/builds/embedded_components_0.2.0_37c39b23/e57a61e5227db4e924f74ca5fd028592cc309243acfdcdbc26dae612ca86268f/config/embedded_components_config.gpr
-20250122001311 007fb323a31d33a919efb98dba504afe
-/Users/karamoko/.local/share/alire/builds/embedded_components_0.2.0_37c39b23/e57a61e5227db4e924f74ca5fd028592cc309243acfdcdbc26dae612ca86268f/embedded_components.gpr
-20240927211218 7e1250695289ae5cb7d8ff35008d6ced
+/Users/karamoko/bno055_project/bno055_project.gpr
+20250122004822 5aa903e130c4346dcd51d702d569839e
 /Users/karamoko/.local/share/alire/builds/stm32f429disco_0.1.0_aa5fe0cb/889ab963feec0991851c3be89f19344fb5b82b13dbe59edcaca23d6420e4ffef/config/stm32f429disco_config.gpr
-20250122001311 1e6fc0a857d7df98c4fea10c2a1768d2
+20250205193736 1e6fc0a857d7df98c4fea10c2a1768d2
 /Users/karamoko/.local/share/alire/builds/stm32f429disco_0.1.0_aa5fe0cb/889ab963feec0991851c3be89f19344fb5b82b13dbe59edcaca23d6420e4ffef/stm32f429disco.gpr
 20240927211220 efd49e4b1cf1c23023eeaaa23356b59e
 /Users/karamoko/.local/share/alire/builds/cortex_m_0.5.0_39667d15/f454f4f06c95bd1d015688e883ae989ddf29833f0c0d0a3a5bb3d2d58fd06244/config/cortex_m_config.gpr
-20250122001311 88e43aad2b1afb0b0aaed29dc21953ce
+20250205193736 88e43aad2b1afb0b0aaed29dc21953ce
 /Users/karamoko/.local/share/alire/builds/cortex_m_0.5.0_39667d15/f454f4f06c95bd1d015688e883ae989ddf29833f0c0d0a3a5bb3d2d58fd06244/cortex_m.gpr
 20240927211217 768ef7c27c7c1e2ac1622a915a3a2867
 /Users/karamoko/.local/share/alire/builds/stm32_hal_0.1.0_9276ee80/fe5bdb04320c4dd2e59b097788cf1b581555a593cfaa0689c0c31d2e4b7bbbfe/config/stm32_hal_config.gpr
-20250122001311 ac0a438ffb904f76ff7a00e925b88b80
+20250205193736 ac0a438ffb904f76ff7a00e925b88b80
 /Users/karamoko/.local/share/alire/builds/stm32_hal_0.1.0_9276ee80/fe5bdb04320c4dd2e59b097788cf1b581555a593cfaa0689c0c31d2e4b7bbbfe/stm32_hal.gpr
 20240927211219 0ef0348f578cde807754024c3bb676ec
+/Users/karamoko/.local/share/alire/builds/stm32_gui_0.1.0_e2e5c9d4/3ee674d2b93dc9506389e115fb01936ceddd850a63beae621d8cf36a7eb596b0/config/stm32_gui_config.gpr
+20250205193736 5f168a1e7edcfc1a9fb63b6b59de5f49
+/Users/karamoko/.local/share/alire/builds/stm32_gui_0.1.0_e2e5c9d4/3ee674d2b93dc9506389e115fb01936ceddd850a63beae621d8cf36a7eb596b0/stm32_gui.gpr
+20241107190316 cf3d14bd8209617f1ddba8108c2ad23c
 /Users/karamoko/.local/share/alire/builds/hal_0.3.0_095ae514/45a7230b1521a74e4d762c42ec802710efe319e84e7227b385f535fafd1bbbac/hal.gpr
 20240927211215 b6ea4dc0170334dffe10c2cfcd75fcdb
 /Users/karamoko/.local/share/alire/builds/adl_middleware_0.2.0_623c6913/fbb7e94a149915209229876b35886a02bfa51ec2fd7a9c0aaa119f6c0390c238/config/adl_middleware_config.gpr
-20250122001311 a1fab5dc8370a6a2d484a3014bdfea31
+20250205193736 a1fab5dc8370a6a2d484a3014bdfea31
 /Users/karamoko/.local/share/alire/builds/adl_middleware_0.2.0_623c6913/fbb7e94a149915209229876b35886a02bfa51ec2fd7a9c0aaa119f6c0390c238/adl_middleware.gpr
 20240927211216 e2872013891745951a6e28310e989d20
-/Users/karamoko/.local/share/alire/builds/stm32_gui_0.1.0_e2e5c9d4/3ee674d2b93dc9506389e115fb01936ceddd850a63beae621d8cf36a7eb596b0/config/stm32_gui_config.gpr
-20250122001311 5f168a1e7edcfc1a9fb63b6b59de5f49
-/Users/karamoko/.local/share/alire/builds/stm32_gui_0.1.0_e2e5c9d4/3ee674d2b93dc9506389e115fb01936ceddd850a63beae621d8cf36a7eb596b0/stm32_gui.gpr
-20241107190316 cf3d14bd8209617f1ddba8108c2ad23c
-/Users/karamoko/Downloads/CEG-4912_G9-BNO055/bno055_project/config/bno055_project_config.gpr
-20250122004922 70cdc639645280e9d4b4bac917a00c30
+/Users/karamoko/.local/share/alire/builds/embedded_components_0.2.0_37c39b23/e57a61e5227db4e924f74ca5fd028592cc309243acfdcdbc26dae612ca86268f/config/embedded_components_config.gpr
+20250205193736 007fb323a31d33a919efb98dba504afe
+/Users/karamoko/.local/share/alire/builds/embedded_components_0.2.0_37c39b23/e57a61e5227db4e924f74ca5fd028592cc309243acfdcdbc26dae612ca86268f/embedded_components.gpr
+20240927211218 7e1250695289ae5cb7d8ff35008d6ced
+/Users/karamoko/bno055_project/config/bno055_project_config.gpr
+20250205193736 d1903b4a924957e0df7079e17ef6287e
 [BOUND OBJECT FILES]
-/Users/karamoko/Downloads/CEG-4912_G9-BNO055/bno055_project/obj/development/bno055_i2c_io_custom.o
-/Users/karamoko/Downloads/CEG-4912_G9-BNO055/bno055_project/obj/development/bno055_project.o
-/Users/karamoko/Downloads/CEG-4912_G9-BNO055/bno055_project/obj/development/main.o
+/Users/karamoko/bno055_project/obj/development/delay_milliseconds.o
+/Users/karamoko/bno055_project/obj/development/bno055_i2c.o
+/Users/karamoko/bno055_project/obj/development/serial_io.o
+/Users/karamoko/bno055_project/obj/development/message_buffers.o
+/Users/karamoko/bno055_project/obj/development/serial_io-blocking.o
+/Users/karamoko/bno055_project/obj/development/peripherals.o
+/Users/karamoko/bno055_project/obj/development/screen_draw.o
+/Users/karamoko/bno055_project/obj/development/main.o
 [GENERATED SOURCE FILES]
 b__main.ads
 b__main.adb
 b__main.ali
 [RESULTING OPTIONS]
--L/Users/karamoko/Downloads/CEG-4912_G9-BNO055/bno055_project/obj/development/
--L/Users/karamoko/Downloads/CEG-4912_G9-BNO055/bno055_project/obj/development/
--L/Users/karamoko/.local/share/alire/builds/stm32_gui_0.1.0_e2e5c9d4/3ee674d2b93dc9506389e115fb01936ceddd850a63beae621d8cf36a7eb596b0/lib/
+-L/Users/karamoko/bno055_project/obj/development/
+-L/Users/karamoko/bno055_project/obj/development/
+-L/Users/karamoko/.local/share/alire/builds/embedded_components_0.2.0_37c39b23/e57a61e5227db4e924f74ca5fd028592cc309243acfdcdbc26dae612ca86268f/lib/
 -L/Users/karamoko/.local/share/alire/builds/adl_middleware_0.2.0_623c6913/fbb7e94a149915209229876b35886a02bfa51ec2fd7a9c0aaa119f6c0390c238/lib/
 -L/Users/karamoko/.local/share/alire/builds/hal_0.3.0_095ae514/45a7230b1521a74e4d762c42ec802710efe319e84e7227b385f535fafd1bbbac/lib/
+-L/Users/karamoko/.local/share/alire/builds/stm32_gui_0.1.0_e2e5c9d4/3ee674d2b93dc9506389e115fb01936ceddd850a63beae621d8cf36a7eb596b0/lib/
 -L/Users/karamoko/.local/share/alire/builds/stm32_hal_0.1.0_9276ee80/fe5bdb04320c4dd2e59b097788cf1b581555a593cfaa0689c0c31d2e4b7bbbfe/lib/
 -L/Users/karamoko/.local/share/alire/builds/cortex_m_0.5.0_39667d15/f454f4f06c95bd1d015688e883ae989ddf29833f0c0d0a3a5bb3d2d58fd06244/lib/
 -L/Users/karamoko/.local/share/alire/builds/stm32f429disco_0.1.0_aa5fe0cb/889ab963feec0991851c3be89f19344fb5b82b13dbe59edcaca23d6420e4ffef/lib/
--L/Users/karamoko/.local/share/alire/builds/embedded_components_0.2.0_37c39b23/e57a61e5227db4e924f74ca5fd028592cc309243acfdcdbc26dae612ca86268f/lib/
 -L/users/karamoko/.local/share/alire/toolchains/gnat_arm_elf_12.2.1_f4bfd822/arm-eabi/lib/gnat/embedded-stm32f429disco/adalib/
 -static
 /users/karamoko/.local/share/alire/toolchains/gnat_arm_elf_12.2.1_f4bfd822/arm-eabi/lib/gnat/embedded-stm32f429disco/adalib/libgnarl.a

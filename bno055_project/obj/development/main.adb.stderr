@@ -1,26 +1,23 @@
-main.adb:6:01: (style) multiple blank lines
-main.adb:9:04: error: instantiation error at bno055_project.ads:98
-main.adb:9:04: error: "Read" is not visible
-main.adb:9:04: error: instantiation error at bno055_project.ads:98
-main.adb:9:04: error: non-visible declaration at bno055_i2c_io_custom.ads:47
-main.adb:9:04: error: instantiation error at bno055_project.ads:104
-main.adb:9:04: error: "Write" is not visible
-main.adb:9:04: error: instantiation error at bno055_project.ads:104
-main.adb:9:04: error: non-visible declaration at bno055_i2c_io_custom.ads:52
-main.adb:9:44: (style) trailing spaces not permitted
-main.adb:12:46: error: expect valid subtype mark to instantiate "Sensor_Data_Buffer"
-main.adb:12:46: error: instantiation abandoned
-main.adb:13:01: (style) multiple blank lines
-main.adb:16:07: (style) space required
-main.adb:17:05: (style) bad casing of "Bno055_Project" declared at bno055_project.ads:124
-main.adb:17:18: error: prefix must not be a generic package
-main.adb:17:18: error: use package instantiation as prefix instead
-main.adb:18:05: (style) bad casing of "Bno055_Project" declared at bno055_project.ads:124
-main.adb:18:18: error: prefix must not be a generic package
-main.adb:18:18: error: use package instantiation as prefix instead
-main.adb:20:07: (style) space required
-main.adb:21:04: error: "BNO055_I2C" is undefined (more references follow)
-main.adb:21:26: (style) space required
-main.adb:22:26: (style) space required
-main.adb:23:26: (style) space required
-main.adb:25:07: (style) space required
+main.adb:1:09: warning: no entities of "Ada.Text_IO" are referenced [-gnatwu]
+main.adb:1:19: warning: use clause for package "Text_IO" has no effect [-gnatwu]
+main.adb:6:21: warning: use clause for package "BNO055_I2C_IO" has no effect [-gnatwu]
+main.adb:7:09: warning: no entities of "HAL.I2C" are referenced [-gnatwu]
+main.adb:7:15: warning: use clause for package "I2C" has no effect [-gnatwu]
+main.adb:14:06: warning: redundant with clause [-gnatwr]
+main.adb:21:19: warning: use clause for package "Screen_Draw" has no effect [-gnatwu]
+main.adb:22:01: (style) multiple blank lines
+main.adb:27:04: warning: variable "SCL_Pin" is not referenced [-gnatwu]
+main.adb:28:04: warning: variable "SDA_Pin" is not referenced [-gnatwu]
+main.adb:29:01: (style) multiple blank lines
+main.adb:33:04: warning: variable "Calibration" is never read and never assigned [-gnatwv]
+main.adb:37:04: warning: variable "Outgoing" is never read and never assigned [-gnatwv]
+main.adb:55:05: (style) bad column
+main.adb:60:07: (style) space required
+main.adb:122:01: (style) multiple blank lines
+main.adb:123:01: (style) trailing spaces not permitted
+main.adb:130:07: (style) space required
+main.adb:134:07: (style) space required
+main.adb:141:80: (style) this line is too long
+main.adb:142:01: (style) multiple blank lines
+main.adb:144:09: (style) two spaces required
+main.adb:145:01: (style) multiple blank lines

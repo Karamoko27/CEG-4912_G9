@@ -14,6 +14,7 @@ executables = ["ultrasonic"]
 [[depends-on]]
 stm32f429disco = "0.1.0"
 stm32_gui = "0.1.0"
+embedded_components = "*"
 
 
 [[pins]]

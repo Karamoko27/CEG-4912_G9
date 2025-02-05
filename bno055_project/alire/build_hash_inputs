@@ -1,3 +1,4 @@
+dependency:embedded_components=0.2.0=e57a61e5227db4e924f74ca5fd028592cc309243acfdcdbc26dae612ca86268f
 dependency:stm32_gui=0.1.0=3ee674d2b93dc9506389e115fb01936ceddd850a63beae621d8cf36a7eb596b0
 dependency:stm32f429disco=0.1.0=889ab963feec0991851c3be89f19344fb5b82b13dbe59edcaca23d6420e4ffef
 external:BNO055_PROJECT_LIBRARY_TYPE=default
