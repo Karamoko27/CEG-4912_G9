@@ -85,7 +85,7 @@ D i-stm32.ads		20220929105809 2ad0960b interfaces.stm32%s
 D i-stm32-pwr.ads	20220929105809 4a098e84 interfaces.stm32.pwr%s
 D message_buffers.ads	20250204193600 8e8a4051 message_buffers%s
 D message_buffers.adb	20250204193553 a19ad26a message_buffers%b
-D serial_io.ads		20250204193636 ece0bd5c serial_io%s
+D serial_io.ads		20250211165836 ece0bd5c serial_io%s
 D stm32.ads		20240927211219 698e2c3b stm32%s
 D stm32-exti.ads	20240927211219 27a7d05f stm32.exti%s
 D stm32-gpio.ads	20240927211219 316fa3bb stm32.gpio%s

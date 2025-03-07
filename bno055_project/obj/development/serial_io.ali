@@ -80,7 +80,7 @@ D hal-uart.ads		20240927211215 f6856013 hal.uart%s
 D interfac.ads		20220929105808 edec285f interfaces%s
 D i-stm32.ads		20220929105809 2ad0960b interfaces.stm32%s
 D i-stm32-pwr.ads	20220929105809 4a098e84 interfaces.stm32.pwr%s
-D serial_io.ads		20250204193636 ece0bd5c serial_io%s
+D serial_io.ads		20250211165836 ece0bd5c serial_io%s
 D serial_io.adb		20250204193636 4f5230de serial_io%b
 D stm32.ads		20240927211219 698e2c3b stm32%s
 D stm32-adc.ads		20240927211219 fbfd6f57 stm32.adc%s

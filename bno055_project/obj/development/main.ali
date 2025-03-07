@@ -50,13 +50,16 @@ RV NO_EXCEPTIONS
 RV NO_FLOATING_POINT
 RV NO_IO
 RV NO_IMPLICIT_CONDITIONALS
+RV NO_SECONDARY_STACK
 RV NO_STANDARD_STORAGE_POOLS
 RV NO_DEFAULT_INITIALIZATION
 RV NO_DYNAMIC_SIZED_OBJECTS
 RV NO_IMPLEMENTATION_PRAGMAS
 
-U main%b		main.adb		15bbcbe5 NE OO SU
+U main%b		main.adb		67fd8557 NE OO SU
 W ada%s			ada.ads			ada.ali
+W ada.characters%s	a-charac.ads		a-charac.ali
+W ada.characters.latin_1%s  a-chlat1.ads	a-chlat1.ali
 Z ada.exceptions%s	a-except.adb		a-except.ali
 W ada.real_time%s	a-reatim.adb		a-reatim.ali
 Z ada.real_time.delays%s  a-retide.adb		a-retide.ali
@@ -80,8 +83,11 @@ W stm32.i2c%s		stm32-i2c.adb		stm32-i2c.ali
 Z system%s		system.ads		system.ali
 Z system.fat_flt%s	s-fatflt.ads		s-fatflt.ali
 Z system.img_flt%s	s-imgflt.ads		s-imgflt.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
 
 D ada.ads		20220929105808 76789da1 ada%s
+D a-charac.ads		20220929105808 2d3ec45b ada.characters%s
+D a-chlat1.ads		20220929105808 e0d72e76 ada.characters.latin_1%s
 D a-except.ads		20220929105809 2a7d8d70 ada.exceptions%s
 D a-finali.ads		20220929105809 bf4f806b ada.finalization%s
 D a-interr.ads		20220929105809 bdf68b51 ada.interrupts%s
@@ -111,12 +117,12 @@ D interfac.ads		20220929105808 edec285f interfaces%s
 D i-stm32.ads		20220929105809 2ad0960b interfaces.stm32%s
 D i-stm32-pwr.ads	20220929105809 4a098e84 interfaces.stm32.pwr%s
 D last_chance_handler.ads  20240927211220 ecd2b85d last_chance_handler%s
-D main.adb		20250205194525 96af255b main%b
+D main.adb		20250214143104 4c41f9d0 main%b
 D message_buffers.ads	20250204193600 8e8a4051 message_buffers%s
-D peripherals.ads	20250205194924 0388a944 peripherals%s
+D peripherals.ads	20250211172358 92dd0c2d peripherals%s
 D screen_draw.ads	20250205194548 d27fce32 screen_draw%s
-D serial_io.ads		20250204193636 ece0bd5c serial_io%s
-D serial_io-blocking.ads  20250204193636 5f44f113 serial_io.blocking%s
+D serial_io.ads		20250211165836 ece0bd5c serial_io%s
+D serial_io-blocking.ads  20250209001305 866ee835 serial_io.blocking%s
 D stm32.ads		20240927211219 698e2c3b stm32%s
 D stm32-adc.ads		20240927211219 fbfd6f57 stm32.adc%s
 D stm32-crc.ads		20240927211219 9ef7b3c1 stm32.crc%s
@@ -189,177 +195,189 @@ D s-traent.ads		20220929105809 c81cbf8c system.traceback_entries%s
 D s-unstyp.ads		20220929105808 fa2a7f59 system.unsigned_types%s
 D unchconv.ads		20220929105808 ca2f9e18 unchecked_conversion%s
 G a e
-G c Z b b [main standard 25 11 none]
-G r s bno055_9dof_imu [main standard 25 11 none] [bno055_9dof_imuIP bno055_i2c 529 9 7_1]
-G r s message [main standard 25 11 none] [messageIP message_buffers 105 9 none]
-G r c none [main standard 25 11 none] [configure serial_io__blocking 58 14 none]
-G r c none [main standard 25 11 none] [enable_clock stm32__device 72 14 none]
-G r c none [main standard 25 11 none] [enable_clock stm32__device 428 14 none]
-G r c none [main standard 25 11 none] [reset stm32__device 431 14 none]
-G r c none [main standard 25 11 none] [configure_io stm32__gpio 207 14 none]
-G r c none [main standard 25 11 none] [configure stm32__i2c 92 14 none]
-G r c none [main standard 25 11 none] [set_state stm32__i2c 97 14 none]
-G r c none [main standard 25 11 none] [clear stm32__gpio 182 14 none]
-G r c none [main standard 25 11 none] [set stm32__gpio 176 14 none]
-G r c none [main standard 25 11 none] [device_id bno055_i2c 134 13 7_1]
-G r c none [main standard 25 11 none] [configure bno055_i2c 201 14 7_1]
-G r c none [main standard 25 11 none] [output bno055_i2c 440 13 7_1]
-G r c none [main standard 25 11 none] [writemsg screen_draw 4 14 none]
+G c Z b b [main standard 26 11 none]
+G r s bno055_9dof_imu [main standard 26 11 none] [bno055_9dof_imuIP bno055_i2c 529 9 7_1]
+G r s message [main standard 26 11 none] [messageIP message_buffers 105 9 none]
+G r c none [main standard 26 11 none] [initialize serial_io__blocking 51 14 none]
+G r c none [main standard 26 11 none] [configure serial_io__blocking 58 14 none]
+G r c none [main standard 26 11 none] [enable_clock stm32__device 72 14 none]
+G r c none [main standard 26 11 none] [enable_clock stm32__device 428 14 none]
+G r c none [main standard 26 11 none] [reset stm32__device 431 14 none]
+G r c none [main standard 26 11 none] [configure_io stm32__gpio 207 14 none]
+G r c none [main standard 26 11 none] [configure stm32__i2c 92 14 none]
+G r c none [main standard 26 11 none] [set_state stm32__i2c 97 14 none]
+G r c none [main standard 26 11 none] [clear stm32__gpio 182 14 none]
+G r c none [main standard 26 11 none] [set stm32__gpio 176 14 none]
+G r c none [main standard 26 11 none] [device_id bno055_i2c 134 13 7_1]
+G r c none [main standard 26 11 none] [configure bno055_i2c 201 14 7_1]
+G r c none [main standard 26 11 none] [output bno055_i2c 440 13 7_1]
+G r c none [main standard 26 11 none] [writemsg screen_draw 4 14 none]
+G r c none [main standard 26 11 none] [put_mess serial_io__blocking 71 16 none]
 X 1 ada.ads
-16K9*Ada 20e8 31|1r6 1r23 2r6 2r25
-X 5 a-reatim.ads
-40K13*Real_Time 181e18 31|2w10 2r29
-50M9*Time<74|46M9>
-60I9*Time_Span<74|81I9>
-67V13*Clock{50M9}<74|134p13> 31|48s19 50s19 148s19
-71V14*"+"{50M9} 31|48s25 50s25 148s25
-127V13*Milliseconds{60I9} 31|48s27 50s27 148s27
-X 14 a-textio.ads
-36K13*Text_IO 52e16 31|1w10 1r27
-X 16 bno055_i2c.ads
-7K9*BNO055_I2C[18|124] 31|13w6 13r23
-X 17 bno055_i2c_io.ads
-38K9*BNO055_I2C_IO 62e18 31|6w6 6r25
-47U14*Read 18|98i19
-52U14*Write 18|104i19
-57U14*Read_Buffer 18|112i19
-X 18 bosch_bno055.ads
-126R9*BNO055_9DOF_IMU 31|31r10[16|7]
-134V13*Device_Id{20|53M9} 31|118s14[16|7]
-138N4*I_Am_BNO055 31|118r27[16|7]
-148N4*BNO055_Min_Sample_Interval 31|148r41[16|7]
-201U14*Configure 31|132s8[16|7]
-380R9*Calibration_States 31|33r18[16|7]
+16K9*Ada 20e8 33|1r6 1r23 2r6 2r25 22r6 22r34
+X 2 a-charac.ads
+16K13*Characters 18e19 33|22r10 22r38
+X 3 a-chlat1.ads
+16K24*Latin_1 294e27 33|22w21 22r49
+33e4*LF{character} 33|174r69
+X 7 a-reatim.ads
+40K13*Real_Time 181e18 33|2w10 2r29
+50M9*Time<76|46M9>
+60I9*Time_Span<76|81I9>
+67V13*Clock{50M9}<76|134p13> 33|51s19 53s19 177s19
+71V14*"+"{50M9} 33|51s25 53s25 177s25
+127V13*Milliseconds{60I9} 33|51s27 53s27 177s27
+X 16 a-textio.ads
+36K13*Text_IO 52e16 33|1w10 1r27
+X 18 bno055_i2c.ads
+7K9*BNO055_I2C[20|124] 33|13w6 13r23
+X 19 bno055_i2c_io.ads
+38K9*BNO055_I2C_IO 62e18 33|6w6 6r25
+47U14*Read 20|98i19
+52U14*Write 20|104i19
+57U14*Read_Buffer 20|112i19
+X 20 bosch_bno055.ads
+126R9*BNO055_9DOF_IMU 33|29r10[18|7]
+134V13*Device_Id{22|53M9} 33|121s14[18|7]
+138N4*I_Am_BNO055 33|121r27[18|7]
+148N4*BNO055_Min_Sample_Interval 33|177r41[18|7]
+201U14*Configure 33|157s8[18|7]
+380R9*Calibration_States 33|31r18[18|7]
 428E9*Axis
-428n18*X{428E9[16|7]} 31|141r53[16|7]
-428n21*Y{428E9[16|7]} 31|141r76[16|7]
-428n24*Z{428E9[16|7]} 31|141r99[16|7]
-430A9*Sensor_Data(float)<428E9[16|7]> 31|35r11[16|7]
+428n18*X{428E9[18|7]} 33|134r46[18|7] 169r53[18|7] 173r64[18|7] 174r40[18|7]
+428n21*Y{428E9[18|7]} 33|134r69[18|7] 169r76[18|7] 173r87[18|7] 174r58[18|7]
+428n24*Z{428E9[18|7]} 33|134r92[18|7] 169r99[18|7]
+430A9*Sensor_Data(float)<428E9[18|7]> 33|33r11[18|7] 34r13[18|7] 127r44[18|7]
 432E9*Sensor_Data_Kinds
-436n7*Euler_Orientation{432E9[16|7]} 31|136r35[16|7]
-440V13*Output{430A9[16|7]} 31|136s19[16|7]
-442e7 Kind{432E9[16|7]} 31|136r27[16|7]
-X 19 delay_milliseconds.ads
-1U11*Delay_Milliseconds 18|119i19
-X 20 hal.ads
-34K9*HAL 166e8 31|4w6 4r15 7r6 7r19
+436n7*Euler_Orientation{432E9[18|7]} 33|133r35[18|7] 162r35[18|7]
+437n7*Linear_Acceleration_Data{432E9[18|7]} 33|163r37[18|7]
+440V13*Output{430A9[18|7]} 33|133s19[18|7] 162s19[18|7] 163s21[18|7]
+442e7 Kind{432E9[18|7]} 33|133r27[18|7] 162r27[18|7] 163r29[18|7]
+X 21 delay_milliseconds.ads
+1U11*Delay_Milliseconds 20|119i19
+X 22 hal.ads
+34K9*HAL 166e8 33|4w6 4r15 7r6 7r19
 43M9*UInt4
-53M9*UInt8<27|68M9>
+53M9*UInt8<29|68M9>
 54M9*UInt10
-97M9*UInt32<27|79M9>
-X 21 hal-audio.ads
+97M9*UInt32<29|79M9>
+X 23 hal-audio.ads
 62h9*Audio_Stream
-X 22 hal-gpio.ads
+X 24 hal-gpio.ads
 48h9*GPIO_Point
-X 23 hal-i2c.ads
-32K13*I2C 85e12 31|7w10 7r23
+X 25 hal-i2c.ads
+32K13*I2C 85e12 33|7w10 7r23
 49h9*I2C_Port
-X 24 hal-real_time_clock.ads
+X 26 hal-real_time_clock.ads
 80h9*RTC_Device
-X 25 hal-spi.ads
+X 27 hal-spi.ads
 49h9*SPI_Port
-X 26 hal-uart.ads
+X 28 hal-uart.ads
 49h9*UART_Port
-X 27 interfac.ads
+X 29 interfac.ads
 68M9*Unsigned_8
 79M9*Unsigned_32
-X 30 last_chance_handler.ads
-36K9*Last_Chance_Handler 42e24 31|3w6 3r49
+X 32 last_chance_handler.ads
+36K9*Last_Chance_Handler 42e24 33|3w6 3r49
 38U14*Last_Chance_Handler 39i<c,__gnat_last_chance_handler>22
-X 31 main.adb
-25U11*Main 25b11 151l5 151t9
-27r4 SCL_Pin{45|138R9}
-28r4 SDA_Pin{45|138R9}
-31r4 IMU{18|126R9[16|7]} 118m10 118r10 132m4 132r4 136m15 136r15
-33r4 Calibration{18|380R9[16|7]}
-35a4 Data{18|430A9[16|7]} 136m7 141r47 141r70 141r93
-37r4 Outgoing{32|41R9}
-43U14 Reset_BNO055_Via_Hardware 43b14 43=41 53l8 53t33 116s7
-43r41 Reset{45|138R9} 46m25 49m23
-59U14 Initialize_IMU_IO_Hardware 59b14 61^7 62>7 63>7 64>7 65>7 66>7 104l8
-. 104t34 108s7
-61p7 Port(46|89R9) 74r21 76r27 95r10 103r28 109r10
-62r7 SCL{45|138R9} 70r21 83r21 110r10
-63m7 SCL_AF{37|42M9} 87r45 111r10
-64r7 SDA{45|138R9} 71r21 88r21 112r10
-65m7 SDA_AF{37|42M9} 92r45 113r10
-66r7 Reset{45|138R9} 72r21 78r21 114r10
-68N7 Selected_Clock_Speed 96r39
-106U14 Set_Up_IMU 106b14 121l8 121t18 131s4
-X 32 message_buffers.ads
-38K9*Message_Buffers 31|16w6 16r30 32|114e20
-41R9*Message 31|37r23 32|112e14
-X 33 peripherals.ads
-50K9*Peripherals 31|19w6 19r23 33|80e16
-61r4*Host{36|48R9} 31|129m15 129r15
-70p4*Selected_I2C_Port(46|89R9) 31|109r20
-71m4*Selected_I2C_Port_AF{37|42M9} 31|111r20 113r20
-72r4*Selected_I2C_Clock_Pin=72:48{45|138R9} 31|110r20
-73r4*Selected_I2C_Data_Pin=73:48{45|138R9} 31|112r20
-74r4*Selected_HW_Reset_Pin=74:48{45|138R9} 31|114r20 116r34
-78r4*Sensor_Port{17|40R9} 31|31m27 31r27
-X 34 screen_draw.ads
-1K9*Screen_Draw 31|21w6 21r23 141r7 34|6e16
-4U14*WriteMsg 31|141s19
-X 35 serial_io.ads
-35K9*Serial_IO 31|17r6 17r30 18w6 18r21 35|63e14
-X 36 serial_io-blocking.ads
-45K19*Blocking 31|17w16 17r40 36|90e23
-58U14*Configure 31|129s4
-60m7 Baud_Rate{53|95M12} 31|129r21
-X 37 stm32.ads
-39K9*STM32 31|9r6 9r22 10r6 11r6 11r24 14r6 27r14 28r14 46r7 49r7 61r23 62r16
-. 63r16 64r16 65r16 66r16 76r7 94r7 97r39 103r7 37|48e10
-42M9*GPIO_Alternate_Function<20|43M9> 31|63r22 65r22
-X 41 stm32-device.ads
-63K15*Device 31|11w12 11r30 76r13 41|654e17
-72U14*Enable_Clock 31|70s7 71s7 72s7
-115r4*PA8{45|138R9} 31|27r39
-148r4*PC9{45|138R9} 31|28r39
-428U14*Enable_Clock 31|74s7
-431U14*Reset 31|76s20
-X 45 stm32-gpio.ads
-49K15*GPIO 31|9w12 9r28 27r20 28r20 46r13 49r13 62r22 64r22 66r22 45|297e15
-87n35*Mode_Out{87E9} 31|78r44
-87n45*Mode_AF{87E9} 31|83r45 88r45
-96n30*Push_Pull{96E9} 31|80r44
-96n41*Open_Drain{96E9} 31|85r45 90r45
-101n44*Speed_25MHz{101E9} 31|81r44
-101n70*Speed_100MHz{101E9} 31|86r45 91r45
-115n36*Floating{115E9} 31|79r44
-115n46*Pull_Up{115E9} 31|84r45 89r45
-123e34*Mode{87E9} 31|78m29 83m27 88m27
-124e7*Resistors{115E9} 31|79m29 84m27 89m27
-129e13*Output_Type{96E9} 31|80m29
-130e13*Speed{101E9} 31|81m29
-132e13*AF_Output_Type{96E9} 31|85m27 90m27
-133e13*AF_Speed{101E9} 31|86m27 91m27
-134m13*AF{37|42M9} 31|87m27 92m27
-138R9*GPIO_Point<22|48R9> 31|27r25 28r25 43r56 62r27 64r27 66r27 45|143e14
-176U14*Set<22|89p14> 31|49s18
-182U14*Clear<22|91p14> 31|46s18
-207U14*Configure_IO 31|78s7 83s7 88s7
-X 46 stm32-i2c.ads
-49K15*I2C 31|10w12 14w12 61r29 94r13 97r45 103r13 46|267e14
-65n7*Addressing_Mode_7bit{64E9} 31|97r49
-69m7*Clock_Speed{20|97M9} 31|96m11
-73e7*Addressing_Mode{64E9} 31|97m11
-74m7*Own_Address{20|54M9} 31|100m11
-78b7*General_Call_Enabled{boolean} 31|98m11
-82b7*Clock_Stretching_Enabled{boolean} 31|99m11
-89R9*I2C_Port<23|49R9> 31|61r33 46|175e17
-92U14*Configure 31|94s17
-97U14*Set_State 31|103s17
-97b49 Enabled{boolean} 31|103r38
-X 53 stm32-usarts.ads
-95M12*Baud_Rates{20|97M9}
-X 74 s-bbtime.ads
+X 33 main.adb
+26U11*Main 26b11 183l5 183t9
+29r4 IMU{20|126R9[18|7]} 121m10 121r10 133m15 133r15 157m4 157r4 162m15 162r15
+. 163m17 163r17
+31r4 Calibration{20|380R9[18|7]}
+33a4 Data{20|430A9[18|7]} 162m7 169r47 169r70 169r93 173r59 173r81
+34a4 LinAcc{20|430A9[18|7]} 163m7 174r33 174r51
+36r4 Outgoing{34|41R9}
+38a4 msg{string}
+46U14 Reset_BNO055_Via_Hardware 46b14 46=41 56l8 56t33 119s7
+46r41 Reset{47|138R9} 49m25 52m23
+62U14 Initialize_IMU_IO_Hardware 62b14 64^7 65>7 66>7 67>7 68>7 69>7 107l8
+. 107t34 111s7
+64p7 Port(48|89R9) 77r21 79r27 98r10 106r28 112r10
+65r7 SCL{47|138R9} 73r21 86r21 113r10
+66m7 SCL_AF{39|42M9} 90r45 114r10
+67r7 SDA{47|138R9} 74r21 91r21 115r10
+68m7 SDA_AF{39|42M9} 95r45 116r10
+69r7 Reset{47|138R9} 75r21 81r21 117r10
+71N7 Selected_Clock_Speed 99r39
+109U14 Set_Up_IMU 109b14 124l8 124t18 156s4
+127V13 Get_Orientation{string} 127b13 127=30 136l8 136t23
+127a30 Data{20|430A9[18|7]} 133m7 134r40 134r63 134r86
+129a4 Orientation{string} 134m7 135r14
+X 34 message_buffers.ads
+38K9*Message_Buffers 33|16w6 16r30 34|114e20
+41R9*Message 33|36r23 34|112e14
+X 35 peripherals.ads
+50K9*Peripherals 33|19w6 19r23 35|80e16
+61r4*Host{38|48R9} 33|152m34 153m15 153r15 173m36 173r36
+70p4*Selected_I2C_Port(48|89R9) 33|112r20
+71m4*Selected_I2C_Port_AF{39|42M9} 33|114r20 116r20
+72r4*Selected_I2C_Clock_Pin=72:48{47|138R9} 33|113r20
+73r4*Selected_I2C_Data_Pin=73:48{47|138R9} 33|115r20
+74r4*Selected_HW_Reset_Pin=74:48{47|138R9} 33|117r20 119r34
+78r4*Sensor_Port{19|40R9} 33|29m27 29r27
+X 36 screen_draw.ads
+1K9*Screen_Draw 33|21w6 169r7 36|6e16
+4U14*WriteMsg 33|169s19
+X 37 serial_io.ads
+35K9*Serial_IO 33|17r6 17r30 18w6 18r21 152r4 173r7 37|63e14
+X 38 serial_io-blocking.ads
+45K19*Blocking 33|17w16 17r40 152r14 173r17 38|93e23
+51U14*Initialize 33|152s23
+58U14*Configure 33|153s4
+60m7 Baud_Rate{55|95M12} 33|153r21
+71U16*Put_Mess 33|173s26
+X 39 stm32.ads
+39K9*STM32 33|9r6 9r22 10r6 11r6 11r24 14r6 49r7 52r7 64r23 65r16 66r16 67r16
+. 68r16 69r16 79r7 97r7 100r39 106r7 39|48e10
+42M9*GPIO_Alternate_Function<22|43M9> 33|66r22 68r22
+X 43 stm32-device.ads
+63K15*Device 33|11w12 11r30 79r13 43|654e17
+72U14*Enable_Clock 33|73s7 74s7 75s7
+428U14*Enable_Clock 33|77s7
+431U14*Reset 33|79s20
+X 47 stm32-gpio.ads
+49K15*GPIO 33|9w12 9r28 49r13 52r13 65r22 67r22 69r22 47|297e15
+87n35*Mode_Out{87E9} 33|81r44
+87n45*Mode_AF{87E9} 33|86r45 91r45
+96n30*Push_Pull{96E9} 33|83r44
+96n41*Open_Drain{96E9} 33|88r45 93r45
+101n44*Speed_25MHz{101E9} 33|84r44
+101n70*Speed_100MHz{101E9} 33|89r45 94r45
+115n36*Floating{115E9} 33|82r44
+115n46*Pull_Up{115E9} 33|87r45 92r45
+123e34*Mode{87E9} 33|81m29 86m27 91m27
+124e7*Resistors{115E9} 33|82m29 87m27 92m27
+129e13*Output_Type{96E9} 33|83m29
+130e13*Speed{101E9} 33|84m29
+132e13*AF_Output_Type{96E9} 33|88m27 93m27
+133e13*AF_Speed{101E9} 33|89m27 94m27
+134m13*AF{39|42M9} 33|90m27 95m27
+138R9*GPIO_Point<24|48R9> 33|46r56 65r27 67r27 69r27 47|143e14
+176U14*Set<24|89p14> 33|52s18
+182U14*Clear<24|91p14> 33|49s18
+207U14*Configure_IO 33|81s7 86s7 91s7
+X 48 stm32-i2c.ads
+49K15*I2C 33|10w12 14w12 64r29 97r13 100r45 106r13 48|267e14
+65n7*Addressing_Mode_7bit{64E9} 33|100r49
+69m7*Clock_Speed{22|97M9} 33|99m11
+73e7*Addressing_Mode{64E9} 33|100m11
+74m7*Own_Address{22|54M9} 33|103m11
+78b7*General_Call_Enabled{boolean} 33|101m11
+82b7*Clock_Stretching_Enabled{boolean} 33|102m11
+89R9*I2C_Port<25|49R9> 33|64r33 48|175e17
+92U14*Configure 33|97s17
+97U14*Set_State 33|106s17
+97b49 Enabled{boolean} 33|106r38
+X 55 stm32-usarts.ads
+95M12*Baud_Rates{22|97M9}
+X 76 s-bbtime.ads
 46M9*Time
 81I9*Time_Span<long_long_integer>
-X 83 s-interr.ads
+X 85 s-interr.ads
 97U14*Install_Restricted_Handlers_Sequential 98i<c,__gnat_attach_all_handlers>22
-X 92 s-secsta.ads
+X 94 s-secsta.ads
 46P9*SS_Stack_Ptr(43R9)
-X 101 s-taskin.ads
-398V13*Get_Sec_Stack{92|46P9} 399i<c,__gnat_get_secondary_stack>22
+X 103 s-taskin.ads
+398V13*Get_Sec_Stack{94|46P9} 399i<c,__gnat_get_secondary_stack>22
 

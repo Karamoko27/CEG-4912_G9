@@ -1,4 +1,5 @@
 serial_io-blocking.adb:67:80: (style) this line is too long
 serial_io-blocking.ads:68:80: (style) this line is too long
-serial_io-blocking.ads:73:80: (style) this line is too long
-serial_io-blocking.ads:75:46: (style) "and then" required
+serial_io-blocking.ads:71:06: (style) bad indentation
+serial_io-blocking.ads:76:80: (style) this line is too long
+serial_io-blocking.ads:78:46: (style) "and then" required

@@ -27,6 +27,8 @@ package ada_main is
 
    --  BEGIN ELABORATION ORDER
    --  ada%s
+   --  ada.characters%s
+   --  ada.characters.latin_1%s
    --  interfaces%s
    --  system%s
    --  ada.io_exceptions%s

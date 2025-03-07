@@ -81,6 +81,16 @@ package body Serial_IO.Blocking is
       end loop;
    end Put;
 
+   procedure Put_Mess (This : in out Serial_Port;  Msg : String) is
+   begin
+      for K in Msg'Range loop
+         Await_Send_Ready (This.Device.Transceiver.all);
+         Transmit
+           (This.Device.Transceiver.all,
+            Character'Pos (Msg (K)));
+      end loop;
+   end Put_Mess;
+
    ---------
    -- Get --
    ---------

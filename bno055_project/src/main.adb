@@ -18,14 +18,12 @@ with Serial_IO.Blocking; use Serial_IO.Blocking;
 with Serial_IO; use Serial_IO;
 with Peripherals; use Peripherals;
 
-with Screen_Draw; use Screen_Draw;
+with Screen_Draw; 
+with Ada.Characters.Latin_1; use Ada.Characters.Latin_1;
 
 
 
 procedure Main is
-
-   SCL_Pin : STM32.GPIO.GPIO_Point := PA8;
-   SDA_Pin : STM32.GPIO.GPIO_Point := PC9;
 
 
    IMU : BNO055_9DOF_IMU (Sensor_Port'Access);
@@ -33,8 +31,13 @@ procedure Main is
    Calibration : Calibration_States;
 
    Data : Sensor_Data;
+   LinAcc : Sensor_Data;
 
    Outgoing : aliased Message (Physical_Size => 1024);
+
+   msg : String (1..1024);
+
+   
 
    -------------------------------
    -- Reset_BNO055_Via_Hardware --
@@ -120,32 +123,61 @@ procedure Main is
       end if;
    end Set_Up_IMU;
 
- 
 
+   function Get_Orientation (Data : in out Sensor_Data) 
+   return String is
+   Orientation : String := "Orientation: ";
+   begin
+      --Set_Up_IMU;
+      --IMU.Configure;
+      Data := IMU.Output (Kind => Euler_Orientation);
+      Orientation := "Orientation: " & Data (X)'Image & " " & Data (Y)'Image & " " & Data (Z)'Image;
+      return Orientation;
+   end Get_Orientation;
+   
+
+
+
+
+   -- usage for UART
+   --type Bno_Data_T is array (0 .. 36) of Character; 
+   --Bno_Data : Bno_Data_T;
+   --Msg: Message_Buffers.Message (Physical_Size => 1024);
 
 
 begin
 
-   Configure (Host, Baud_Rate => 115_200);
+   -- Uart with serial.IO.Blocking
+   --Uart.Initialize;
+   Serial_IO.Blocking.Initialize(Host);
+   Configure (Host, Baud_Rate => 115200);
+
    -- Initialisation de l'IMU
    Set_Up_IMU;
    IMU.Configure;
+   
 
-   -- Affichage des données
+   
    loop
       Data := IMU.Output (Kind => Euler_Orientation);
+      LinAcc := IMU.Output (Kind => Linear_Acceleration_Data);
+      
 
-      --  NB: AT MOST ONE blank may appear between values! The proceure Put
-      --  that takes a floating point argument ensures that no extra blanks
-      --  are output.
+      -- Affichage des données
+      --via screen 
+
       Screen_Draw.WriteMsg ("Orientation: " & Data (X)'Image & " " & Data (Y)'Image & " " & Data (Z)'Image);
+      --Screen_Draw.WriteMsg ("Acceleration" & LinAcc (X)'Image & "m/2s" & LinAcc (Y)'Image & "m/s2");
 
+      --via uart
+      Serial_IO.Blocking.Put_Mess (Host,"Orientation: " & Data(X)'Image & " " & Data (Y)'Image & 
+      "Linear Acceleration: " & LinAcc(X)'Image & LinAcc(Y)'Image & LF);
 
       --Calibration := IMU.Sensor_Calibration;
-
-
-
       delay until Clock + Milliseconds (BNO055_Min_Sample_Interval);
+
+
+
    end loop;
 
 end Main;

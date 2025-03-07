@@ -51,10 +51,10 @@ package Peripherals is
 
    --  The specific USART selection is arbitrary.
    Peripheral_For_Host : aliased Serial_IO.Peripheral_Descriptor :=
-                  (Transceiver    => USART_6'Access,
-                   Transceiver_AF => GPIO_AF_USART6_8,
-                   Tx_Pin         => PC6,
-                   Rx_Pin         => PC7);
+                  (Transceiver    => USART_1'Access,
+                   Transceiver_AF => GPIO_AF_USART1_7,
+                   Tx_Pin         => PA9,
+                   Rx_Pin         => PA10);
 
    --  The serial port connected to the host computer, to send data from
    --  the IMU to the host (via the STM32 board) for display.

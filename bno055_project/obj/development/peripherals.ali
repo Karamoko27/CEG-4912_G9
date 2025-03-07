@@ -49,7 +49,7 @@ RV NO_DEFAULT_INITIALIZATION
 RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_ELABORATION_CODE
 
-U peripherals%s		peripherals.ads		b9881200 EE OO PK
+U peripherals%s		peripherals.ads		f1f7ae4f EE OO PK
 Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
 Z ada.tags%s		a-tags.adb		a-tags.ali
 W bno055_i2c%s		bno055_i2c.ads		bno055_i2c.ali
@@ -90,9 +90,9 @@ D interfac.ads		20220929105808 edec285f interfaces%s
 D i-stm32.ads		20220929105809 2ad0960b interfaces.stm32%s
 D i-stm32-pwr.ads	20220929105809 4a098e84 interfaces.stm32.pwr%s
 D message_buffers.ads	20250204193600 8e8a4051 message_buffers%s
-D peripherals.ads	20250205194924 0388a944 peripherals%s
-D serial_io.ads		20250204193636 ece0bd5c serial_io%s
-D serial_io-blocking.ads  20250204193636 5f44f113 serial_io.blocking%s
+D peripherals.ads	20250211172358 92dd0c2d peripherals%s
+D serial_io.ads		20250211165836 ece0bd5c serial_io%s
+D serial_io-blocking.ads  20250209001305 866ee835 serial_io.blocking%s
 D stm32.ads		20240927211219 698e2c3b stm32%s
 D stm32-adc.ads		20240927211219 fbfd6f57 stm32.adc%s
 D stm32-crc.ads		20240927211219 9ef7b3c1 stm32.crc%s
@@ -159,7 +159,7 @@ D s-unstyp.ads		20220929105808 fa2a7f59 system.unsigned_types%s
 D unchconv.ads		20220929105808 ca2f9e18 unchecked_conversion%s
 G a e
 G c s s s [s peripherals 50 1 none]
-G r s serial_port [s peripherals 50 1 none] [serial_portIP serial_io__blocking 81 9 none]
+G r s serial_port [s peripherals 50 1 none] [serial_portIP serial_io__blocking 84 9 none]
 X 14 bno055_i2c.ads
 7K9*BNO055_I2C[16|124] 29|43w6 43r25
 X 15 bno055_i2c_io.ads
@@ -206,21 +206,21 @@ X 30 serial_io.ads
 40r7*Tx_Pin{40|138R9} 29|56m20
 41r7*Rx_Pin{40|138R9} 29|57m20
 X 31 serial_io-blocking.ads
-45K19*Blocking 29|46w16 46r40 31|90e23
-48R9*Serial_Port 29|61r11 31|84e17
+45K19*Blocking 29|46w16 46r40 31|93e23
+48R9*Serial_Port 29|61r11 31|87e17
 X 32 stm32.ads
 39K9*STM32 29|36r6 36r31 40r6 40r25 42r6 42r25 48r5 32|48e10
 42M9*GPIO_Alternate_Function<18|43M9> 29|71r38
 X 36 stm32-device.ads
 63K15*Device 29|36w12 36r37 36|654e17
+116r4*PA9{40|138R9} 29|56r38
+117r4*PA10{40|138R9} 29|57r38
 128r4*PB5{40|138R9} 29|74r48
 133r4*PB10{40|138R9} 29|72r48
 134r4*PB11{40|138R9} 29|73r48
-145r4*PC6{40|138R9} 29|56r38
-146r4*PC7{40|138R9} 29|57r38
 299m4*GPIO_AF_I2C2_4{32|42M9} 29|71r65
-317m4*GPIO_AF_USART6_8{32|42M9} 29|55r38
-392r4*USART_6{48|56R9} 29|54m38 54r38
+311m4*GPIO_AF_USART1_7{32|42M9} 29|55r38
+387r4*USART_1{48|56R9} 29|54m38 54r38
 418r4*I2C_2{41|89R9} 29|70m57 70r57
 X 40 stm32-gpio.ads
 49K15*GPIO 29|40w12 40r31 40|297e15

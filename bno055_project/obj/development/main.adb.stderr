@@ -4,20 +4,45 @@ main.adb:6:21: warning: use clause for package "BNO055_I2C_IO" has no effect [-g
 main.adb:7:09: warning: no entities of "HAL.I2C" are referenced [-gnatwu]
 main.adb:7:15: warning: use clause for package "I2C" has no effect [-gnatwu]
 main.adb:14:06: warning: redundant with clause [-gnatwr]
-main.adb:21:19: warning: use clause for package "Screen_Draw" has no effect [-gnatwu]
-main.adb:22:01: (style) multiple blank lines
-main.adb:27:04: warning: variable "SCL_Pin" is not referenced [-gnatwu]
-main.adb:28:04: warning: variable "SDA_Pin" is not referenced [-gnatwu]
-main.adb:29:01: (style) multiple blank lines
-main.adb:33:04: warning: variable "Calibration" is never read and never assigned [-gnatwv]
-main.adb:37:04: warning: variable "Outgoing" is never read and never assigned [-gnatwv]
-main.adb:55:05: (style) bad column
-main.adb:60:07: (style) space required
-main.adb:122:01: (style) multiple blank lines
-main.adb:123:01: (style) trailing spaces not permitted
-main.adb:130:07: (style) space required
-main.adb:134:07: (style) space required
-main.adb:141:80: (style) this line is too long
-main.adb:142:01: (style) multiple blank lines
-main.adb:144:09: (style) two spaces required
-main.adb:145:01: (style) multiple blank lines
+main.adb:21:18: (style) trailing spaces not permitted
+main.adb:23:01: (style) multiple blank lines
+main.adb:27:01: (style) multiple blank lines
+main.adb:31:04: warning: variable "Calibration" is never read and never assigned [-gnatwv]
+main.adb:36:04: warning: variable "Outgoing" is never read and never assigned [-gnatwv]
+main.adb:38:04: warning: variable "msg" is never read and never assigned [-gnatwv]
+main.adb:38:19: (style) space required
+main.adb:39:01: (style) multiple blank lines
+main.adb:40:01: (style) trailing spaces not permitted
+main.adb:58:05: (style) bad column
+main.adb:63:07: (style) space required
+main.adb:125:01: (style) multiple blank lines
+main.adb:127:13: warning: function "Get_Orientation" is not referenced [-gnatwu]
+main.adb:127:56: (style) trailing spaces not permitted
+main.adb:129:03: (style) incorrect layout
+main.adb:131:09: (style) two spaces required
+main.adb:132:09: (style) two spaces required
+main.adb:134:80: (style) this line is too long
+main.adb:134:84: warning: wrong length for array of subtype of "Standard.String" defined at line 129 [enabled by default]
+main.adb:134:84: warning: Constraint_Error will be raised at run time [enabled by default]
+main.adb:137:01: (style) trailing spaces not permitted
+main.adb:142:07: (style) space required
+main.adb:143:06: (style) two spaces required
+main.adb:144:06: (style) two spaces required
+main.adb:145:06: (style) two spaces required
+main.adb:146:01: (style) multiple blank lines
+main.adb:150:07: (style) space required
+main.adb:151:06: (style) two spaces required
+main.adb:152:33: (style) space required
+main.adb:155:07: (style) space required
+main.adb:158:01: (style) trailing spaces not permitted
+main.adb:160:01: (style) trailing spaces not permitted
+main.adb:164:01: (style) trailing spaces not permitted
+main.adb:166:10: (style) space required
+main.adb:167:09: (style) two spaces required
+main.adb:169:80: (style) this line is too long
+main.adb:170:09: (style) two spaces required
+main.adb:172:09: (style) two spaces required
+main.adb:173:41: (style) space required
+main.adb:174:39: (style) space required
+main.adb:176:09: (style) two spaces required
+main.adb:178:01: (style) multiple blank lines

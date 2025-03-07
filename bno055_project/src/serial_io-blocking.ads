@@ -67,6 +67,9 @@ package Serial_IO.Blocking is
 
    procedure Put (This : in out Serial_Port; Msg : not null access Message) with
      Pre => (Initialized (This) or else raise Serial_Port_Uninitialized);
+
+     procedure Put_Mess(This : in out Serial_Port; Msg : String) with
+     Pre => (Initialized (This) or else raise Serial_Port_Uninitialized);
    --  Sends Msg.Length characters of Msg via USART attached to This. Callers
    --  wait until all characters are sent.
 

@@ -48,10 +48,11 @@ RV NO_DISPATCHING_CALLS
 RV NO_EXCEPTIONS
 RV NO_IMPLICIT_CONDITIONALS
 RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
 RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_ELABORATION_CODE
 
-U serial_io.blocking%b	serial_io-blocking.adb	d0777356 OO PK
+U serial_io.blocking%b	serial_io-blocking.adb	91313c09 OO PK
 Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
 Z ada.tags%s		a-tags.adb		a-tags.ali
 W hal%s			hal.ads			hal.ali
@@ -60,7 +61,7 @@ W stm32%s		stm32.ads		stm32.ali
 W stm32.device%s	stm32-device.adb	stm32-device.ali
 Z system%s		system.ads		system.ali
 
-U serial_io.blocking%s	serial_io-blocking.ads	3d2e0c1e BN EB EE OO PF PK
+U serial_io.blocking%s	serial_io-blocking.ads	e4041538 BN EB EE OO PF PK
 Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
 Z ada.tags%s		a-tags.adb		a-tags.ali
 W message_buffers%s	message_buffers.adb	message_buffers.ali
@@ -92,9 +93,9 @@ D interfac.ads		20220929105808 edec285f interfaces%s
 D i-stm32.ads		20220929105809 2ad0960b interfaces.stm32%s
 D i-stm32-pwr.ads	20220929105809 4a098e84 interfaces.stm32.pwr%s
 D message_buffers.ads	20250204193600 8e8a4051 message_buffers%s
-D serial_io.ads		20250204193636 ece0bd5c serial_io%s
-D serial_io-blocking.ads  20250204193636 5f44f113 serial_io.blocking%s
-D serial_io-blocking.adb  20250204193636 858bd069 serial_io.blocking%b
+D serial_io.ads		20250211165836 ece0bd5c serial_io%s
+D serial_io-blocking.ads  20250209001305 866ee835 serial_io.blocking%s
+D serial_io-blocking.adb  20250209001656 1de78610 serial_io.blocking%b
 D stm32.ads		20240927211219 698e2c3b stm32%s
 D stm32-adc.ads		20240927211219 fbfd6f57 stm32.adc%s
 D stm32-crc.ads		20240927211219 9ef7b3c1 stm32.crc%s
@@ -165,27 +166,30 @@ G c Z s b [initialize serial_io__blocking 51 14 none]
 G c Z s b [initialized serial_io__blocking 54 13 none]
 G c Z s b [configure serial_io__blocking 58 14 none]
 G c Z s b [put serial_io__blocking 68 14 none]
-G c Z s b [get serial_io__blocking 73 14 none]
-G c Z s b [await_send_ready serial_io__blocking 86 14 none]
-G c Z s b [await_data_available serial_io__blocking 88 14 none]
-G c Z s s [serial_portDF serial_io__blocking 81 9 none]
-G c Z s s [serial_portIP serial_io__blocking 81 9 none]
+G c Z s b [put_mess serial_io__blocking 71 16 none]
+G c Z s b [get serial_io__blocking 76 14 none]
+G c Z s b [await_send_ready serial_io__blocking 89 14 none]
+G c Z s b [await_data_available serial_io__blocking 91 14 none]
+G c Z s s [serial_portDF serial_io__blocking 84 9 none]
+G c Z s s [serial_portIP serial_io__blocking 84 9 none]
 G r c none [initialize serial_io__blocking 51 14 none] [initialize_peripheral serial_io 44 14 none]
 G r c none [configure serial_io__blocking 58 14 none] [configure serial_io 46 14 none]
 G r c none [put serial_io__blocking 68 14 none] [length message_buffers 45 13 none]
 G r c none [put serial_io__blocking 68 14 none] [tx_ready stm32__usarts 77 13 none]
 G r c none [put serial_io__blocking 68 14 none] [content_at message_buffers 47 13 none]
 G r c none [put serial_io__blocking 68 14 none] [transmit stm32__usarts 75 14 none]
-G r c none [get serial_io__blocking 73 14 none] [clear message_buffers 51 14 none]
-G r c none [get serial_io__blocking 73 14 none] [rx_ready stm32__usarts 79 13 none]
-G r c none [get serial_io__blocking 73 14 none] [receive stm32__usarts 69 14 none]
-G r c none [get serial_io__blocking 73 14 none] [terminator message_buffers 76 13 none]
-G r c none [get serial_io__blocking 73 14 none] [append message_buffers 55 14 none]
-G r c none [await_send_ready serial_io__blocking 86 14 none] [tx_ready stm32__usarts 77 13 none]
-G r c none [await_data_available serial_io__blocking 88 14 none] [rx_ready stm32__usarts 79 13 none]
+G r c none [put_mess serial_io__blocking 71 16 none] [tx_ready stm32__usarts 77 13 none]
+G r c none [put_mess serial_io__blocking 71 16 none] [transmit stm32__usarts 75 14 none]
+G r c none [get serial_io__blocking 76 14 none] [clear message_buffers 51 14 none]
+G r c none [get serial_io__blocking 76 14 none] [rx_ready stm32__usarts 79 13 none]
+G r c none [get serial_io__blocking 76 14 none] [receive stm32__usarts 69 14 none]
+G r c none [get serial_io__blocking 76 14 none] [terminator message_buffers 76 13 none]
+G r c none [get serial_io__blocking 76 14 none] [append message_buffers 55 14 none]
+G r c none [await_send_ready serial_io__blocking 89 14 none] [tx_ready stm32__usarts 77 13 none]
+G r c none [await_data_available serial_io__blocking 91 14 none] [rx_ready stm32__usarts 79 13 none]
 X 14 hal.ads
 34K9*HAL 166e8 27|33w6 33r25
-51M9*UInt9 27|90r23
+51M9*UInt9 27|100r23
 97M9*UInt32<21|79M9>
 X 15 hal-audio.ads
 62h9*Audio_Stream
@@ -203,28 +207,28 @@ X 21 interfac.ads
 79M9*Unsigned_32
 X 24 message_buffers.ads
 38K9*Message_Buffers 114e20 26|43w6 43r28
-41R9*Message 112e14 26|68r68 73r69 27|74r69 88r69
-41i18 Physical_Size{positive} 26|75r32 27|93r37
-45V13*Length{natural} 26|75s18 76s34 27|76s28
-47V13*Content_At{character} 26|76s18 27|80s32
-51U14*Clear 27|92s11
-55U14*Append 27|98s14
-76V13*Terminator{character} 26|76s49 27|97s50
+41R9*Message 112e14 26|68r68 76r69 27|74r69 98r69
+41i18 Physical_Size{positive} 26|78r32 27|103r37
+45V13*Length{natural} 26|78s18 79s34 27|76s28
+47V13*Content_At{character} 26|79s18 27|80s32
+51U14*Clear 27|102s11
+55U14*Append 27|108s14
+76V13*Terminator{character} 26|79s49 27|107s50
 X 25 serial_io.ads
-35K9*Serial_IO 63e14 26|45r9 90r5 27|35r14 43r7 67r7 124r5
-37R9*Peripheral_Descriptor 42e14 26|48r47 81r38
-38p7*Transceiver(44|56R9) 27|77r40 79r25 94r44 95r31
+35K9*Serial_IO 63e14 26|45r9 93r5 27|35r14 43r7 67r7 134r5
+37R9*Peripheral_Descriptor 42e14 26|48r47 84r38
+38p7*Transceiver(44|56R9) 27|77r40 79r25 87r40 89r25 104r44 105r31
 44U14*Initialize_Peripheral 27|43s17
 46U14*Configure 27|67s17
 X 26 serial_io-blocking.ads
-45K19*Blocking 25|35k9 26|81E9 90l15 90e23 27|35b24 124l15 124t23
-48R9*Serial_Port 48d22 51p14 51r37 54p13 54r33 58p14 59r26 68p14 68r33 73p14
-. 73r33 81c9 84e17 27|41r37 51r33 59r26 74r33 88r33
+45K19*Blocking 25|35k9 26|84E9 93l15 93e23 27|35b24 134l15 134t23
+48R9*Serial_Port 48d22 51p14 51r37 54p13 54r33 58p14 59r26 68p14 68r33 71p16
+. 71r39 76p14 76r33 84c9 87e17 27|41r37 51r33 59r26 74r33 84r38 98r33
 51U14*Initialize 51<26 27|41b14 45l8 45t18
 51r26 This{48R9} 52r33 27|41b26 43m40 43r40 44m7
-54V13*Initialized{boolean} 52s20 54>26 66s16 69s14 74s15 27|51b13
+54V13*Initialized{boolean} 52s20 54>26 66s16 69s14 72s14 77s15 27|51b13
 54r26 This{48R9} 27|52r7
-56X4*Serial_Port_Uninitialized 66r49 69r47 74r48
+56X4*Serial_Port_Uninitialized 66r49 69r47 72r47 77r48
 58U14*Configure 59=7 60>7 61>7 62>7 63>7 64>7 27|58b14 68l8 68t17
 59r7 This{48R9} 66r29 27|59b7 67m28 67r28
 60m7 Baud_Rate{44|95M12} 27|60b7 67r41
@@ -235,31 +239,35 @@ X 26 serial_io-blocking.ads
 68U14*Put 68=19 68^46 27|74b14 82l8 82t11
 68r19 This{48R9} 69r27 27|74b19 77r28 79r13
 68p46 Msg(24|41R9) 27|74b47 76r24 80r28
-73U14*Get 73=19 73^47 27|88b14 100l8 100t11
-73r19 This{48R9} 74r28 27|88b19 94r32 95r19
-73p47 Msg(24|41R9) 75r14 75r28 76r14 76r30 76r45 27|88b47 92r7 93r33 97r46
-. 98r10
-83b10*Initialized{boolean} 27|44m12 52r12
-86U14 Await_Send_Ready 86>32 27|77s10 106b14 111l8 111t24
-86r32 This{44|56R9} 27|106b32 109r30
-88U14 Await_Data_Available 88>36 27|94s10 117b14 122l8 122t28
-88r36 This{44|56R9} 27|117b36 120r30
+71U16*Put_Mess 71=25 71>52 27|84b14 92l8 92t16
+71r25 This{48R9} 72r27 27|84b24 87r28 89r13
+71a52 Msg{string} 27|84b52 86r16 90r28
+76U14*Get 76=19 76^47 27|98b14 110l8 110t11
+76r19 This{48R9} 77r28 27|98b19 104r32 105r19
+76p47 Msg(24|41R9) 78r14 78r28 79r14 79r30 79r45 27|98b47 102r7 103r33 107r46
+. 108r10
+86b10*Initialized{boolean} 27|44m12 52r12
+89U14 Await_Send_Ready 89>32 27|77s10 87s10 116b14 121l8 121t24
+89r32 This{44|56R9} 27|116b32 119r30
+91U14 Await_Data_Available 91>36 27|104s10 127b14 132l8 132t28
+91r36 This{44|56R9} 27|127b36 130r30
 X 27 serial_io-blocking.adb
 76i11 Next{integer} 80r44
-89e7 Received_Char{character} 96m10 97r30 98r22
-90m7 Raw{14|51M9} 95m48 96r42
-93l7 Receiving 97r15 99l16 99e25
-93i23 K{integer}
+86i11 K{integer} 90r33
+99e7 Received_Char{character} 106m10 107r30 108r22
+100m7 Raw{14|51M9} 105m48 106r42
+103l7 Receiving 107r15 109l16 109e25
+103i23 K{integer}
 X 28 stm32.ads
 39K9*STM32 27|32r6 32r25 28|48e10
 X 32 stm32-device.ads
 63K15*Device 27|32w12 32r31 32|654e17
 X 44 stm32-usarts.ads
-56R9*USART<20|49R9> 26|86r39 88r43 27|106r39 117r43 44|269e53
-69U14*Receive 27|95s10
-75U14*Transmit 27|78s10
-77V13*Tx_Ready{boolean} 27|109s20
-79V13*Rx_Ready{boolean} 27|120s20
+56R9*USART<20|49R9> 26|89r39 91r43 27|116r39 127r43 44|269e53
+69U14*Receive 27|105s10
+75U14*Transmit 27|78s10 88s10
+77V13*Tx_Ready{boolean} 27|119s20
+79V13*Rx_Ready{boolean} 27|130s20
 81E9*Stop_Bits 26|63r19 27|63r19 44|81e47
 81n23*Stopbits_1{81E9} 26|63r35 27|63r35
 87E9*Word_Lengths 26|62r19 27|62r19 44|87e55
