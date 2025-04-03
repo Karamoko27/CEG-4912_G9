@@ -1,8 +1,8 @@
 [GENERATED OBJECT FILE]
 b__main.o
 [PROJECT FILES]
-/Users/karamoko/bno055_project/bno055_project.gpr
-20250122004822 5aa903e130c4346dcd51d702d569839e
+/Users/karamoko/Desktop/CEG4912/BonCode/CEG-4912_G9/bno055_project/bno055_project.gpr
+20250122004822 de8ec116b03ec14e55c99e78cca29648
 /Users/karamoko/.local/share/alire/builds/stm32f429disco_0.1.0_aa5fe0cb/889ab963feec0991851c3be89f19344fb5b82b13dbe59edcaca23d6420e4ffef/config/stm32f429disco_config.gpr
 20250205193736 1e6fc0a857d7df98c4fea10c2a1768d2
 /Users/karamoko/.local/share/alire/builds/stm32f429disco_0.1.0_aa5fe0cb/889ab963feec0991851c3be89f19344fb5b82b13dbe59edcaca23d6420e4ffef/stm32f429disco.gpr
@@ -29,24 +29,24 @@ b__main.o
 20250205193736 007fb323a31d33a919efb98dba504afe
 /Users/karamoko/.local/share/alire/builds/embedded_components_0.2.0_37c39b23/e57a61e5227db4e924f74ca5fd028592cc309243acfdcdbc26dae612ca86268f/embedded_components.gpr
 20240927211218 7e1250695289ae5cb7d8ff35008d6ced
-/Users/karamoko/bno055_project/config/bno055_project_config.gpr
-20250205193736 d1903b4a924957e0df7079e17ef6287e
+/Users/karamoko/Desktop/CEG4912/BonCode/CEG-4912_G9/bno055_project/config/bno055_project_config.gpr
+20250205193736 7a8e2ee84d5a6a61c27bdfdea4fcd36e
 [BOUND OBJECT FILES]
-/Users/karamoko/bno055_project/obj/development/delay_milliseconds.o
-/Users/karamoko/bno055_project/obj/development/bno055_i2c.o
-/Users/karamoko/bno055_project/obj/development/serial_io.o
-/Users/karamoko/bno055_project/obj/development/message_buffers.o
-/Users/karamoko/bno055_project/obj/development/serial_io-blocking.o
-/Users/karamoko/bno055_project/obj/development/peripherals.o
-/Users/karamoko/bno055_project/obj/development/screen_draw.o
-/Users/karamoko/bno055_project/obj/development/main.o
+/Users/karamoko/Desktop/CEG4912/BonCode/CEG-4912_G9/bno055_project/obj/development/delay_milliseconds.o
+/Users/karamoko/Desktop/CEG4912/BonCode/CEG-4912_G9/bno055_project/obj/development/bno055_i2c.o
+/Users/karamoko/Desktop/CEG4912/BonCode/CEG-4912_G9/bno055_project/obj/development/serial_io.o
+/Users/karamoko/Desktop/CEG4912/BonCode/CEG-4912_G9/bno055_project/obj/development/message_buffers.o
+/Users/karamoko/Desktop/CEG4912/BonCode/CEG-4912_G9/bno055_project/obj/development/serial_io-blocking.o
+/Users/karamoko/Desktop/CEG4912/BonCode/CEG-4912_G9/bno055_project/obj/development/peripherals.o
+/Users/karamoko/Desktop/CEG4912/BonCode/CEG-4912_G9/bno055_project/obj/development/screen_draw.o
+/Users/karamoko/Desktop/CEG4912/BonCode/CEG-4912_G9/bno055_project/obj/development/main.o
 [GENERATED SOURCE FILES]
 b__main.ads
 b__main.adb
 b__main.ali
 [RESULTING OPTIONS]
--L/Users/karamoko/bno055_project/obj/development/
--L/Users/karamoko/bno055_project/obj/development/
+-L/Users/karamoko/Desktop/CEG4912/BonCode/CEG-4912_G9/bno055_project/obj/development/
+-L/Users/karamoko/Desktop/CEG4912/BonCode/CEG-4912_G9/bno055_project/obj/development/
 -L/Users/karamoko/.local/share/alire/builds/embedded_components_0.2.0_37c39b23/e57a61e5227db4e924f74ca5fd028592cc309243acfdcdbc26dae612ca86268f/lib/
 -L/Users/karamoko/.local/share/alire/builds/adl_middleware_0.2.0_623c6913/fbb7e94a149915209229876b35886a02bfa51ec2fd7a9c0aaa119f6c0390c238/lib/
 -L/Users/karamoko/.local/share/alire/builds/hal_0.3.0_095ae514/45a7230b1521a74e4d762c42ec802710efe319e84e7227b385f535fafd1bbbac/lib/

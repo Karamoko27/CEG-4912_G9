@@ -51,7 +51,7 @@ RV NO_UNCHECKED_CONVERSION
 RV NO_DYNAMIC_SIZED_OBJECTS
 RV NO_IMPLEMENTATION_PRAGMAS
 
-U ultrasonic%b		ultrasonic.adb		e9d31aac NE OO SU IL
+U ultrasonic%b		ultrasonic.adb		6f6fcc21 NE OO SU IL
 W ada%s			ada.ads			ada.ali
 W ada.real_time%s	a-reatim.adb		a-reatim.ali
 Z ada.real_time.delays%s  a-retide.adb		a-retide.ali
@@ -109,7 +109,7 @@ D i-stm32-pwr.ads	20220929105809 4a098e84 interfaces.stm32.pwr%s
 D l3gd20.ads		20240927211218 ca110b0d l3gd20%s
 D memory_mapped_bitmap.ads  20240927211216 b0310810 memory_mapped_bitmap%s
 D ravenscar_time.ads	20240927211220 7a23edc6 ravenscar_time%s
-D screen_draw.ads	20241127003251 d27fce32 screen_draw%s
+D screen_draw.ads	20250307183706 d27fce32 screen_draw%s
 D soft_drawing_bitmap.ads  20240927211216 e11f4ff7 soft_drawing_bitmap%s
 D stm32.ads		20240927211219 698e2c3b stm32%s
 D stm32-adc.ads		20240927211219 fbfd6f57 stm32.adc%s
@@ -184,7 +184,7 @@ D s-tpoben.ads		20220929105809 8351b91e system.tasking.protected_objects.entries
 D s-traent.ads		20220929105809 c81cbf8c system.traceback_entries%s
 D s-unstyp.ads		20220929105808 fa2a7f59 system.unsigned_types%s
 D touch_panel_stmpe811.ads  20240927211220 aefcd99e touch_panel_stmpe811%s
-D ultrasonic.adb	20241127065805 ffd2f7cc ultrasonic%b
+D ultrasonic.adb	20250403171203 796e2141 ultrasonic%b
 D unchconv.ads		20220929105808 ca2f9e18 unchecked_conversion%s
 G a e
 G c Z b b [ultrasonic standard 23 11 none]
@@ -194,21 +194,21 @@ G r c none [ultrasonic standard 23 11 none] [set stm32__gpio 176 14 none]
 G r c none [ultrasonic standard 23 11 none] [set stm32__gpio 169 13 none]
 G r c none [ultrasonic standard 23 11 none] [writemsg screen_draw 4 14 none]
 X 1 ada.ads
-16K9*Ada 20e8 111|10r6 10r23 19r6 21r6 21r25 44r18 62r34 63r30 68r24 70r21
-. 75r22 77r19 101r31
+16K9*Ada 20e8 111|10r6 10r23 19r6 21r6 21r25 51r18 69r34 70r30 75r24 77r21
+. 82r22 84r19 108r31
 X 6 a-reatim.ads
-40K13*Real_Time 181e18 111|21w10 21r29 44r22 62r38 63r34 68r28 70r25 75r26
-. 77r23 101r35
-50M9*Time<81|46M9> 111|44r32 63r44
-60I9*Time_Span<81|81I9> 111|42r24 43r23 62r48 101r45
-67V13*Clock{50M9}<81|134p13> 111|49s19 51s19 67s22 68s38 70s35 74s22 75s36
-. 77s33 106s19
-71V14*"+"{50M9} 111|49s25 51s25 67s28 74s28 106s25
-75V14*"-"{60I9} 111|79s23
-103V14*"/"{60I9} 111|49s36
-118V13*To_Duration{duration} 111|102s66
-125V13*Microseconds{60I9} 111|43s36 67s30 74s30
-130V13*Seconds{60I9} 111|42s37
+40K13*Real_Time 181e18 111|21w10 21r29 51r22 69r38 70r34 75r28 77r25 82r26
+. 84r23 108r35
+50M9*Time<81|46M9> 111|51r32 70r44
+60I9*Time_Span<81|81I9> 111|49r24 50r23 69r48 108r45
+67V13*Clock{50M9}<81|134p13> 111|56s19 58s19 74s22 75s38 77s35 81s22 82s36
+. 84s33 113s19
+71V14*"+"{50M9} 111|56s25 58s25 74s28 81s28 113s25
+75V14*"-"{60I9} 111|86s23
+103V14*"/"{60I9} 111|56s36
+118V13*To_Duration{duration} 111|109s66
+125V13*Microseconds{60I9} 111|50s36 74s30 81s30
+130V13*Seconds{60I9} 111|49s37
 X 14 a-textio.ads
 36K13*Text_IO 52e16 111|10w10 10r27
 X 15 a-unccon.ads
@@ -241,38 +241,37 @@ X 28 hal-uart.ads
 X 30 interfac.ads
 38K9*Interfaces 231e15 111|11w6
 X 36 screen_draw.ads
-1K9*Screen_Draw 6e16 111|13w6 16w6 104r10
-4U14*WriteMsg 111|104s22
+1K9*Screen_Draw 6e16 111|13w6 16w6 111r10
+4U14*WriteMsg 111|111s22
 X 38 stm32.ads
 39K9*STM32 48e10 111|2r6 2r23 3r6 3r22 4r6 4r24 5r6 5r22 26r15 27r15 30r27
-. 37r27 48r7 50r7 52r7 58r23
+. 44r27 55r7 57r7 59r7
 X 40 stm32-board.ads
 59K15*Board 226e16 111|2w12 2r29
 X 43 stm32-device.ads
 63K15*Device 654e17 111|4w12 4r30
-140r4*PC1{50|138R9} 111|26r40
-155r4*PD0{50|138R9} 111|27r40
+147r4*PC8{50|138R9} 111|27r40
+177r4*PE6{50|138R9} 111|26r40
 X 48 stm32-exti.ads
 45K15*EXTI 113e15 111|5w12 5r28
 X 50 stm32-gpio.ads
-49K15*GPIO 297e15 111|3w12 3r28 26r21 27r21 30r33 37r33 48r13 50r13 52r13
-. 58r29
-87n26*Mode_In{87E9} 111|38r20
+49K15*GPIO 297e15 111|3w12 3r28 26r21 27r21 30r33 44r33 55r13 57r13 59r13
+87n26*Mode_In{87E9} 111|45r20
 87n35*Mode_Out{87E9} 111|31r20
 96n30*Push_Pull{96E9} 111|33r22
 101n44*Speed_25MHz{101E9} 111|34r16
 115n36*Floating{115E9} 111|32r20
-115n55*Pull_Down{115E9} 111|39r20
-123R9*GPIO_Port_Configuration 136e14 111|30r38 37r38
-123e34*Mode{87E9} 111|31m7 38m7
-124e7*Resistors{115E9} 111|32m7 39m7
+115n55*Pull_Down{115E9} 111|46r20
+123R9*GPIO_Port_Configuration 136e14 111|30r38 44r38
+123e34*Mode{87E9} 111|31m7 45m7
+124e7*Resistors{115E9} 111|32m7 46m7
 129e13*Output_Type{96E9} 111|33m7
 130e13*Speed{101E9} 111|34m7
 138R9*GPIO_Point<22|48R9> 143e14 111|26r26 27r26
-169V13*Set{boolean}<22|77p13> 111|58s34
-176U14*Set<22|89p14> 111|50s18
-182U14*Clear<22|91p14> 111|48s18 52s18
-207U14*Configure_IO 111|95s4 96s4
+169V13*Set{boolean}<22|77p13> 111|65s23
+176U14*Set<22|89p14> 111|57s18
+182U14*Clear<22|91p14> 111|55s18 59s18
+207U14*Configure_IO 111|102s4 103s4
 X 60 stm32_svd.ads
 10K9*STM32_SVD 184e14 111|6r6
 X 65 stm32_svd-gpio.ads
@@ -287,25 +286,25 @@ X 96 s-secsta.ads
 X 105 s-taskin.ads
 398V13*Get_Sec_Stack{96|46P9} 399i<c,__gnat_get_secondary_stack>22
 X 111 ultrasonic.adb
-23U11*ultrasonic 23b11 108l5 108t15
-26r4 Trig_Pin{50|138R9} 48m24 48r24 50m22 50r22 52m24 52r24 95r17
-27r4 Echo_Pin{50|138R9} 58r38 96r17
-30r4 Trig_Config{50|123R9} 95r27
-37r4 Echo_Config{50|123R9} 96r27
-42i4 Delay_sec{6|60I9} 106r27
-43i4 Delay_Us{6|60I9} 49r28 51r27
-44m4 trigger_time{6|50M9}
-46U14 Trigger_Sensor 46b14 53l8 53t22 99s7
-55V13 Echo_Pin_Is_High{boolean} 55b13 60l8 60t24 66s17 73s13
-56b7 Signal_State{boolean} 58m7 59r14
-62V13 Get_Echo_Time{6|60I9} 62b13 80l8 80t21 101s58
-63m7 Start_Time{6|50M9} 68m10 70m7 79r25
-63m19 End_Time{6|50M9} 75m10 77m7 79r14
-82D9 T6_D3 84r45 84r59 85r33 86r25 102r31 102r59
-84V13 Calculate_Distance{82D9} 84b13 84>33 90l8 90t26 102s40
-84d33 Time_Diff{82D9} 86r34
-85d7 Speed_Of_Sound{82D9} 89r23
-86d7 By_Two{82D9} 89r14
-101i10 Echo_Time{6|60I9} 102r79
-102d10 Distance{82D9} 104r47
+23U11*ultrasonic 23b11 115l5 115t15
+26r4 Trig_Pin{50|138R9} 55m24 55r24 57m22 57r22 59m24 59r24 102r17
+27r4 Echo_Pin{50|138R9} 65r27 103r17
+30r4 Trig_Config{50|123R9} 102r27
+44r4 Echo_Config{50|123R9} 103r27
+49i4 Delay_sec{6|60I9} 113r27
+50i4 Delay_Us{6|60I9} 56r28 58r27
+51m4 trigger_time{6|50M9}
+53U14 Trigger_Sensor 53b14 60l8 60t22 106s7
+62V13 Echo_Pin_Is_High{boolean} 62b13 67l8 67t24 73s17 80s13
+63b7 Signal_State{boolean} 65m7 66r14
+69V13 Get_Echo_Time{6|60I9} 69b13 87l8 87t21 108s58
+70m7 Start_Time{6|50M9} 75m10 77m7 86r25
+70m19 End_Time{6|50M9} 82m10 84m7 86r14
+89D9 T6_D3 91r45 91r59 92r33 93r25 109r31 109r59
+91V13 Calculate_Distance{89D9} 91b13 91>33 97l8 97t26 109s40
+91d33 Time_Diff{89D9} 93r34
+92d7 Speed_Of_Sound{89D9} 96r23
+93d7 By_Two{89D9} 96r14
+108i10 Echo_Time{6|60I9} 109r79
+109d10 Distance{89D9} 111r47
 

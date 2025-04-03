@@ -384,16 +384,16 @@ package body ada_main is
    end;
 
 --  BEGIN Object file/option list
-   --   /Users/karamoko/bno055_project/obj/development/delay_milliseconds.o
-   --   /Users/karamoko/bno055_project/obj/development/bno055_i2c.o
-   --   /Users/karamoko/bno055_project/obj/development/serial_io.o
-   --   /Users/karamoko/bno055_project/obj/development/message_buffers.o
-   --   /Users/karamoko/bno055_project/obj/development/serial_io-blocking.o
-   --   /Users/karamoko/bno055_project/obj/development/peripherals.o
-   --   /Users/karamoko/bno055_project/obj/development/screen_draw.o
-   --   /Users/karamoko/bno055_project/obj/development/main.o
-   --   -L/Users/karamoko/bno055_project/obj/development/
-   --   -L/Users/karamoko/bno055_project/obj/development/
+   --   /Users/karamoko/Desktop/CEG4912/BonCode/CEG-4912_G9/bno055_project/obj/development/delay_milliseconds.o
+   --   /Users/karamoko/Desktop/CEG4912/BonCode/CEG-4912_G9/bno055_project/obj/development/bno055_i2c.o
+   --   /Users/karamoko/Desktop/CEG4912/BonCode/CEG-4912_G9/bno055_project/obj/development/serial_io.o
+   --   /Users/karamoko/Desktop/CEG4912/BonCode/CEG-4912_G9/bno055_project/obj/development/message_buffers.o
+   --   /Users/karamoko/Desktop/CEG4912/BonCode/CEG-4912_G9/bno055_project/obj/development/serial_io-blocking.o
+   --   /Users/karamoko/Desktop/CEG4912/BonCode/CEG-4912_G9/bno055_project/obj/development/peripherals.o
+   --   /Users/karamoko/Desktop/CEG4912/BonCode/CEG-4912_G9/bno055_project/obj/development/screen_draw.o
+   --   /Users/karamoko/Desktop/CEG4912/BonCode/CEG-4912_G9/bno055_project/obj/development/main.o
+   --   -L/Users/karamoko/Desktop/CEG4912/BonCode/CEG-4912_G9/bno055_project/obj/development/
+   --   -L/Users/karamoko/Desktop/CEG4912/BonCode/CEG-4912_G9/bno055_project/obj/development/
    --   -L/Users/karamoko/.local/share/alire/builds/embedded_components_0.2.0_37c39b23/e57a61e5227db4e924f74ca5fd028592cc309243acfdcdbc26dae612ca86268f/lib/
    --   -L/Users/karamoko/.local/share/alire/builds/adl_middleware_0.2.0_623c6913/fbb7e94a149915209229876b35886a02bfa51ec2fd7a9c0aaa119f6c0390c238/lib/
    --   -L/Users/karamoko/.local/share/alire/builds/hal_0.3.0_095ae514/45a7230b1521a74e4d762c42ec802710efe319e84e7227b385f535fafd1bbbac/lib/

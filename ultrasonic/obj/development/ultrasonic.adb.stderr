@@ -15,25 +15,27 @@ ultrasonic.adb:15:09: warning: unit "HAL.Framebuffer" is not referenced [-gnatwu
 ultrasonic.adb:16:06: warning: redundant with clause [-gnatwr]
 ultrasonic.adb:18:04: (style) space required
 ultrasonic.adb:19:31: (style) trailing spaces not permitted
+ultrasonic.adb:26:44: (style) space required
 ultrasonic.adb:27:04: warning: "Echo_Pin" is not modified, could be declared constant [-gnatwk]
 ultrasonic.adb:30:61: (style) space required
 ultrasonic.adb:32:29: (style) trailing spaces not permitted
 ultrasonic.adb:33:32: (style) trailing spaces not permitted
-ultrasonic.adb:42:15: (style) space required
-ultrasonic.adb:43:14: (style) space required
-ultrasonic.adb:44:04: warning: variable "trigger_time" is never read and never assigned [-gnatwv]
-ultrasonic.adb:44:16: (style) space required
-ultrasonic.adb:48:23: (style) space required
-ultrasonic.adb:49:36: (style) space required
-ultrasonic.adb:50:21: (style) space required
-ultrasonic.adb:52:23: (style) space required
-ultrasonic.adb:58:37: (style) space required
-ultrasonic.adb:65:10: (style) space required
-ultrasonic.adb:67:42: (style) space required
-ultrasonic.adb:72:09: (style) two spaces required
+ultrasonic.adb:41:34: (style) trailing spaces not permitted
+ultrasonic.adb:49:15: (style) space required
+ultrasonic.adb:50:14: (style) space required
+ultrasonic.adb:51:04: warning: variable "trigger_time" is never read and never assigned [-gnatwv]
+ultrasonic.adb:51:16: (style) space required
+ultrasonic.adb:55:23: (style) space required
+ultrasonic.adb:56:36: (style) space required
+ultrasonic.adb:57:21: (style) space required
+ultrasonic.adb:59:23: (style) space required
+ultrasonic.adb:65:26: (style) space required
+ultrasonic.adb:72:10: (style) space required
 ultrasonic.adb:74:42: (style) space required
-ultrasonic.adb:88:57: (style) trailing spaces not permitted
-ultrasonic.adb:95:16: (style) space required
-ultrasonic.adb:96:16: (style) space required
-ultrasonic.adb:102:58: (style) space required
-ultrasonic.adb:106:80: (style) this line is too long
+ultrasonic.adb:79:09: (style) two spaces required
+ultrasonic.adb:81:42: (style) space required
+ultrasonic.adb:95:57: (style) trailing spaces not permitted
+ultrasonic.adb:102:16: (style) space required
+ultrasonic.adb:103:16: (style) space required
+ultrasonic.adb:109:58: (style) space required
+ultrasonic.adb:113:80: (style) this line is too long

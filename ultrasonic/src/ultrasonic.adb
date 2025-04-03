@@ -23,8 +23,8 @@ with Ada.Real_Time; use Ada.Real_Time;
 procedure ultrasonic is
 
    --  subtype ultra_pins is GPIO_Point;
-   Trig_Pin : STM32.GPIO.GPIO_Point := PC1; -- PC1 for trigger
-   Echo_Pin : STM32.GPIO.GPIO_Point := PD0; -- PD0 for ECHO
+   Trig_Pin : STM32.GPIO.GPIO_Point := PE6;-- PE6 for trigger
+   Echo_Pin : STM32.GPIO.GPIO_Point := PC8; -- PC8 for ECHO
 
    --  Configuration records
    Trig_Config : constant STM32.GPIO.GPIO_Port_Configuration:= (
@@ -34,6 +34,13 @@ procedure ultrasonic is
       Speed => Speed_25MHz
    );
 
+   --  Echo_Config : constant STM32.GPIO.GPIO_Port_Configuration := (
+   --     Mode      => Mode_AF,
+   --     AF      => STM32.Device.GPIO_AF_TIM1_1,
+   --     Resistors => Floating,
+   --     AF_Speed => Speed_High, 
+   --     AF_Output_Type => Push_Pull
+   --  );
    Echo_Config : constant STM32.GPIO.GPIO_Port_Configuration := (
       Mode      => Mode_In,
       Resistors => Pull_Down
@@ -55,7 +62,7 @@ procedure ultrasonic is
    function Echo_Pin_Is_High return Boolean is
       Signal_State : Boolean;
    begin
-      Signal_State := STM32.GPIO.Set(Echo_Pin); --  Get the pin state directly
+      Signal_State := Set(Echo_Pin); --  Get the pin state directly
       return Signal_State;
    end Echo_Pin_Is_High;
 
