@@ -85,6 +85,8 @@ package ada_main is
    --  system.wch_jis%b
    --  system.wch_cnv%s
    --  system.wch_cnv%b
+   --  ada.text_io%s
+   --  ada.text_io%b
    --  system.address_image%s
    --  system.address_image%b
    --  system.exn_int%s
@@ -194,6 +196,8 @@ package ada_main is
    --  system.tasking.protected_objects.entries%b
    --  system.tasking.protected_objects.multiprocessors%s
    --  system.tasking.protected_objects.multiprocessors%b
+   --  system.tasking.protected_objects.single_entry%s
+   --  system.tasking.protected_objects.single_entry%b
    --  system.tasking.queuing%s
    --  system.tasking.queuing%b
    --  system.tasking.protected_objects.operations%s
@@ -203,6 +207,8 @@ package ada_main is
    --  system.tasking.restricted.stages%b
    --  ada.task_identification%s
    --  ada.task_identification%b
+   --  ada.synchronous_task_control%s
+   --  ada.synchronous_task_control%b
    --  system.interrupts%s
    --  system.interrupts%b
    --  ada.interrupts%s
@@ -245,8 +251,16 @@ package ada_main is
    --  bitmap_color_conversion%b
    --  bmp_fonts%s
    --  bmp_fonts%b
+   --  bno055_i2c_io%s
+   --  bno055_i2c_io%b
+   --  bosch_bno055%s
+   --  bosch_bno055%b
    --  cortex_m.cache%s
    --  cortex_m.cache%b
+   --  delay_milliseconds%s
+   --  delay_milliseconds%b
+   --  bno055_i2c%s
+   --  bno055_i2c%b
    --  hershey_fonts%s
    --  hershey_fonts%b
    --  bitmapped_drawing%s
@@ -312,6 +326,13 @@ package ada_main is
    --  stm32.i2c.dma%b
    --  stm32.rcc%b
    --  stm32.usarts%b
+   --  serial_io%s
+   --  serial_io%b
+   --  message_buffers%s
+   --  message_buffers%b
+   --  serial_io.blocking%s
+   --  serial_io.blocking%b
+   --  peripherals%s
    --  stm32.ltdc%s
    --  stm32.ltdc%b
    --  framebuffer_ltdc%s
@@ -324,10 +345,10 @@ package ada_main is
    --  stm32.board%b
    --  framebuffer_ili9341%b
    --  touch_panel_stmpe811%b
+   --  last_chance_handler%s
+   --  last_chance_handler%b
    --  screen_draw%s
    --  screen_draw%b
-   --  uart%s
-   --  uart%b
    --  gps%b
    --  END ELABORATION ORDER
 

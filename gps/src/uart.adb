@@ -3,7 +3,7 @@ with STM32.GPIO;    use STM32.GPIO;
 
 package body Uart is
 
-   TX_Pin : constant GPIO_Point := PA2;
+   TX_Pin : constant GPIO_Point := PA;
    RX_Pin : constant GPIO_Point := PA3;
 
    --------------------------

@@ -13,11 +13,16 @@ with STM32.Board; use STM32.Board;
 with STM32.Device; use STM32.Device;
 with STM32.GPIO; use STM32.GPIO;
 with STM32; use STM32;
+with HAL; use HAL;
 
 
 with Ultrasonic; use Ultrasonic;
+with Ada.Characters.Latin_1; use Ada.Characters.Latin_1;
+
+with Gps; use Gps;
 
 procedure Rc_Car_Main is
+   Rcv_Data    : HAL.UInt16;
 begin
 
    Serial_IO.Blocking.Initialize(Host);
@@ -73,19 +78,29 @@ begin
       -----------------------------------------------------
       if Ir_Motion_Free then
          Screen_Draw.WriteMsg ("IR_Motion_Free");
-         Serial_IO.Blocking.Put_Mess (Host,"IR_Motion_Free");
+         Serial_IO.Blocking.Put_Mess (Host,"IR_Motion_Free" & LF & CR);
       else
          Screen_Draw.WriteMsg ("IR_Motion_Detected");
-         Serial_IO.Blocking.Put_Mess (Host,"IR_Motion_Detected");
+         Serial_IO.Blocking.Put_Mess (Host,"IR_Motion_Detected" & LF & CR);
       end if;
 
+      --------------------------------------------------------
+      -- Gps
+      --------------------------------------------------------
+      Serial_IO.Blocking.Put_Mess(Host, "GPS: " & Img(Message) & LF & CR);
+      Current_Char := Character'Val (Rcv_Data);
+      State := Update_State (Current_Char, State);
+      Buffer (Pos_In_buffer) := Current_Char;
+      if State /= Invalid then
+         Pos_In_buffer := Pos_In_buffer + 1;
+      end if;
 
       ---------------------------------------------------------
       -- UART
       ------------------------------------------------------------
       --  -- Send the data to the UART
-      Serial_IO.Blocking.Put_Mess (Host,"Orientation: " & Data(X)'Image & " " & Data (Y)'Image & 
-      "Linear Acceleration: " & LinAcc(X)'Image & LinAcc(Y)'Image );
+      Serial_IO.Blocking.Put_Mess (Host,"Orientation: " & Data(X)'Image & " " & Data (Y)'Image & LF & CR & 
+      "Linear Acceleration: " & LinAcc(X)'Image & LinAcc(Y)'Image & LF & CR );
 
    end loop;
 end Rc_Car_Main;

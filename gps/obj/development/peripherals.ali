@@ -44,81 +44,67 @@ P DB LC TF  SS ZX
 
 RN
 RV NO_DISPATCHING_CALLS
-RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
 RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_ELABORATION_CODE
 
-U screen_draw%b		screen_draw.adb		05a2fe2e OO PK
+U peripherals%s		peripherals.ads		f1f7ae4f EE OO PK
 Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
-W bitmapped_drawing%s	bitmapped_drawing.adb	bitmapped_drawing.ali
-W bmp_fonts%s		bmp_fonts.adb		bmp_fonts.ali
-Z framebuffer_ili9341%s	framebuffer_ili9341.adb	framebuffer_ili9341.ali  AD
-Z framebuffer_ltdc%s	framebuffer_ltdc.adb	framebuffer_ltdc.ali  AD
-W hal%s			hal.ads			hal.ali
-W hal.bitmap%s		hal-bitmap.ads		hal-bitmap.ali
-W hal.framebuffer%s	hal-framebuffer.ads	hal-framebuffer.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W bno055_i2c%s		bno055_i2c.ads		bno055_i2c.ali
+W bno055_i2c_io%s	bno055_i2c_io.adb	bno055_i2c_io.ali
+W serial_io%s		serial_io.adb		serial_io.ali
+W serial_io.blocking%s	serial_io-blocking.adb	serial_io-blocking.ali
 W stm32%s		stm32.ads		stm32.ali
-W stm32.board%s		stm32-board.adb		stm32-board.ali
-
-U screen_draw%s		screen_draw.ads		85f85cb5 EE NE OO PK
-Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W stm32.device%s	stm32-device.adb	stm32-device.ali
+W stm32.gpio%s		stm32-gpio.adb		stm32-gpio.ali
+W stm32.i2c%s		stm32-i2c.adb		stm32-i2c.ali
+Z system%s		system.ads		system.ali
 
 D ada.ads		20220929105808 76789da1 ada%s
 D a-except.ads		20220929105809 2a7d8d70 ada.exceptions%s
 D a-finali.ads		20220929105809 bf4f806b ada.finalization%s
 D a-interr.ads		20220929105809 bdf68b51 ada.interrupts%s
-D a-intnam.ads		20220929105809 d93e10ac ada.interrupts.names%s
 D a-reatim.ads		20220929105809 cfe92427 ada.real_time%s
 D a-stream.ads		20220929105808 119b8fb3 ada.streams%s
 D a-string.ads		20220929105808 90ac6797 ada.strings%s
 D a-sttebu.ads		20220929105809 18209c64 ada.strings.text_buffers%s
 D a-stuten.ads		20220929105809 33c54060 ada.strings.utf_encoding%s
+D a-sytaco.ads		20220929105809 e57638e1 ada.synchronous_task_control%s
 D a-tags.ads		20220929105809 9eaa38c6 ada.tags%s
 D a-taside.ads		20220929105809 c0a7c8d8 ada.task_identification%s
 D a-unccon.ads		20220929105808 0e9b276f ada.unchecked_conversion%s
-D bitmapped_drawing.ads	20241107190316 5d86af19 bitmapped_drawing%s
-D bmp_fonts.ads		20241107190316 593c0a39 bmp_fonts%s
-D framebuffer_ili9341.ads  20240927211220 71d6dd2d framebuffer_ili9341%s
-D framebuffer_ltdc.ads	20240927211220 78cac1e3 framebuffer_ltdc%s
+D bno055_i2c.ads	20250403232920 4fcff3f0 bno055_i2c%s
+D bno055_i2c_io.ads	20240927211218 7cc5a612 bno055_i2c_io%s
+D bosch_bno055.ads	20240927211218 0e3b6f4c bosch_bno055%s
+D delay_milliseconds.ads  20250403232955 1a3c3a9e delay_milliseconds%s
 D hal.ads		20240927211215 2b42c80e hal%s
 D hal-audio.ads		20240927211215 e7f91665 hal.audio%s
-D hal-bitmap.ads	20240927211215 12976478 hal.bitmap%s
-D hal-framebuffer.ads	20240927211215 38f7bff6 hal.framebuffer%s
 D hal-gpio.ads		20240927211215 c8195dfd hal.gpio%s
 D hal-i2c.ads		20240927211215 bbe3f8eb hal.i2c%s
 D hal-real_time_clock.ads  20240927211215 d33ce008 hal.real_time_clock%s
 D hal-spi.ads		20240927211215 23ccf813 hal.spi%s
-D hal-time.ads		20240927211215 c82c1ca8 hal.time%s
-D hal-touch_panel.ads	20240927211215 a00b066b hal.touch_panel%s
 D hal-uart.ads		20240927211215 f6856013 hal.uart%s
-D hershey_fonts.ads	20241107190316 f42bbcd7 hershey_fonts%s
-D ili9341.ads		20240927211218 936ed160 ili9341%s
 D interfac.ads		20220929105808 edec285f interfaces%s
 D i-stm32.ads		20220929105809 2ad0960b interfaces.stm32%s
 D i-stm32-pwr.ads	20220929105809 4a098e84 interfaces.stm32.pwr%s
-D l3gd20.ads		20240927211218 ca110b0d l3gd20%s
-D memory_mapped_bitmap.ads  20240927211216 b0310810 memory_mapped_bitmap%s
-D ravenscar_time.ads	20240927211220 7a23edc6 ravenscar_time%s
-D screen_draw.ads	20250307183706 85f85cb5 screen_draw%s
-D screen_draw.adb	20250307183706 85f2ab96 screen_draw%b
-D soft_drawing_bitmap.ads  20240927211216 e11f4ff7 soft_drawing_bitmap%s
+D message_buffers.ads	20250403220125 8e8a4051 message_buffers%s
+D peripherals.ads	20250403232757 92dd0c2d peripherals%s
+D serial_io.ads		20250403215508 ece0bd5c serial_io%s
+D serial_io-blocking.ads  20250403215508 866ee835 serial_io.blocking%s
 D stm32.ads		20240927211219 698e2c3b stm32%s
 D stm32-adc.ads		20240927211219 fbfd6f57 stm32.adc%s
-D stm32-board.ads	20240927211220 2b7277a3 stm32.board%s
 D stm32-crc.ads		20240927211219 9ef7b3c1 stm32.crc%s
 D stm32-dac.ads		20240927211219 bbc963b4 stm32.dac%s
 D stm32-device.ads	20240927211219 21fa9a22 stm32.device%s
 D stm32-dma.ads		20240927211219 a485c5f7 stm32.dma%s
 D stm32-dma-interrupts.ads  20240927211219 0810c00a stm32.dma.interrupts%s
-D stm32-dma2d.ads	20240927211219 cec1550a stm32.dma2d%s
-D stm32-dma2d_bitmap.ads  20240927211220 e71d75df stm32.dma2d_bitmap%s
 D stm32-exti.ads	20240927211219 27a7d05f stm32.exti%s
-D stm32-fmc.ads		20240927211219 cbc3a468 stm32.fmc%s
 D stm32-gpio.ads	20240927211219 316fa3bb stm32.gpio%s
 D stm32-i2c.ads		20240927211219 2a3b9b70 stm32.i2c%s
 D stm32-i2c-dma.ads	20240927211219 75d445d8 stm32.i2c.dma%s
 D stm32-i2s.ads		20240927211219 8099fbc7 stm32.i2s%s
-D stm32-ltdc.ads	20240927211219 679ad904 stm32.ltdc%s
 D stm32-rtc.ads		20240927211219 ff58a3e8 stm32.rtc%s
 D stm32-spi.ads		20240927211219 98127252 stm32.spi%s
 D stm32-spi-dma.ads	20240927211219 030a0921 stm32.spi.dma%s
@@ -134,7 +120,6 @@ D stm32_svd-i2c.ads	20240927211219 b6aa1d20 stm32_svd.i2c%s
 D stm32_svd-sdio.ads	20240927211219 586e3cc2 stm32_svd.sdio%s
 D stm32_svd-spi.ads	20240927211219 694b2c33 stm32_svd.spi%s
 D stm32_svd-usart.ads	20240927211219 d9126171 stm32_svd.usart%s
-D stmpe811.ads		20240927211218 1eb180eb stmpe811%s
 D system.ads		20220929105809 5ad4ef55 system%s
 D s-bb.ads		20220929105808 09e072ae system.bb%s
 D s-bbbopa.ads		20220929105809 5e9af419 system.bb.board_parameters%s
@@ -146,8 +131,6 @@ D s-bbpara.ads		20220929105809 f29639f9 system.bb.parameters%s
 D s-bbthre.ads		20220929105809 5f49caa9 system.bb.threads%s
 D s-bbthqu.ads		20220929105809 cd23d79e system.bb.threads.queues%s
 D s-bbtime.ads		20220929105809 ad086247 system.bb.time%s
-D s-fatflt.ads		20220929105808 11beb392 system.fat_flt%s
-D s-fatgen.ads		20220929105808 d28c6cfe system.fat_gen%s
 D s-finmas.ads		20220929105809 bd688734 system.finalization_masters%s
 D s-finroo.ads		20220929105809 4ff27390 system.finalization_root%s
 D s-interr.ads		20220929105809 d74bd991 system.interrupts%s
@@ -170,93 +153,85 @@ D s-taspri.ads		20220929105809 37f162b4 system.task_primitives%s
 D s-taskin.ads		20220929105809 989d56fd system.tasking%s
 D s-taprob.ads		20220929105809 c8fc0753 system.tasking.protected_objects%s
 D s-tpoben.ads		20220929105809 8351b91e system.tasking.protected_objects.entries%s
+D s-tposen.ads		20220929105809 828b4fcc system.tasking.protected_objects.single_entry%s
 D s-traent.ads		20220929105809 c81cbf8c system.traceback_entries%s
 D s-unstyp.ads		20220929105808 fa2a7f59 system.unsigned_types%s
-D touch_panel_stmpe811.ads  20240927211220 aefcd99e touch_panel_stmpe811%s
 D unchconv.ads		20220929105808 ca2f9e18 unchecked_conversion%s
 G a e
-G c b b b [b screen_draw 9 1 none]
-G c Z s b [clear screen_draw 3 14 none]
-G c Z s b [display_msg screen_draw 4 14 none]
-G r c none [b screen_draw 9 1 none] [initialize framebuffer_ili9341 46 14 none]
-G r c none [b screen_draw 9 1 none] [set_orientation framebuffer_ltdc 60 25 none]
-G r c none [b screen_draw 9 1 none] [initialize_layer framebuffer_ltdc 93 25 none]
-G r c none [clear screen_draw 3 14 none] [hidden_buffer framebuffer_ltdc 146 24 none]
-G r c none [clear screen_draw 3 14 none] [update_layer framebuffer_ltdc 118 25 none]
-G r c none [display_msg screen_draw 4 14 none] [hidden_buffer framebuffer_ltdc 146 24 none]
-G r c none [display_msg screen_draw 4 14 none] [draw_string bitmapped_drawing 50 14 none]
-G r c none [display_msg screen_draw 4 14 none] [update_layer framebuffer_ltdc 118 25 none]
-X 14 bitmapped_drawing.ads
-40K9*Bitmapped_Drawing 78e22 38|5w6 28r7
-50U14*Draw_String 38|28s25
-52r7 Start{20|68R9} 38|30r10
-53a7 Msg{string} 38|31r10
-54e7 Font{15|46E9} 38|32r10
-55r7 Foreground{20|87R9} 38|33r10
-56r7 Background{20|87R9} 38|34r10
-X 15 bmp_fonts.ads
-44K9*BMP_Fonts 74e14 38|3w6 32r18
-46n22*Font8x8{46E9} 38|32r28
-X 16 framebuffer_ili9341.ads
-46U14*Initialize 38|41s12
-X 17 framebuffer_ltdc.ads
-60U25*Set_Orientation<21|58p14> 38|42s12
-93U25*Initialize_Layer<21|84p14> 38|43s12
-118U25*Update_Layer<21|101p14> 38|18s15 36s15
-121b7 Copy_Back{boolean} 38|18r32 36r32
-146V24*Hidden_Buffer{20|103P9}<21|117p13> 38|16s15 17s15 25s15 26s15 29s19
+G c s s s [s peripherals 50 1 none]
+G r s serial_port [s peripherals 50 1 none] [serial_portIP serial_io__blocking 84 9 none]
+X 14 bno055_i2c.ads
+7K9*BNO055_I2C[16|124] 29|43w6 43r25
+X 15 bno055_i2c_io.ads
+38K9*BNO055_I2C_IO 62e18 29|41w6 78r26
+40R9*IO_Port 43e14 29|78r40
+47U14*Read 16|98i19
+52U14*Write 16|104i19
+57U14*Read_Buffer 16|112i19
+X 16 bosch_bno055.ads
+144m4*BNO055_Primary_Address{21|47M12} 29|78r71[14|7]
+X 17 delay_milliseconds.ads
+1U11*Delay_Milliseconds 16|119i19
 X 18 hal.ads
-34K9*HAL 166e8 38|2r6 2r33 7r6 42r29
-53M9*UInt8<31|68M9>
+43M9*UInt4
+54M9*UInt10
 X 19 hal-audio.ads
 62h9*Audio_Stream
-X 20 hal-bitmap.ads
-34K13*Bitmap 433e15 38|2w10 2r37
-45n7*ARGB_8888{44E9} 38|43r33
-87R9*Bitmap_Color 92e15 38|11r18 12r18
-88m7*Alpha{18|53M9} 38|11m35 12m35
-101h9*Bitmap_Buffer
-103P9*Any_Bitmap_Buffer(101R9)
-143x14*Set_Source 38|16R33 25R33
-203x14*Fill 38|17R33 26R33
-X 21 hal-framebuffer.ads
-34K13*Framebuffer 128e20 38|7w10 42r33
-41n16*Landscape{40E9} 38|42r45
-45h9*Frame_Buffer_Display
-X 22 hal-gpio.ads
+X 20 hal-gpio.ads
 48h9*GPIO_Point
-X 23 hal-i2c.ads
+X 21 hal-i2c.ads
+47M12*I2C_Address{18|54M9}
 49h9*I2C_Port
-X 24 hal-real_time_clock.ads
+X 22 hal-real_time_clock.ads
 80h9*RTC_Device
-X 25 hal-spi.ads
+X 23 hal-spi.ads
 49h9*SPI_Port
-X 26 hal-time.ads
-35h9*Delays
-X 27 hal-touch_panel.ads
-53h9*Touch_Panel_Device
-X 28 hal-uart.ads
+X 24 hal-uart.ads
 49h9*UART_Port
-X 31 interfac.ads
-68M9*Unsigned_8
-X 37 screen_draw.ads
-1K9*Screen_Draw 6l5 6e16 38|9b14 45l5 45t16
-3U14*Clear 38|14b14 19l8 19t13
-4U14*Display_Msg 4>27 38|21b14 37l8 37t19
-4a27 Msg{string} 38|22b8 31r17
-X 38 screen_draw.adb
-11r4 BG{20|87R9} 16r45 25r45 34r24
-12r4 FG{20|87R9} 33r24
-X 40 stm32.ads
-39K9*STM32 38|1r6 1r33 40|48e10
-X 42 stm32-board.ads
-59K15*Board 38|1w12 1r39 42|226e16
-189r4*Display{16|43R9} 38|16m7 16r7 17m7 17r7 18m7 18r7 25m7 25r7 26m7 26r7
-. 29m11 29r11 36m7 36r7 41m4 41r4 42m4 42r4 43m4 43r4
-X 88 s-interr.ads
+X 29 peripherals.ads
+50K9*Peripherals 80l5 80e16
+53r4*Peripheral_For_Host{30|37R9} 61m24 61r24
+61r4*Host{31|48R9}
+70p4*Selected_I2C_Port(41|89R9) 78r52
+71m4*Selected_I2C_Port_AF{32|42M9}
+72r4*Selected_I2C_Clock_Pin=72:48{40|138R9}
+73r4*Selected_I2C_Data_Pin=73:48{40|138R9}
+74r4*Selected_HW_Reset_Pin=74:48{40|138R9}
+78r4*Sensor_Port{15|40R9}
+X 30 serial_io.ads
+35K9*Serial_IO 29|45w6 45r25 46r6 46r30 53r34 30|63e14
+37R9*Peripheral_Descriptor 29|53r44 30|42e14
+38p7*Transceiver(48|56R9) 29|54m20
+39m7*Transceiver_AF{32|42M9} 29|55m20
+40r7*Tx_Pin{40|138R9} 29|56m20
+41r7*Rx_Pin{40|138R9} 29|57m20
+X 31 serial_io-blocking.ads
+45K19*Blocking 29|46w16 46r40 31|93e23
+48R9*Serial_Port 29|61r11 31|87e17
+X 32 stm32.ads
+39K9*STM32 29|36r6 36r31 40r6 40r25 42r6 42r25 48r5 32|48e10
+42M9*GPIO_Alternate_Function<18|43M9> 29|71r38
+X 36 stm32-device.ads
+63K15*Device 29|36w12 36r37 36|654e17
+116r4*PA9{40|138R9} 29|56r38
+117r4*PA10{40|138R9} 29|57r38
+128r4*PB5{40|138R9} 29|74r48
+133r4*PB10{40|138R9} 29|72r48
+134r4*PB11{40|138R9} 29|73r48
+299m4*GPIO_AF_I2C2_4{32|42M9} 29|71r65
+311m4*GPIO_AF_USART1_7{32|42M9} 29|55r38
+387r4*USART_1{48|56R9} 29|54m38 54r38
+418r4*I2C_2{41|89R9} 29|70m57 70r57
+X 40 stm32-gpio.ads
+49K15*GPIO 29|40w12 40r31 40|297e15
+138R9*GPIO_Point<20|48R9> 29|72r29 73r29 74r29 40|143e14
+X 41 stm32-i2c.ads
+49K15*I2C 29|42w12 42r31 41|267e14
+89R9*I2C_Port<21|49R9> 29|70r45 41|175e17
+X 72 s-interr.ads
 97U14*Install_Restricted_Handlers_Sequential 98i<c,__gnat_attach_all_handlers>22
-X 96 s-secsta.ads
+X 80 s-secsta.ads
 46P9*SS_Stack_Ptr(43R9)
-X 105 s-taskin.ads
-398V13*Get_Sec_Stack{96|46P9} 399i<c,__gnat_get_secondary_stack>22
+X 89 s-taskin.ads
+398V13*Get_Sec_Stack{80|46P9} 399i<c,__gnat_get_secondary_stack>22
 

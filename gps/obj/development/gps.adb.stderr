@@ -1,10 +1,42 @@
-gps.adb:17:01: (style) multiple blank lines
-gps.adb:18:01: (style) trailing spaces not permitted
-gps.adb:35:80: (style) this line is too long
+gps.adb:2:06: warning: redundant with clause in body [-gnatwr]
+gps.adb:2:19: warning: "Peripherals" is already use-visible through previous use_clause at gps.ads:14 [-gnatwr]
+gps.adb:5:01: (style) multiple blank lines
+gps.adb:6:01: (style) trailing spaces not permitted
+gps.adb:10:80: (style) this line is too long
+gps.adb:13:80: (style) this line is too long
+gps.adb:23:80: (style) this line is too long
+gps.adb:23:86: (style) trailing spaces not permitted
+gps.adb:34:80: (style) this line is too long
 gps.adb:38:80: (style) this line is too long
-gps.adb:48:80: (style) this line is too long
-gps.adb:48:86: (style) trailing spaces not permitted
-gps.adb:59:80: (style) this line is too long
-gps.adb:63:80: (style) this line is too long
-gps.adb:68:27: (style) trailing spaces not permitted
-gps.adb:72:11: (style) trailing spaces not permitted
+gps.adb:43:27: (style) trailing spaces not permitted
+gps.adb:47:11: (style) trailing spaces not permitted
+gps.adb:52:04: warning: variable "Rcv_Data" is read but never assigned [-gnatwv]
+gps.adb:55:07: (style) space required
+gps.adb:56:33: (style) space required
+gps.adb:61:34: (style) space required
+gps.adb:62:20: warning: variable "Current_Char" can be accessed by clients before this initialization [enabled by default]
+gps.adb:62:20: warning: add pragma "Elaborate_Body" to spec "Gps" to ensure proper initialization [enabled by default]
+gps.adb:62:20: warning:   body of unit "Gps" elaborated [enabled by default]
+gps.adb:62:20: warning:   variable "Current_Char" assigned at line 62 [enabled by default]
+gps.ads:1:09: warning: no entities of "Ada.Text_IO" are referenced [-gnatwu]
+gps.ads:1:19: warning: use clause for package "Text_IO" has no effect [-gnatwu]
+gps.ads:2:09: warning: no entities of "Ada.Real_Time" are referenced [-gnatwu]
+gps.ads:2:21: warning: use clause for package "Real_Time" has no effect [-gnatwu]
+gps.ads:4:06: warning: no entities of "HAL" are referenced in spec [-gnatwu]
+gps.ads:4:06: warning: with clause might be moved to body [-gnatwu]
+gps.ads:6:13: warning: use clause for package "STM32" has no effect [-gnatwu]
+gps.ads:7:01: (style) multiple blank lines
+gps.ads:9:04: (style) space required
+gps.ads:10:06: warning: unit "Screen_Draw" is not referenced in spec [-gnatwu]
+gps.ads:10:06: warning: with clause might be moved to body [-gnatwu]
+gps.ads:13:15: warning: no entities of "Serial_IO.Blocking" are referenced in spec [-gnatwu]
+gps.ads:13:15: warning: with clause might be moved to body [-gnatwu]
+gps.ads:13:25: (style) space required
+gps.ads:14:06: warning: no entities of "Peripherals" are referenced in spec [-gnatwu]
+gps.ads:14:06: warning: with clause might be moved to body [-gnatwu]
+gps.ads:15:20: warning: use clause for package "Device" has no effect [-gnatwu]
+gps.ads:27:01: (style) multiple blank lines
+gps.ads:28:01: (style) trailing spaces not permitted
+gps.ads:44:80: (style) this line is too long
+gps.ads:45:01: (style) trailing spaces not permitted
+gps.ads:46:01: (style) trailing spaces not permitted

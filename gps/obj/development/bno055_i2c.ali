@@ -1,0 +1,236 @@
+V "GNAT Lib v12"
+A -Og
+A -gnatA
+A --RTS=/users/karamoko/.local/share/alire/toolchains/gnat_arm_elf_12.2.1_f4bfd822/arm-eabi/lib/gnat/embedded-stm32f429disco/
+A -mlittle-endian
+A -mfloat-abi=hard
+A -mcpu=cortex-m4
+A -mfpu=fpv4-sp-d16
+A -mthumb
+A -ffunction-sections
+A -fdata-sections
+A -g
+A -gnatwa
+A -gnatw.X
+A -gnatVa
+A -gnaty3
+A -gnatya
+A -gnatyA
+A -gnatyB
+A -gnatyb
+A -gnatyc
+A -gnaty-
+A -gnatyd
+A -gnatye
+A -gnatyf
+A -gnatyh
+A -gnatyi
+A -gnatyI
+A -gnatyk
+A -gnatyl
+A -gnatym
+A -gnatyn
+A -gnatyO
+A -gnatyp
+A -gnatyr
+A -gnatyS
+A -gnatyt
+A -gnatyu
+A -gnatyx
+A -gnatW8
+A -mlibarch=armv7e-m+fp
+A -march=armv7e-m+fp
+P DB SS ZX
+
+RN
+RV NO_DISPATCHING_CALLS
+RV NO_FLOATING_POINT
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLICIT_LOOPS
+RV NO_ELABORATION_CODE
+
+U bno055_i2c%b		bno055_i2c.ads		4fcff3f0 NE OO PK IU
+W ada%s			ada.ads			ada.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+Z ada.unchecked_conversion%s
+W bno055_i2c_io%s	bno055_i2c_io.adb	bno055_i2c_io.ali
+W bosch_bno055%s	bosch_bno055.adb	bosch_bno055.ali  ED
+W delay_milliseconds%s	delay_milliseconds.adb	delay_milliseconds.ali
+W hal%s			hal.ads			hal.ali
+W hal.i2c%s		hal-i2c.ads		hal-i2c.ali
+Z interfaces%s		interfac.ads		interfac.ali
+Z system%s		system.ads		system.ali
+Z system.fat_flt%s	s-fatflt.ads		s-fatflt.ali
+Z system.put_images%s	s-putima.adb		s-putima.ali
+
+U bno055_i2c%s		bno055_i2c.ads		9ceef8db EB EE OO PK IU
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W bno055_i2c_io%s	bno055_i2c_io.adb	bno055_i2c_io.ali
+W bosch_bno055%s	bosch_bno055.adb	bosch_bno055.ali
+W delay_milliseconds%s	delay_milliseconds.adb	delay_milliseconds.ali
+W hal%s			hal.ads			hal.ali
+W hal.i2c%s		hal-i2c.ads		hal-i2c.ali
+Z interfaces%s		interfac.ads		interfac.ali
+Z system%s		system.ads		system.ali
+Z system.put_images%s	s-putima.adb		s-putima.ali
+
+D ada.ads		20220929105808 76789da1 ada%s
+D a-except.ads		20220929105809 2a7d8d70 ada.exceptions%s
+D a-finali.ads		20220929105809 bf4f806b ada.finalization%s
+D a-stream.ads		20220929105808 119b8fb3 ada.streams%s
+D a-string.ads		20220929105808 90ac6797 ada.strings%s
+D a-sttebu.ads		20220929105809 18209c64 ada.strings.text_buffers%s
+D a-stuten.ads		20220929105809 33c54060 ada.strings.utf_encoding%s
+D a-tags.ads		20220929105809 9eaa38c6 ada.tags%s
+D a-unccon.ads		20220929105808 0e9b276f ada.unchecked_conversion%s
+D bno055_i2c.ads	20250403232920 4fcff3f0 bno055_i2c%s
+D bno055_i2c.ads	20250403232920 4fcff3f0 bno055_i2c%b
+D bno055_i2c_io.ads	20240927211218 7cc5a612 bno055_i2c_io%s
+D bosch_bno055.ads	20240927211218 0e3b6f4c bosch_bno055%s
+D bosch_bno055.adb	20240927211218 298f61ea bosch_bno055%b
+D delay_milliseconds.ads  20250403232955 1a3c3a9e delay_milliseconds%s
+D hal.ads		20240927211215 2b42c80e hal%s
+D hal-i2c.ads		20240927211215 bbe3f8eb hal.i2c%s
+D interfac.ads		20220929105808 edec285f interfaces%s
+D system.ads		20220929105809 5ad4ef55 system%s
+D s-fatflt.ads		20220929105808 11beb392 system.fat_flt%s
+D s-fatgen.ads		20220929105808 d28c6cfe system.fat_gen%s
+D s-finmas.ads		20220929105809 bd688734 system.finalization_masters%s
+D s-finroo.ads		20220929105809 4ff27390 system.finalization_root%s
+D s-parame.ads		20220929105809 8e90778f system.parameters%s
+D s-pooglo.ads		20220929105809 91708d21 system.pool_global%s
+D s-putima.ads		20220929105809 4e095881 system.put_images%s
+D s-secsta.ads		20220929105808 56a2861c system.secondary_stack%s
+D s-stalib.ads		20220929105809 1c9580f6 system.standard_library%s
+D s-stoele.ads		20220929105808 6d8e1ff4 system.storage_elements%s
+D s-stoele.adb		20220929105808 8f5a9db6 system.storage_elements%b
+D s-stopoo.ads		20220929105809 e9fa2dd8 system.storage_pools%s
+D s-stratt.ads		20220929105808 f7dfd786 system.stream_attributes%s
+D s-traent.ads		20220929105809 c81cbf8c system.traceback_entries%s
+D s-unstyp.ads		20220929105808 fa2a7f59 system.unsigned_types%s
+D unchconv.ads		20220929105808 ca2f9e18 unchecked_conversion%s
+G a e
+G c s s s [s bno055_i2c 7 1 none]
+G c Z s s [device_id bno055_i2c 134 13 7_1]
+G c Z s s [current_mode bno055_i2c 198 13 7_1]
+G c Z s s [configure bno055_i2c 201 14 7_1]
+G c Z s s [set_mode bno055_i2c 208 14 7_1]
+G c Z s s [set_acceleration_units bno055_i2c 220 14 7_1]
+G c Z s s [set_angular_rate_units bno055_i2c 232 14 7_1]
+G c Z s s [set_euler_angle_units bno055_i2c 242 14 7_1]
+G c Z s s [set_temperature_units bno055_i2c 253 14 7_1]
+G c Z s s [set_pitch_rotation bno055_i2c 274 14 7_1]
+G c Z s s [selected_euler_units bno055_i2c 278 13 7_1]
+G c Z s s [selected_acceleration_units bno055_i2c 281 13 7_1]
+G c Z s s [selected_temperature_units bno055_i2c 284 13 7_1]
+G c Z s s [reset bno055_i2c 287 14 7_1]
+G c Z s s [get_revision_info bno055_i2c 299 14 7_1]
+G c Z s s [self_test_resultsIP bno055_i2c 324 9 7_1]
+G c Z s s [get_status bno055_i2c 369 14 7_1]
+G c Z s s [sensor_calibration bno055_i2c 392 13 7_1]
+G c Z s s [sensors_selectionIP bno055_i2c 408 9 7_1]
+G c Z s s [calibration_complete bno055_i2c 412 13 7_1]
+G c Z s s [output bno055_i2c 440 13 7_1]
+G c Z s s [quaternion_orientation bno055_i2c 460 13 7_1]
+G c Z s s [sensor_temperature bno055_i2c 467 13 7_1]
+G c Z s s [sensor_offsets bno055_i2c 489 13 7_1]
+G c Z s s [set_sensor_offsets bno055_i2c 494 14 7_1]
+G c Z s s [remap_axes bno055_i2c 507 14 7_1]
+G c Z s s [remap_axes_signs bno055_i2c 523 14 7_1]
+G c Z s s [bno055_9dof_imuDF bno055_i2c 529 9 7_1]
+G c Z s s [bno055_9dof_imuIP bno055_i2c 529 9 7_1]
+G c Z s s [revision_informationIP bno055_i2c 291 9 7_1]
+G c Z s s [calibration_statesIP bno055_i2c 380 9 7_1]
+G c Z s s [Tsensor_dataBIP bno055_i2c 430 4 7_1]
+G c Z s s [TquaternionBIP bno055_i2c 447 4 7_1]
+G c Z s s [sensor_offset_valuesIP bno055_i2c 475 9 7_1]
+G c Z s s [Taxes_remappingBIP bno055_i2c 504 4 7_1]
+G c Z s s [Taxes_sign_remappingBIP bno055_i2c 520 4 7_1]
+G c Z s s [value_at bno055_i2c 38 13 7_1]
+G c Z s s [value_at bno055_i2c 44 13 7_1]
+G c Z s s [to_integer_16 bno055_i2c 50 13 7_1]
+G c Z s s [as_self_test_results bno055_i2c 53 13 7_1]
+G c Z s s [set_units_register bno055_i2c 56 14 7_1]
+G r i none [s bno055_i2c 7 1 none] [bosch_bno055 standard 124 9 none]
+G r c none [device_id bno055_i2c 134 13 7_1] [read bno055_i2c_io 47 14 none]
+G r c none [current_mode bno055_i2c 198 13 7_1] [write bno055_i2c_io 52 14 none]
+G r c none [current_mode bno055_i2c 198 13 7_1] [delay_milliseconds standard 1 11 none]
+G r c none [current_mode bno055_i2c 198 13 7_1] [read bno055_i2c_io 47 14 none]
+G r c none [configure bno055_i2c 201 14 7_1] [write bno055_i2c_io 52 14 none]
+G r c none [configure bno055_i2c 201 14 7_1] [delay_milliseconds standard 1 11 none]
+G r c none [set_mode bno055_i2c 208 14 7_1] [write bno055_i2c_io 52 14 none]
+G r c none [set_mode bno055_i2c 208 14 7_1] [delay_milliseconds standard 1 11 none]
+G r c none [set_acceleration_units bno055_i2c 220 14 7_1] [write bno055_i2c_io 52 14 none]
+G r c none [set_acceleration_units bno055_i2c 220 14 7_1] [delay_milliseconds standard 1 11 none]
+G r c none [set_acceleration_units bno055_i2c 220 14 7_1] [read bno055_i2c_io 47 14 none]
+G r c none [set_angular_rate_units bno055_i2c 232 14 7_1] [write bno055_i2c_io 52 14 none]
+G r c none [set_angular_rate_units bno055_i2c 232 14 7_1] [delay_milliseconds standard 1 11 none]
+G r c none [set_angular_rate_units bno055_i2c 232 14 7_1] [read bno055_i2c_io 47 14 none]
+G r c none [set_euler_angle_units bno055_i2c 242 14 7_1] [write bno055_i2c_io 52 14 none]
+G r c none [set_euler_angle_units bno055_i2c 242 14 7_1] [delay_milliseconds standard 1 11 none]
+G r c none [set_euler_angle_units bno055_i2c 242 14 7_1] [read bno055_i2c_io 47 14 none]
+G r c none [set_temperature_units bno055_i2c 253 14 7_1] [write bno055_i2c_io 52 14 none]
+G r c none [set_temperature_units bno055_i2c 253 14 7_1] [delay_milliseconds standard 1 11 none]
+G r c none [set_temperature_units bno055_i2c 253 14 7_1] [read bno055_i2c_io 47 14 none]
+G r c none [set_pitch_rotation bno055_i2c 274 14 7_1] [write bno055_i2c_io 52 14 none]
+G r c none [set_pitch_rotation bno055_i2c 274 14 7_1] [delay_milliseconds standard 1 11 none]
+G r c none [set_pitch_rotation bno055_i2c 274 14 7_1] [read bno055_i2c_io 47 14 none]
+G r c none [selected_euler_units bno055_i2c 278 13 7_1] [read bno055_i2c_io 47 14 none]
+G r c none [selected_acceleration_units bno055_i2c 281 13 7_1] [read bno055_i2c_io 47 14 none]
+G r c none [selected_temperature_units bno055_i2c 284 13 7_1] [read bno055_i2c_io 47 14 none]
+G r c none [reset bno055_i2c 287 14 7_1] [write bno055_i2c_io 52 14 none]
+G r c none [reset bno055_i2c 287 14 7_1] [delay_milliseconds standard 1 11 none]
+G r c none [get_revision_info bno055_i2c 299 14 7_1] [read bno055_i2c_io 47 14 none]
+G r c none [get_status bno055_i2c 369 14 7_1] [read bno055_i2c_io 47 14 none]
+G r c none [sensor_calibration bno055_i2c 392 13 7_1] [read bno055_i2c_io 47 14 none]
+G r c none [calibration_complete bno055_i2c 412 13 7_1] [read bno055_i2c_io 47 14 none]
+G r c none [output bno055_i2c 440 13 7_1] [read_buffer bno055_i2c_io 57 14 none]
+G r c none [output bno055_i2c 440 13 7_1] [read bno055_i2c_io 47 14 none]
+G r c none [quaternion_orientation bno055_i2c 460 13 7_1] [read_buffer bno055_i2c_io 57 14 none]
+G r c none [sensor_temperature bno055_i2c 467 13 7_1] [write bno055_i2c_io 52 14 none]
+G r c none [sensor_temperature bno055_i2c 467 13 7_1] [read bno055_i2c_io 47 14 none]
+G r c none [sensor_offsets bno055_i2c 489 13 7_1] [write bno055_i2c_io 52 14 none]
+G r c none [sensor_offsets bno055_i2c 489 13 7_1] [delay_milliseconds standard 1 11 none]
+G r c none [sensor_offsets bno055_i2c 489 13 7_1] [read bno055_i2c_io 47 14 none]
+G r c none [set_sensor_offsets bno055_i2c 494 14 7_1] [write bno055_i2c_io 52 14 none]
+G r c none [set_sensor_offsets bno055_i2c 494 14 7_1] [delay_milliseconds standard 1 11 none]
+G r c none [remap_axes bno055_i2c 507 14 7_1] [write bno055_i2c_io 52 14 none]
+G r c none [remap_axes bno055_i2c 507 14 7_1] [delay_milliseconds standard 1 11 none]
+G r c none [remap_axes_signs bno055_i2c 523 14 7_1] [write bno055_i2c_io 52 14 none]
+G r c none [remap_axes_signs bno055_i2c 523 14 7_1] [delay_milliseconds standard 1 11 none]
+G r c none [value_at bno055_i2c 38 13 7_1] [read bno055_i2c_io 47 14 none]
+G r c none [value_at bno055_i2c 44 13 7_1] [read bno055_i2c_io 47 14 none]
+G r c none [set_units_register bno055_i2c 56 14 7_1] [write bno055_i2c_io 52 14 none]
+G r c none [set_units_register bno055_i2c 56 14 7_1] [delay_milliseconds standard 1 11 none]
+G r c none [set_units_register bno055_i2c 56 14 7_1] [read bno055_i2c_io 47 14 none]
+X 11 bno055_i2c.ads
+7K9*BNO055_I2C[13|124]
+X 12 bno055_i2c_io.ads
+38K9*BNO055_I2C_IO 11|1w6 1r26 12|62e18
+40R9*IO_Port 11|8r26 12|43e14
+45P9*Any_IO_Port(40R9) 11|9r26
+47U14*Read 13|98i19
+52U14*Write 13|104i19
+57U14*Read_Buffer 13|112i19
+X 13 bosch_bno055.ads
+94H9 IO_Port 11|8r4
+96P9 Any_IO_Port(94R9) 11|9r4
+110A9 Sensor_Data_Buffer(16|53M9)<integer> 11|10r4
+124k9*Bosch_BNO055 11|4w6 7r27 13|690e17
+X 15 delay_milliseconds.ads
+1U11*Delay_Milliseconds 11|5w6 13|119i19
+X 16 hal.ads
+34K9*HAL 11|2r6 2r26 16|166e8
+53M9*UInt8<18|68M9>
+162A9*UInt8_Array(53M9)<integer>
+X 17 hal-i2c.ads
+32K13*I2C 11|2w10 2r30 17|85e12
+41A12*I2C_Data{16|162A9}<integer> 11|10r26
+X 18 interfac.ads
+68M9*Unsigned_8
+

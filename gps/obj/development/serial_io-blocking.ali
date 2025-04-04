@@ -43,56 +43,36 @@ A -march=armv7e-m+fp
 P DB LC TF  SS ZX
 
 RN
-RV NO_ENUMERATION_MAPS
-RV NO_FIXED_POINT
-RV NO_IO
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_DISPATCHING_CALLS
+RV NO_EXCEPTIONS
 RV NO_IMPLICIT_CONDITIONALS
-RV NO_SECONDARY_STACK
 RV NO_STANDARD_STORAGE_POOLS
-RV NO_DEFAULT_INITIALIZATION
 RV NO_DYNAMIC_SIZED_OBJECTS
 RV NO_IMPLEMENTATION_PRAGMAS
-RV NO_IMPLICIT_LOOPS
 RV NO_ELABORATION_CODE
 
-U gps%b			gps.adb			85a34a89 OO PK
+U serial_io.blocking%b	serial_io-blocking.adb	91313c09 OO PK
 Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
-W gps%s			gps.adb			gps.ali
-Z interfaces%s		interfac.ads		interfac.ali
-W peripherals%s		peripherals.ads		peripherals.ali
-Z screen_draw%s		screen_draw.adb		screen_draw.ali  AD
-Z serial_io.blocking%s	serial_io-blocking.adb	serial_io-blocking.ali  AD
-Z system%s		system.ads		system.ali
-Z system.img_decimal_32%s  s-imde32.ads		s-imde32.ali
-Z system.img_int%s	s-imgint.ads		s-imgint.ali
-Z system.img_uns%s	s-imguns.ads		s-imguns.ali
-Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
-Z system.unsigned_types%s  s-unstyp.ads		s-unstyp.ali
-Z system.val_decimal_32%s  s-vade32.ads		s-vade32.ali
-Z system.val_enum_8%s	s-vaenu8.ads		s-vaenu8.ali
-Z system.val_int%s	s-valint.ads		s-valint.ali
-
-U gps%s			gps.ads			6dab376d BD EE NE OO PK
-W ada%s			ada.ads			ada.ali
-W ada.real_time%s	a-reatim.adb		a-reatim.ali
-Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
-W ada.text_io%s		a-textio.adb		a-textio.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
 W hal%s			hal.ads			hal.ali
-W last_chance_handler%s	last_chance_handler.adb	last_chance_handler.ali
-W peripherals%s		peripherals.ads		peripherals.ali
-W screen_draw%s		screen_draw.adb		screen_draw.ali
 W serial_io%s		serial_io.adb		serial_io.ali
-W serial_io.blocking%s	serial_io-blocking.adb	serial_io-blocking.ali
 W stm32%s		stm32.ads		stm32.ali
 W stm32.device%s	stm32-device.adb	stm32-device.ali
+Z system%s		system.ads		system.ali
+
+U serial_io.blocking%s	serial_io-blocking.ads	e4041538 BN EB EE OO PF PK
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W message_buffers%s	message_buffers.adb	message_buffers.ali
+W serial_io%s		serial_io.adb		serial_io.ali
+Z system%s		system.ads		system.ali
+Z system.put_images%s	s-putima.adb		s-putima.ali
 
 D ada.ads		20220929105808 76789da1 ada%s
 D a-except.ads		20220929105809 2a7d8d70 ada.exceptions%s
 D a-finali.ads		20220929105809 bf4f806b ada.finalization%s
 D a-interr.ads		20220929105809 bdf68b51 ada.interrupts%s
-D a-numeri.ads		20220929105808 84bea7a3 ada.numerics%s
-D a-nubinu.ads		20220929105808 93f1f3d1 ada.numerics.big_numbers%s
-D a-nbnbig.ads		20220929105808 511b9bab ada.numerics.big_numbers.big_integers_ghost%s
 D a-reatim.ads		20220929105809 cfe92427 ada.real_time%s
 D a-stream.ads		20220929105808 119b8fb3 ada.streams%s
 D a-string.ads		20220929105808 90ac6797 ada.strings%s
@@ -101,14 +81,7 @@ D a-stuten.ads		20220929105809 33c54060 ada.strings.utf_encoding%s
 D a-sytaco.ads		20220929105809 e57638e1 ada.synchronous_task_control%s
 D a-tags.ads		20220929105809 9eaa38c6 ada.tags%s
 D a-taside.ads		20220929105809 c0a7c8d8 ada.task_identification%s
-D a-textio.ads		20220929105808 ffc84532 ada.text_io%s
 D a-unccon.ads		20220929105808 0e9b276f ada.unchecked_conversion%s
-D bno055_i2c.ads	20250403232920 4fcff3f0 bno055_i2c%s
-D bno055_i2c_io.ads	20240927211218 7cc5a612 bno055_i2c_io%s
-D bosch_bno055.ads	20240927211218 0e3b6f4c bosch_bno055%s
-D delay_milliseconds.ads  20250403232955 1a3c3a9e delay_milliseconds%s
-D gps.ads		20250403234710 afc595c3 gps%s
-D gps.adb		20250403234736 177e46a4 gps%b
 D hal.ads		20240927211215 2b42c80e hal%s
 D hal-audio.ads		20240927211215 e7f91665 hal.audio%s
 D hal-gpio.ads		20240927211215 c8195dfd hal.gpio%s
@@ -119,12 +92,10 @@ D hal-uart.ads		20240927211215 f6856013 hal.uart%s
 D interfac.ads		20220929105808 edec285f interfaces%s
 D i-stm32.ads		20220929105809 2ad0960b interfaces.stm32%s
 D i-stm32-pwr.ads	20220929105809 4a098e84 interfaces.stm32.pwr%s
-D last_chance_handler.ads  20240927211220 ecd2b85d last_chance_handler%s
 D message_buffers.ads	20250403220125 8e8a4051 message_buffers%s
-D peripherals.ads	20250403232757 92dd0c2d peripherals%s
-D screen_draw.ads	20250307183706 85f85cb5 screen_draw%s
 D serial_io.ads		20250403215508 ece0bd5c serial_io%s
 D serial_io-blocking.ads  20250403215508 866ee835 serial_io.blocking%s
+D serial_io-blocking.adb  20250403215508 1de78610 serial_io.blocking%b
 D stm32.ads		20240927211219 698e2c3b stm32%s
 D stm32-adc.ads		20240927211219 fbfd6f57 stm32.adc%s
 D stm32-crc.ads		20240927211219 9ef7b3c1 stm32.crc%s
@@ -142,6 +113,7 @@ D stm32-spi.ads		20240927211219 98127252 stm32.spi%s
 D stm32-spi-dma.ads	20240927211219 030a0921 stm32.spi.dma%s
 D stm32-timers.ads	20240927211219 63c500b2 stm32.timers%s
 D stm32-usarts.ads	20240927211219 c32302c7 stm32.usarts%s
+D stm32-usarts.adb	20240927211219 d94dcf90 stm32.usarts%b
 D stm32_svd.ads		20240927211219 89b9f11a stm32_svd%s
 D stm32_svd-adc.ads	20240927211219 0c4598f6 stm32_svd.adc%s
 D stm32_svd-crc.ads	20240927211219 f8fb8ec8 stm32_svd.crc%s
@@ -153,7 +125,6 @@ D stm32_svd-sdio.ads	20240927211219 586e3cc2 stm32_svd.sdio%s
 D stm32_svd-spi.ads	20240927211219 694b2c33 stm32_svd.spi%s
 D stm32_svd-usart.ads	20240927211219 d9126171 stm32_svd.usart%s
 D system.ads		20220929105809 5ad4ef55 system%s
-D s-arit32.ads		20220929105808 e8522a76 system.arith_32%s
 D s-bb.ads		20220929105808 09e072ae system.bb%s
 D s-bbbopa.ads		20220929105809 5e9af419 system.bb.board_parameters%s
 D s-bbbosu.ads		20220929105809 0f820a2a system.bb.board_support%s
@@ -164,15 +135,8 @@ D s-bbpara.ads		20220929105809 f29639f9 system.bb.parameters%s
 D s-bbthre.ads		20220929105809 5f49caa9 system.bb.threads%s
 D s-bbthqu.ads		20220929105809 cd23d79e system.bb.threads.queues%s
 D s-bbtime.ads		20220929105809 ad086247 system.bb.time%s
-D s-casuti.ads		20220929105808 cf13d755 system.case_util%s
 D s-finmas.ads		20220929105809 bd688734 system.finalization_masters%s
 D s-finroo.ads		20220929105809 4ff27390 system.finalization_root%s
-D s-imaged.ads		20220929105808 fe69ad8a system.image_d%s
-D s-imagei.ads		20220929105808 0d3f86a7 system.image_i%s
-D s-imageu.ads		20220929105808 525c30c6 system.image_u%s
-D s-imde32.ads		20220929105808 76eaccd4 system.img_decimal_32%s
-D s-imgint.ads		20220929105808 bdb6f5ec system.img_int%s
-D s-imguns.ads		20220929105808 0e4da2ac system.img_uns%s
 D s-interr.ads		20220929105809 d74bd991 system.interrupts%s
 D s-multip.ads		20220929105809 f33e0e35 system.multiprocessors%s
 D s-mufalo.ads		20220929105809 3dca0374 system.multiprocessors.fair_locks%s
@@ -196,122 +160,127 @@ D s-tpoben.ads		20220929105809 8351b91e system.tasking.protected_objects.entries
 D s-tposen.ads		20220929105809 828b4fcc system.tasking.protected_objects.single_entry%s
 D s-traent.ads		20220929105809 c81cbf8c system.traceback_entries%s
 D s-unstyp.ads		20220929105808 fa2a7f59 system.unsigned_types%s
-D s-vade32.ads		20220929105808 28f7eebf system.val_decimal_32%s
-D s-vaenu8.ads		20220929105808 b7b91426 system.val_enum_8%s
-D s-valint.ads		20220929105809 85ddbf9c system.val_int%s
-D s-valuns.ads		20220929105809 e8a1f424 system.val_uns%s
-D s-valuti.ads		20220929105809 4d0d41f3 system.val_util%s
-D s-valued.ads		20220929105808 a94e9aba system.value_d%s
-D s-valuei.ads		20220929105809 75953b98 system.value_i%s
-D s-valuen.ads		20220929105808 72b74993 system.value_n%s
-D s-valueu.ads		20220929105809 eb2f4477 system.value_u%s
-D s-valueu.adb		20220929105809 040f5707 system.value_u%b
 D unchconv.ads		20220929105808 ca2f9e18 unchecked_conversion%s
 G a e
-G c b b b [b gps 4 1 none]
-G c Z s s [message_tIP gps 34 9 none]
-G c Z s b [img gps 43 13 none]
-G c Z s b [update_state gps 44 13 none]
-G r c none [b gps 4 1 none] [initialize serial_io__blocking 51 14 none]
-G r c none [b gps 4 1 none] [configure serial_io__blocking 58 14 none]
-G r c none [b gps 4 1 none] [put_mess serial_io__blocking 71 16 none]
-G r c none [b gps 4 1 none] [display_msg screen_draw 4 14 none]
-G r c none [update_state gps 44 13 none] [display_msg screen_draw 4 14 none]
-X 1 ada.ads
-16K9*Ada 20e8 22|1r6 1r23 2r6 2r25
-X 8 a-reatim.ads
-40K13*Real_Time 181e18 22|2w10 2r29
-X 16 a-textio.ads
-36K13*Text_IO 52e16 22|1w10 1r27
-X 19 bno055_i2c_io.ads
-47U14*Read 20|98i19
-52U14*Write 20|104i19
-57U14*Read_Buffer 20|112i19
-X 21 delay_milliseconds.ads
-1U11*Delay_Milliseconds 20|119i19
-X 22 gps.ads
-17K9*Gps 47l5 47e8 23|1w6 1r15 4b14 69l5 69t8
-19E9*States_T 19e76 20r12 44r61 44r78 23|13r61 13r78
-19n22*Sentence_Type{19E9} 20r24 23|17r17 21r18
-19n37*Time_UTC{19E9} 23|25r26 29r18
-19n47*Latitude{19E9} 23|32r23 33r18
-19n57*Longitude{19E9} 23|36r23 37r18
-19n68*Invalid{19E9} 23|27r26 42r23 45r23 49r17 65r19
-20e4*State{19E9} 23|63m7 63r44 65r10
-21e4*Reset_Char{character} 23|15r17
-22e4*Split_Char{character} 23|18r20
-24a4*Buffer{string} 23|22r37 23r57 30r51 34r54 38r56 64m7
-25e4*Current_Char{character} 23|62m7 63r30 64r33
-26i4*Pos_In_buffer{natural} 23|22r50 23r70 24m19 30r64 31m16 34r67 35m16
-. 38r69 39m16 64r15 66m10 66r27
-29E9*Sentence_T 29e66 35r18 23|22r19 23r39
-29n25*GNGGA{29E9} 35r34 23|22r68
-29n32*GNRMC{29E9}
-29n39*GNGSA{29E9}
-29n46*GNGSV{29E9}
-29n53*GNVTG{29E9}
-29n60*GNGLL{29E9}
-31D9*Latitude_T 37r18 23|34r36
-32D9*Longitude_T 38r19 23|38r37
-34R9*Message_T 39e14 41r14 43r22 23|8r22
-35e7*Sentence{29E9} 23|10r16 23m27
-36i7*Time_UTC{natural} 23|10r47 30m24
-37d7*Latitude{31D9} 23|10r82 34m24
-38d7*Longitude{32D9} 23|10r118 38m24
-41r4*Message{34R9} 23|23m19 30m16 34m16 38m16 40r46 41m16 48r40
-43V13*Img{string} 43>18 23|8b13 11l8 11t11 40s41 48s35
-43r18 M{34R9} 23|8b18 10r14 10r45 10r80 10r116
-44V13*Update_State{19E9} 44>27 44>45 23|13b13 51l8 51t20 63s16
-44e27 Data{character} 23|13b27 15r10 18r13
-44e45 Current_State{19E9} 23|13b45 20r15
-X 23 gps.adb
-52m4 Rcv_Data{24|66M9} 61r41 62r38
-X 24 hal.ads
-34K9*HAL 22|4w6 4r15 23|52r18 24|166e8
-66M9*UInt16<31|71M9> 23|52r22
-97M9*UInt32<31|79M9>
-X 25 hal-audio.ads
+G c Z s b [initialize serial_io__blocking 51 14 none]
+G c Z s b [initialized serial_io__blocking 54 13 none]
+G c Z s b [configure serial_io__blocking 58 14 none]
+G c Z s b [put serial_io__blocking 68 14 none]
+G c Z s b [put_mess serial_io__blocking 71 16 none]
+G c Z s b [get serial_io__blocking 76 14 none]
+G c Z s b [await_send_ready serial_io__blocking 89 14 none]
+G c Z s b [await_data_available serial_io__blocking 91 14 none]
+G c Z s s [serial_portDF serial_io__blocking 84 9 none]
+G c Z s s [serial_portIP serial_io__blocking 84 9 none]
+G r c none [initialize serial_io__blocking 51 14 none] [initialize_peripheral serial_io 44 14 none]
+G r c none [configure serial_io__blocking 58 14 none] [configure serial_io 46 14 none]
+G r c none [put serial_io__blocking 68 14 none] [length message_buffers 45 13 none]
+G r c none [put serial_io__blocking 68 14 none] [tx_ready stm32__usarts 77 13 none]
+G r c none [put serial_io__blocking 68 14 none] [content_at message_buffers 47 13 none]
+G r c none [put serial_io__blocking 68 14 none] [transmit stm32__usarts 75 14 none]
+G r c none [put_mess serial_io__blocking 71 16 none] [tx_ready stm32__usarts 77 13 none]
+G r c none [put_mess serial_io__blocking 71 16 none] [transmit stm32__usarts 75 14 none]
+G r c none [get serial_io__blocking 76 14 none] [clear message_buffers 51 14 none]
+G r c none [get serial_io__blocking 76 14 none] [rx_ready stm32__usarts 79 13 none]
+G r c none [get serial_io__blocking 76 14 none] [receive stm32__usarts 69 14 none]
+G r c none [get serial_io__blocking 76 14 none] [terminator message_buffers 76 13 none]
+G r c none [get serial_io__blocking 76 14 none] [append message_buffers 55 14 none]
+G r c none [await_send_ready serial_io__blocking 89 14 none] [tx_ready stm32__usarts 77 13 none]
+G r c none [await_data_available serial_io__blocking 91 14 none] [rx_ready stm32__usarts 79 13 none]
+X 14 hal.ads
+34K9*HAL 166e8 27|33w6 33r25
+51M9*UInt9 27|100r23
+97M9*UInt32<21|79M9>
+X 15 hal-audio.ads
 62h9*Audio_Stream
-X 26 hal-gpio.ads
+X 16 hal-gpio.ads
 48h9*GPIO_Point
-X 27 hal-i2c.ads
+X 17 hal-i2c.ads
 49h9*I2C_Port
-X 28 hal-real_time_clock.ads
+X 18 hal-real_time_clock.ads
 80h9*RTC_Device
-X 29 hal-spi.ads
+X 19 hal-spi.ads
 49h9*SPI_Port
-X 30 hal-uart.ads
+X 20 hal-uart.ads
 49h9*UART_Port
-X 31 interfac.ads
-71M9*Unsigned_16
+X 21 interfac.ads
 79M9*Unsigned_32
-X 34 last_chance_handler.ads
-36K9*Last_Chance_Handler 22|3w6 3r49 34|42e24
-38U14*Last_Chance_Handler 39i<c,__gnat_last_chance_handler>22
-X 36 peripherals.ads
-50K9*Peripherals 22|14w6 14r23 23|2w6 2r23 36|80e16
-61r4*Host{39|48R9} 23|56m34 57m15 57r15 61m35 61r35
-X 37 screen_draw.ads
-1K9*Screen_Draw 22|10w6 23|16r10 19r10 40r16 44r16 48r10 37|6e16
-4U14*Display_Msg 23|16s22 19s22 40s28 44s28 48s22
-X 38 serial_io.ads
-35K9*Serial_IO 22|12w6 12r21 13r6 13r29 23|56r4 61r7 38|63e14
-X 39 serial_io-blocking.ads
-45K19*Blocking 22|13w16 13r39 23|56r14 61r17 39|93e23
-51U14*Initialize 23|56s23
-58U14*Configure 23|57s4
-60m7 Baud_Rate{56|95M12} 23|57r21
-71U16*Put_Mess 23|61s26
-X 40 stm32.ads
-39K9*STM32 22|6w6 6r17 15r6 15r24 40|48e10
-X 44 stm32-device.ads
-63K15*Device 22|15w12 15r30 44|654e17
-X 56 stm32-usarts.ads
-95M12*Baud_Rates{24|97M9}
-X 88 s-interr.ads
+X 24 message_buffers.ads
+38K9*Message_Buffers 114e20 26|43w6 43r28
+41R9*Message 112e14 26|68r68 76r69 27|74r69 98r69
+41i18 Physical_Size{positive} 26|78r32 27|103r37
+45V13*Length{natural} 26|78s18 79s34 27|76s28
+47V13*Content_At{character} 26|79s18 27|80s32
+51U14*Clear 27|102s11
+55U14*Append 27|108s14
+76V13*Terminator{character} 26|79s49 27|107s50
+X 25 serial_io.ads
+35K9*Serial_IO 63e14 26|45r9 93r5 27|35r14 43r7 67r7 134r5
+37R9*Peripheral_Descriptor 42e14 26|48r47 84r38
+38p7*Transceiver(44|56R9) 27|77r40 79r25 87r40 89r25 104r44 105r31
+44U14*Initialize_Peripheral 27|43s17
+46U14*Configure 27|67s17
+X 26 serial_io-blocking.ads
+45K19*Blocking 25|35k9 26|84E9 93l15 93e23 27|35b24 134l15 134t23
+48R9*Serial_Port 48d22 51p14 51r37 54p13 54r33 58p14 59r26 68p14 68r33 71p16
+. 71r39 76p14 76r33 84c9 87e17 27|41r37 51r33 59r26 74r33 84r38 98r33
+51U14*Initialize 51<26 27|41b14 45l8 45t18
+51r26 This{48R9} 52r33 27|41b26 43m40 43r40 44m7
+54V13*Initialized{boolean} 52s20 54>26 66s16 69s14 72s14 77s15 27|51b13
+54r26 This{48R9} 27|52r7
+56X4*Serial_Port_Uninitialized 66r49 69r47 72r47 77r48
+58U14*Configure 59=7 60>7 61>7 62>7 63>7 64>7 27|58b14 68l8 68t17
+59r7 This{48R9} 66r29 27|59b7 67m28 67r28
+60m7 Baud_Rate{44|95M12} 27|60b7 67r41
+61e7 Parity{44|91E9} 27|61b7 67r52
+62e7 Data_Bits{44|87E9} 27|62b7 67r60
+63e7 End_Bits{44|81E9} 27|63b7 67r71
+64e7 Control{44|110E9} 27|64b7 67r81
+68U14*Put 68=19 68^46 27|74b14 82l8 82t11
+68r19 This{48R9} 69r27 27|74b19 77r28 79r13
+68p46 Msg(24|41R9) 27|74b47 76r24 80r28
+71U16*Put_Mess 71=25 71>52 27|84b14 92l8 92t16
+71r25 This{48R9} 72r27 27|84b24 87r28 89r13
+71a52 Msg{string} 27|84b52 86r16 90r28
+76U14*Get 76=19 76^47 27|98b14 110l8 110t11
+76r19 This{48R9} 77r28 27|98b19 104r32 105r19
+76p47 Msg(24|41R9) 78r14 78r28 79r14 79r30 79r45 27|98b47 102r7 103r33 107r46
+. 108r10
+86b10*Initialized{boolean} 27|44m12 52r12
+89U14 Await_Send_Ready 89>32 27|77s10 87s10 116b14 121l8 121t24
+89r32 This{44|56R9} 27|116b32 119r30
+91U14 Await_Data_Available 91>36 27|104s10 127b14 132l8 132t28
+91r36 This{44|56R9} 27|127b36 130r30
+X 27 serial_io-blocking.adb
+76i11 Next{integer} 80r44
+86i11 K{integer} 90r33
+99e7 Received_Char{character} 106m10 107r30 108r22
+100m7 Raw{14|51M9} 105m48 106r42
+103l7 Receiving 107r15 109l16 109e25
+103i23 K{integer}
+X 28 stm32.ads
+39K9*STM32 27|32r6 32r25 28|48e10
+X 32 stm32-device.ads
+63K15*Device 27|32w12 32r31 32|654e17
+X 44 stm32-usarts.ads
+56R9*USART<20|49R9> 26|89r39 91r43 27|116r39 127r43 44|269e53
+69U14*Receive 27|105s10
+75U14*Transmit 27|78s10 88s10
+77V13*Tx_Ready{boolean} 27|119s20
+79V13*Rx_Ready{boolean} 27|130s20
+81E9*Stop_Bits 26|63r19 27|63r19 44|81e47
+81n23*Stopbits_1{81E9} 26|63r35 27|63r35
+87E9*Word_Lengths 26|62r19 27|62r19 44|87e55
+87n26*Word_Length_8{87E9} 26|62r35 27|62r35
+91E9*Parities 26|61r19 27|61r19 44|91e57
+91n22*No_Parity{91E9} 26|61r35 27|61r35
+95M12*Baud_Rates{14|97M9} 26|60r19 27|60r19
+110E9*Flow_Control 26|64r19 27|64r19 44|114e28
+111n7*No_Flow_Control{110E9} 26|64r35 27|64r35
+X 69 s-interr.ads
 97U14*Install_Restricted_Handlers_Sequential 98i<c,__gnat_attach_all_handlers>22
-X 96 s-secsta.ads
+X 77 s-secsta.ads
 46P9*SS_Stack_Ptr(43R9)
-X 105 s-taskin.ads
-398V13*Get_Sec_Stack{96|46P9} 399i<c,__gnat_get_secondary_stack>22
+X 86 s-taskin.ads
+398V13*Get_Sec_Stack{77|46P9} 399i<c,__gnat_get_secondary_stack>22
 

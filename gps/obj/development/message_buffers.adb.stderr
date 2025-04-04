@@ -1,0 +1,7 @@
+message_buffers.adb:158:80: (style) this line is too long
+message_buffers.adb:185:80: (style) this line is too long
+message_buffers.ads:47:80: (style) this line is too long
+message_buffers.ads:52:32: (style) "and then" required
+message_buffers.ads:62:40: (style) "and then" required
+message_buffers.ads:66:32: (style) "and then" required
+message_buffers.ads:96:80: (style) this line is too long
